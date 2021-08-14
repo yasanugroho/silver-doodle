@@ -24,13 +24,6 @@ export const Index: React.FC = () => {
         <li className="mt-2">Tailwind CSS</li>
       </ul>
 
-      <a
-        href="https://github.com/ChangoMan/nextjs-typescript-mdx-blog"
-        className="inline-block px-7 py-3 rounded-md text-white dark:text-white bg-blue-600 hover:bg-blue-700 hover:text-white dark:hover:text-white"
-      >
-        Get the source code!
-      </a>
-
     </Layout>
   );
 };
