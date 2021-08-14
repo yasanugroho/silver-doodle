@@ -1,15 +1,13 @@
-import { useRouter } from 'next/router';
 import React from 'react';
 import Layout from '../components/Layout';
-import { _ } from '../lib/i18n';
+import { useLocale, _ } from '../lib/i18n';
 
 // type IndexProps = {
 //   posts: PostType[];
 // };
 
 export const Index: React.FC = () => {
-  const router = useRouter();
-  const { locale: l } = router;
+  const l = useLocale();
 
   return (
     <Layout>

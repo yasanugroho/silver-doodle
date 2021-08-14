@@ -16,7 +16,6 @@ import Layout, { WEBSITE_HOST_URL } from '../../components/Layout';
 import { MetaProps } from '../../types/layout';
 import { PostType } from '../../types/post';
 import { enPostFilePaths, idPostFilePaths, EN_POSTS_PATH, ID_POSTS_PATH } from '../../utils/mdxUtils';
-import { useRouter } from 'next/router';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
