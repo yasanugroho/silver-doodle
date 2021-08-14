@@ -32,7 +32,7 @@ type PostPageProps = {
   frontMatter: PostType;
 };
 
-const PostPage = ({ source, frontMatter }: PostPageProps): JSX.Element => {
+const PostPage: React.FC<PostPageProps> = ({ source, frontMatter }) => {
   const customMeta: MetaProps = {
     title: `${frontMatter.title} - Hunter Chang`,
     description: frontMatter.description,

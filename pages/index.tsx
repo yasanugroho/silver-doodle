@@ -10,7 +10,7 @@ type IndexProps = {
   posts: PostType[];
 };
 
-export const Index = ({ posts }: IndexProps): JSX.Element => {
+export const Index: React.FC<IndexProps> = ({ posts }) => {
   return (
     <Layout>
       <h1>Home Page</h1>
