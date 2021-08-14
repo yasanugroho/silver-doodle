@@ -51,7 +51,7 @@ export const Index: React.FC<IndexProps> = ({ posts }) => {
           </h1>
           <p className="mb-3">{post.description}</p>
           <p>
-            <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
+            <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`} locale={post.lang}>
               <a>Read More</a>
             </Link>
           </p>
@@ -62,10 +62,11 @@ export const Index: React.FC<IndexProps> = ({ posts }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getAllPosts('id', ['date', 'description', 'slug', 'title']);
+  const enPosts = getAllPosts('en', ['date', 'description', 'slug', 'title']);
+  const idPosts = getAllPosts('id', ['date', 'description', 'slug', 'title']);
 
   return {
-    props: { posts },
+    props: { posts: [...enPosts, ...idPosts] },
   };
 };
 

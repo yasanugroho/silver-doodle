@@ -37,6 +37,8 @@ export function getPostBySlug(lang: 'en' | 'id', slug: string, fields: string[] 
     }
   });
 
+  items.lang = lang;
+
   return items;
 }
 
