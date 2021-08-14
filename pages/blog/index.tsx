@@ -12,13 +12,13 @@ type IndexProps = {
   posts: PostType[];
 };
 
-export const Index: React.FC<IndexProps> = ({ posts }) => {
+export const Page: React.FC<IndexProps> = ({ posts }) => {
   const router = useRouter();
   const { locale: l, locales, defaultLocale } = router;
 
   return (
     <Layout>
-      <h1>{_(l, 'Posts', 'Posts')}</h1>
+      <h1>Blog</h1>
       {posts.map((post) => (
         <article key={post.slug} className="mt-12">
           <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
@@ -52,4 +52,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default Index;
+export default Page;
