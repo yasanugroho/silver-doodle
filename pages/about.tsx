@@ -10,7 +10,7 @@ export const About: React.FC = () => {
   return (
     <Layout
       customMeta={{
-        title: 'About - Hunter Chang',
+        title: 'About - Xerpihan',
       }}
     >
       <h1>{_(l, 'Tentang', 'About')}</h1>

@@ -38,7 +38,7 @@ const PostPage: React.FC<PostPageProps> = ({ source, frontMatter }) => {
   const { defaultLocale,  query, locale, locales } = router;
 
   const customMeta: MetaProps = {
-    title: `${frontMatter.title} - Hunter Chang`,
+    title: `${frontMatter.title} - Xerpihan`,
     description: frontMatter.description,
     image: `${WEBSITE_HOST_URL}${frontMatter.image}`,
     date: frontMatter.date,
