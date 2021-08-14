@@ -15,7 +15,8 @@ import rehypeSlug from 'rehype-slug';
 import Layout, { WEBSITE_HOST_URL } from '../../components/Layout';
 import { MetaProps } from '../../types/layout';
 import { PostType } from '../../types/post';
-import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
+import { enPostFilePaths, idPostFilePaths, EN_POSTS_PATH, ID_POSTS_PATH } from '../../utils/mdxUtils';
+import { useRouter } from 'next/router';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -33,6 +34,9 @@ type PostPageProps = {
 };
 
 const PostPage: React.FC<PostPageProps> = ({ source, frontMatter }) => {
+  const router = useRouter();
+  const { defaultLocale,  query, locale, locales } = router;
+
   const customMeta: MetaProps = {
     title: `${frontMatter.title} - Hunter Chang`,
     description: frontMatter.description,
@@ -40,8 +44,14 @@ const PostPage: React.FC<PostPageProps> = ({ source, frontMatter }) => {
     date: frontMatter.date,
     type: 'article',
   };
+
   return (
     <Layout customMeta={customMeta}>
+      <p>Current slug: {query.slug}</p>
+      <p>Current locale: {locale}</p>
+      <p>Default locale: {defaultLocale}</p>
+      <p>Configured locales: {JSON.stringify(locales)}</p>
+
       <article>
         <h1 className="mb-3 text-gray-900 dark:text-white">
           {frontMatter.title}
@@ -57,8 +67,9 @@ const PostPage: React.FC<PostPageProps> = ({ source, frontMatter }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
+export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
+  const postPaths = locale === 'en' ? EN_POSTS_PATH : ID_POSTS_PATH;
+  const postFilePath = path.join(postPaths, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
 
   const { content, data } = matter(source);
@@ -81,14 +92,24 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = postFilePaths
+  const idPaths = idPostFilePaths
     // Remove file extensions for page paths
     .map((path) => path.replace(/\.mdx?$/, ''))
     // Map the path into the static paths object required by Next.js
-    .map((slug) => ({ params: { slug } }));
+    .map((slug) => (
+      { params: { slug }, locale: 'id' }
+    ));
+
+  const enPaths = enPostFilePaths
+    // Remove file extensions for page paths
+    .map((path) => path.replace(/\.mdx?$/, ''))
+    // Map the path into the static paths object required by Next.js
+    .map((slug) => (
+      { params: { slug }, locale: 'en' }
+    ));
 
   return {
-    paths,
+    paths: [...idPaths, ...enPaths],
     fallback: false,
   };
 };

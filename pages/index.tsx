@@ -62,7 +62,7 @@ export const Index: React.FC<IndexProps> = ({ posts }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getAllPosts(['date', 'description', 'slug', 'title']);
+  const posts = getAllPosts('id', ['date', 'description', 'slug', 'title']);
 
   return {
     props: { posts },
