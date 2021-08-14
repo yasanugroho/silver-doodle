@@ -34,9 +34,6 @@ type PostPageProps = {
 };
 
 const PostPage: React.FC<PostPageProps> = ({ source, frontMatter }) => {
-  const router = useRouter();
-  const { defaultLocale,  query, locale, locales } = router;
-
   const customMeta: MetaProps = {
     title: `${frontMatter.title} - Xerpihan`,
     description: frontMatter.description,
@@ -47,11 +44,6 @@ const PostPage: React.FC<PostPageProps> = ({ source, frontMatter }) => {
 
   return (
     <Layout customMeta={customMeta}>
-      <p>Current slug: {query.slug}</p>
-      <p>Current locale: {locale}</p>
-      <p>Default locale: {defaultLocale}</p>
-      <p>Configured locales: {JSON.stringify(locales)}</p>
-
       <article>
         <h1 className="mb-3 text-gray-900 dark:text-white">
           {frontMatter.title}

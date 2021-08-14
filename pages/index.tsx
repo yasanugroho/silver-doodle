@@ -9,7 +9,7 @@ import { _ } from '../lib/i18n';
 
 export const Index: React.FC = () => {
   const router = useRouter();
-  const { locale: l, locales, defaultLocale } = router;
+  const { locale: l } = router;
 
   return (
     <Layout>
@@ -25,10 +25,6 @@ export const Index: React.FC = () => {
         <li className="mt-2">MDX</li>
         <li className="mt-2">Tailwind CSS</li>
       </ul>
-
-      <p>Current locale: {l}</p>
-      <p>Default locale: {defaultLocale}</p>
-      <p>Configured locales: {JSON.stringify(locales)}</p>
 
       <a
         href="https://github.com/ChangoMan/nextjs-typescript-mdx-blog"
