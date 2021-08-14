@@ -5,7 +5,7 @@ import LocaleSwitcher from './LocaleSwitcher';
 
 const Navigation: React.FC = () => {
   const router = useRouter();
-  const isPosts = router.pathname.split('/')[1] === 'posts';
+  const isPosts = router.pathname.split('/')[2] === '[slug]';
 
   return (
     <nav>
