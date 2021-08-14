@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import LocaleSwitcher from './LocaleSwitcher';
 
 const Navigation: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const Navigation: React.FC = () => {
       <Link href="/about">
         <a className="text-gray-900 dark:text-white px-6 py-4">About</a>
       </Link>
+      <LocaleSwitcher />
     </nav>
   );
 };

@@ -1,6 +1,7 @@
 import { format, parseISO } from 'date-fns';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import Layout from '../components/Layout';
 import { getAllPosts } from '../lib/api';
@@ -11,6 +12,9 @@ type IndexProps = {
 };
 
 export const Index: React.FC<IndexProps> = ({ posts }) => {
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
+
   return (
     <Layout>
       <h1>Home Page</h1>
@@ -21,6 +25,10 @@ export const Index: React.FC<IndexProps> = ({ posts }) => {
         <li className="mt-2">MDX</li>
         <li className="mt-2">Tailwind CSS</li>
       </ul>
+
+      <p>Current locale: {locale}</p>
+      <p>Default locale: {defaultLocale}</p>
+      <p>Configured locales: {JSON.stringify(locales)}</p>
 
       <a
         href="https://github.com/ChangoMan/nextjs-typescript-mdx-blog"
