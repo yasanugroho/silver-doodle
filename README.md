@@ -30,3 +30,10 @@ npm run dev
 ```
 
 Your new site will be up at http://localhost:3000/
+
+## Required VS Code Plugins
+
+```
+Tailwind CSS Intellisense
+PostCSS Language Support
+```
