@@ -28,13 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children, customMeta }) => {
       </main>
       <footer className="py-8">
         <div className="max-w-5xl px-8 mx-auto">
-          Built by{' '}
-          <a
-            className="text-gray-900 dark:text-white"
-            href="https://twitter.com/huntarosan"
-          >
-            Hunter Chang
-          </a>
+          Made with ❤️ by Xerpihan
         </div>
       </footer>
     </>
