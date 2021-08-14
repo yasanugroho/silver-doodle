@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import LocaleSwitcher from './LocaleSwitcher';
 
 const Navigation: React.FC = () => {
+  const router = useRouter();
+  const isPosts = router.pathname.split('/')[1] === 'posts';
+
   return (
     <nav>
       <Link href="/">
@@ -11,7 +15,9 @@ const Navigation: React.FC = () => {
       <Link href="/about">
         <a className="text-gray-900 dark:text-white px-6 py-4">About</a>
       </Link>
-      <LocaleSwitcher />
+
+      {/* Hide language switcher in posts */}
+      {!isPosts && <LocaleSwitcher />}
     </nav>
   );
 };
