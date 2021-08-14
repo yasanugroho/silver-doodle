@@ -19,7 +19,11 @@ export const Index: React.FC<IndexProps> = ({ posts }) => {
   return (
     <Layout>
       <h1>{_(l, 'Selamat Datang', 'Welcome')}</h1>
-      <p>Next.js starter for your next blog or personal site. Built with:</p>
+      {_(l,
+        <p>Next.js starter for your next blog or personal site. Built with:</p>,
+        <p>Permulaian Next.js</p>
+      )}
+      
       <ul className="list-disc pl-4 my-6">
         <li>Next.js</li>
         <li className="mt-2">Typescript</li>
