@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import Layout from '../components/Layout';
 import { getAllPosts } from '../lib/api';
+import { _ } from '../lib/i18n';
 import { PostType } from '../types/post';
 
 type IndexProps = {
@@ -13,11 +14,11 @@ type IndexProps = {
 
 export const Index: React.FC<IndexProps> = ({ posts }) => {
   const router = useRouter();
-  const { locale, locales, defaultLocale } = router;
+  const { locale: l, locales, defaultLocale } = router;
 
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <h1>{_(l, 'Selamat Datang', 'Welcome')}</h1>
       <p>Next.js starter for your next blog or personal site. Built with:</p>
       <ul className="list-disc pl-4 my-6">
         <li>Next.js</li>
@@ -26,7 +27,7 @@ export const Index: React.FC<IndexProps> = ({ posts }) => {
         <li className="mt-2">Tailwind CSS</li>
       </ul>
 
-      <p>Current locale: {locale}</p>
+      <p>Current locale: {l}</p>
       <p>Default locale: {defaultLocale}</p>
       <p>Configured locales: {JSON.stringify(locales)}</p>
 
