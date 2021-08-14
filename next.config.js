@@ -13,6 +13,11 @@ const config = {
         defaultLocale: 'id',
         localeDetection: false
     },
+    async rewrites() {
+        return [
+            // { source: "/:lang(en|id)?/tentang", destination: "/about" },
+        ]
+      },
 }
 
 module.exports = config;

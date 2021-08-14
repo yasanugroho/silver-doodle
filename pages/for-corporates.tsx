@@ -10,10 +10,10 @@ export const Page: React.FC = () => {
   return (
     <Layout
       customMeta={{
-        title: _(l, 'Tentang', 'About') + ' - Xerpihan',
+        title: _(l, 'Untuk Korporat', 'For Corporates') + ' - Xerpihan',
       }}
     >
-      <h1>{_(l, 'Tentang', 'About')}</h1>
+      <h1>{_(l, 'Untuk Korporat', 'For Corporates')}</h1>
       <p>Hello World</p>
     </Layout>
   );

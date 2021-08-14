@@ -14,6 +14,15 @@ const Navigation: React.FC = () => {
       <Link href="/">
         <a className="text-gray-900 dark:text-white pr-6 py-4 font-bold ">Xerpihan</a>
       </Link>
+      <Link href="/for-corporates">
+        <a className="text-gray-900 dark:text-white px-6 py-4">{_(l, 'Untuk Korporat', 'For Corporates')}</a>
+      </Link>
+      <Link href="/for-individuals">
+        <a className="text-gray-900 dark:text-white px-6 py-4">{_(l, 'Untuk Individual', 'For Individuals')}</a>
+      </Link>
+      <Link href="/case-studies">
+        <a className="text-gray-900 dark:text-white px-6 py-4">{_(l, 'Studi Kasus', 'Case Studies')}</a>
+      </Link>
       <Link href="/blog">
         <a className="text-gray-900 dark:text-white px-6 py-4">Blog</a>
       </Link>
