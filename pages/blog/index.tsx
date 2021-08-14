@@ -25,7 +25,7 @@ export const Index: React.FC<IndexProps> = ({ posts }) => {
             {format(parseISO(post.date), 'MMMM dd, yyyy')}
           </p>
           <h1 className="mb-2 text-xl">
-            <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`} locale={post.lang}>
+            <Link as={`/blog/${post.slug}`} href={`/blog/[slug]`} locale={post.lang}>
               <a className="text-gray-900 dark:text-white dark:hover:text-blue-400">
                 {post.title}
               </a>
@@ -33,7 +33,7 @@ export const Index: React.FC<IndexProps> = ({ posts }) => {
           </h1>
           <p className="mb-3">{post.description}</p>
           <p>
-            <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`} locale={post.lang}>
+            <Link as={`/blog/${post.slug}`} href={`/blog/[slug]`} locale={post.lang}>
               <a>Read More</a>
             </Link>
           </p>
