@@ -91,6 +91,7 @@ const config = {
     },
   },
   variants: {
+    // @ts-ignore
     typography: ['dark'],
   },
   plugins: [require('@tailwindcss/typography')],
