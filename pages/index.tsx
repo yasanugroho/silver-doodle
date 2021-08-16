@@ -12,8 +12,8 @@ export const Index: React.FC = () => {
   return (
     <Layout>
       <L>
-        <h1 className="text-6xl font-bold text-center">Layanan bahasa<br /><span className="x-text-primary">No.1</span> di Indonesia</h1>
-        <h1 className="text-6xl font-bold text-center">Indonesian <span className="x-text-primary">No.1</span><br /> language service provider</h1>
+        <h1 className="text-6xl font-bold text-center">Layanan bahasa<br /><span className="text-xerp-primary">No.1</span> di Indonesia</h1>
+        <h1 className="text-6xl font-bold text-center">Indonesian <span className="text-xerp-primary">No.1</span><br /> language service provider</h1>
       </L>
 
       <div className="flex justify-center flex-wrap mb-10">
