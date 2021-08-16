@@ -25,6 +25,10 @@ const config = {
             '700': '#008191',
             '800': '#006774',
             '900': '#00545f'
+          },
+          'hero-gradient': {
+            start: '#FEFEFE',
+            end: '#FAFAFA'
           }
         }
       },
