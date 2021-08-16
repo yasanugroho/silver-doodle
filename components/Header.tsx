@@ -1,6 +1,4 @@
 import React from 'react';
-import { MetaProps } from '../types/layout';
-import Head from './Head';
 import Navigation from './Navigation';
 import ThemeSwitch from './ThemeSwitch';
 

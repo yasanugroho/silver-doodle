@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import Layout from '../../components/Layout';
 import { getAllPosts } from '../../lib/api';
-import { _ } from '../../lib/i18n';
 import { PostType } from '../../types/post';
 
 type IndexProps = {

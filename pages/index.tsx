@@ -1,9 +1,8 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LayoutPlain from '../components/LayoutPlain';
-import { L, useLocale, _ } from '../lib/i18n';
-import Footer from '../components/Footer';
+import { L, useLocale } from '../lib/i18n';
 
 export const Index: React.FC = () => {
   const l = useLocale();

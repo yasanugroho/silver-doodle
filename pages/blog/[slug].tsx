@@ -3,8 +3,8 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import mdxPrism from 'mdx-prism';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { serialize } from 'next-mdx-remote/serialize';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,10 +13,10 @@ import React from 'react';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import Layout from '../../components/Layout';
+import { WEBSITE_HOST_URL } from '../../lib/constants';
 import { MetaProps } from '../../types/layout';
 import { PostType } from '../../types/post';
-import { enPostFilePaths, idPostFilePaths, EN_POSTS_PATH, ID_POSTS_PATH } from '../../utils/mdxUtils';
-import { WEBSITE_HOST_URL } from '../../lib/constants';
+import { enPostFilePaths, EN_POSTS_PATH, idPostFilePaths, ID_POSTS_PATH } from '../../utils/mdxUtils';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
