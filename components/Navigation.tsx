@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import React from 'react';
-import { useLocale, _ } from '../lib/i18n';
+import {useLocale, _} from '../lib/i18n';
 import LocaleSwitcher from './LocaleSwitcher';
 
 const Navigation: React.FC = () => {
@@ -32,9 +32,7 @@ const Navigation: React.FC = () => {
       <div className="flex-1"></div>
 
       {/* Hide language switcher in posts */}
-      <div className="mr-5">
-        {!isPosts && <LocaleSwitcher />}
-      </div>
+      <div className="mr-5">{!isPosts && <LocaleSwitcher />}</div>
     </nav>
   );
 };

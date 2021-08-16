@@ -1,16 +1,15 @@
 import NextHead from 'next/head';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import React from 'react';
-import { MetaProps } from '../types/layout';
+import {MetaProps} from '../types/layout';
 
 export const WEBSITE_HOST_URL = 'https://nextjs-typescript-mdx-blog.vercel.app';
 
-const Head: React.FC<{ customMeta?: MetaProps }> = ({ customMeta }) => {
+const Head: React.FC<{customMeta?: MetaProps}> = ({customMeta}) => {
   const router = useRouter();
   const meta: MetaProps = {
     title: 'Xerpihan',
-    description:
-      'Your personal writing assistant',
+    description: 'Your personal writing assistant',
     image: `${WEBSITE_HOST_URL}/images/site-preview.png`,
     type: 'website',
     ...customMeta,
@@ -32,9 +31,7 @@ const Head: React.FC<{ customMeta?: MetaProps }> = ({ customMeta }) => {
       <meta name="twitter:title" content={meta.title} />
       <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={meta.image} />
-      {meta.date && (
-        <meta property="article:published_time" content={meta.date} />
-      )}
+      {meta.date && <meta property="article:published_time" content={meta.date} />}
     </NextHead>
   );
 };

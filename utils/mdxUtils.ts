@@ -9,9 +9,9 @@ export const EN_POSTS_PATH = path.join(process.cwd(), 'posts-en');
 export const idPostFilePaths = fs
   .readdirSync(ID_POSTS_PATH)
   // Only include md(x) files
-  .filter((path) => /\.mdx?$/.test(path));
+  .filter(path => /\.mdx?$/.test(path));
 
-  export const enPostFilePaths = fs
+export const enPostFilePaths = fs
   .readdirSync(EN_POSTS_PATH)
   // Only include md(x) files
-  .filter((path) => /\.mdx?$/.test(path));
+  .filter(path => /\.mdx?$/.test(path));
