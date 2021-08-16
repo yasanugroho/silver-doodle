@@ -1,7 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import {join} from 'path';
-import {ID_POSTS_PATH, EN_POSTS_PATH} from '../utils/mdxUtils';
+import { join } from 'path';
+import { ID_POSTS_PATH, EN_POSTS_PATH } from '../utils/mdxUtils';
 
 export function getPostSlugs(lang: 'en' | 'id'): string[] {
   if (lang === 'en') {
@@ -20,7 +20,7 @@ export function getPostBySlug(lang: 'en' | 'id', slug: string, fields: string[] 
   const realSlug = slug.replace(/\.mdx$/, '');
   const fullPath = join(path, `${realSlug}.mdx`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const {data, content} = matter(fileContents);
+  const { data, content } = matter(fileContents);
 
   const items: PostItems = {};
 

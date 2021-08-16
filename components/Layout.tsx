@@ -1,5 +1,5 @@
 import React from 'react';
-import {MetaProps} from '../types/layout';
+import { MetaProps } from '../types/layout';
 import Head from './Head';
 import Header from './Header';
 import Footer from './Footer';
@@ -11,7 +11,7 @@ type LayoutProps = {
   customMeta?: MetaProps;
 };
 
-const Layout: React.FC<LayoutProps> = ({children, customMeta}) => {
+const Layout: React.FC<LayoutProps> = ({ children, customMeta }) => {
   return (
     <>
       <Head customMeta={customMeta} />

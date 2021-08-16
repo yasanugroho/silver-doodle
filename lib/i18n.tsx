@@ -1,4 +1,4 @@
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 export function _(lang: 'en' | 'id' | string, id: React.ReactNode, en: React.ReactNode): React.ReactNode;
@@ -17,7 +17,7 @@ export function _(
   return en;
 }
 
-export const L: React.FC = ({children}) => {
+export const L: React.FC = ({ children }) => {
   const l = useLocale();
 
   if (l === 'id') {
@@ -31,6 +31,6 @@ export const L: React.FC = ({children}) => {
 
 export const useLocale = (): string => {
   const router = useRouter();
-  const {locale} = router;
+  const { locale } = router;
   return locale ?? 'id';
 };

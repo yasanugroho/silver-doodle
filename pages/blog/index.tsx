@@ -1,20 +1,20 @@
-import {format, parseISO} from 'date-fns';
-import {GetStaticProps} from 'next';
+import { format, parseISO } from 'date-fns';
+import { GetStaticProps } from 'next';
 import Link from 'next/link';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import React from 'react';
 import Layout from '../../components/Layout';
-import {getAllPosts} from '../../lib/api';
-import {_} from '../../lib/i18n';
-import {PostType} from '../../types/post';
+import { getAllPosts } from '../../lib/api';
+import { _ } from '../../lib/i18n';
+import { PostType } from '../../types/post';
 
 type IndexProps = {
   posts: PostType[];
 };
 
-export const Page: React.FC<IndexProps> = ({posts}) => {
+export const Page: React.FC<IndexProps> = ({ posts }) => {
   const router = useRouter();
-  const {locale: l, locales, defaultLocale} = router;
+  const { locale: l, locales, defaultLocale } = router;
 
   return (
     <Layout>
@@ -46,7 +46,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const idPosts = getAllPosts('id', ['date', 'description', 'slug', 'title']);
 
   return {
-    props: {posts: [...enPosts, ...idPosts]},
+    props: { posts: [...enPosts, ...idPosts] },
   };
 };
 

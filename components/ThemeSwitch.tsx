@@ -1,4 +1,4 @@
-import {useTheme} from 'next-themes';
+import { useTheme } from 'next-themes';
 import React from 'react';
 
 /**
@@ -8,7 +8,7 @@ import React from 'react';
 
 const ThemeSwitch: React.FC = () => {
   const [mounted, setMounted] = React.useState(false);
-  const {theme, setTheme} = useTheme();
+  const { theme, setTheme } = useTheme();
 
   // After mounting, we have access to the theme
   React.useEffect(() => setMounted(true), []);

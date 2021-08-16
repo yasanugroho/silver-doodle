@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import LayoutPlain from '../components/LayoutPlain';
-import {L, useLocale, _} from '../lib/i18n';
+import { L, useLocale, _ } from '../lib/i18n';
 import Footer from '../components/Footer';
 
 export const Index: React.FC = () => {

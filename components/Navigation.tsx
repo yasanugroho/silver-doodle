@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import React from 'react';
-import {useLocale, _} from '../lib/i18n';
+import { useLocale, _ } from '../lib/i18n';
 import LocaleSwitcher from './LocaleSwitcher';
 
 const Navigation: React.FC = () => {
