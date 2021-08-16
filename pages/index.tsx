@@ -70,9 +70,11 @@ export const Index: React.FC = () => {
         </div>
       </div>
       <div className="max-w-5xl px-8 py-4 mx-auto">
-        <section className="flex items-center my-12">
-          <div className="flex-1 flex justify-center items-center">
-            <Image src={proofreading} alt="Proofreading" width={250} height={250} objectFit="contain" />
+        <section className="flex flex-col md:flex-row items-center my-12">
+          <div className="flex-1 flex mb-5 md:mb-0 justify-center items-center">
+            <figure className="w-36 h-36 md:w-48 md:h-48">
+              <Image src={proofreading} alt="Proofreading" objectFit="contain" />
+            </figure>
           </div>
           <div className="flex-1">
             <div className="text-xl font-bold mb-1 text-gray-500">proofreading</div>
@@ -83,9 +85,11 @@ export const Index: React.FC = () => {
             </p>
           </div>
         </section>
-        <section className="flex items-center my-12 flex-row-reverse">
-          <div className="flex-1 flex justify-center items-center">
-            <Image src={translation} alt="Translation" width={250} height={250} objectFit="contain" />
+        <section className="flex flex-col md:flex-row-reverse items-center my-12">
+          <div className="flex-1 flex mb-5 md:mb-0 justify-center items-center">
+            <figure className="w-36 h-36 md:w-48 md:h-48">
+              <Image src={translation} alt="Translation" objectFit="contain" />
+            </figure>
           </div>
           <div className="flex-1">
             <div className="text-xl font-bold mb-1 text-gray-500">terjemahan</div>
@@ -96,9 +100,11 @@ export const Index: React.FC = () => {
             </p>
           </div>
         </section>
-        <section className="flex items-center my-12">
-          <div className="flex-1 flex justify-center items-center">
-            <Image src={subtitle} alt="Subtitle" width={250} height={250} objectFit="contain" />
+        <section className="flex flex-col md:flex-row items-center my-12">
+          <div className="flex-1 flex mb-5 md:mb-0 justify-center items-center">
+            <figure className="w-36 h-36 md:w-48 md:h-48">
+              <Image src={subtitle} alt="Subtitle" objectFit="contain" />
+            </figure>
           </div>
           <div className="flex-1">
             <div className="text-xl font-bold mb-1 text-gray-500">subtitle</div>
@@ -109,9 +115,11 @@ export const Index: React.FC = () => {
             </p>
           </div>
         </section>
-        <section className="flex items-center my-12 flex-row-reverse">
-          <div className="flex-1 flex justify-center items-center">
-            <Image src={transcription} alt="Transcription" width={250} height={250} objectFit="contain" />
+        <section className="flex flex-col md:flex-row-reverse items-center my-12">
+          <div className="flex-1 flex mb-5 md:mb-0 justify-center items-center">
+            <figure className="w-40 h-40 md:w-52 md:h-52">
+              <Image src={transcription} alt="Transcription" objectFit="contain" />
+            </figure>
           </div>
           <div className="flex-1">
             <div className="text-xl font-bold mb-1 text-gray-500">transkripsi</div>
