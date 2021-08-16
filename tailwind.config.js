@@ -1,11 +1,33 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-check
 const { spacing } = require('tailwindcss/defaultTheme');
 
-module.exports = {
+/** @type {import("tailwindcss/tailwind-config").TailwindConfig } */
+const config = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        // Xerpihan primary color
+        // @ts-ignore
+        xerpihan: {
+          primary: {
+            '50': '#f2fbfc',
+            '100': '#e6f7f9',
+            '200': '#bfeaf0',
+            '300': '#99dee6',
+            '400': '#4dc5d4',
+            '500': '#00acc1',
+            DEFAULT: '#00acc1',
+            '600': '#009bae',
+            '700': '#008191',
+            '800': '#006774',
+            '900': '#00545f'
+          }
+        }
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -73,3 +95,5 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/typography')],
 };
+
+module.exports = config;
