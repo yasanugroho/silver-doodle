@@ -11,17 +11,13 @@ type LayoutProps = {
   customMeta?: MetaProps;
 };
 
-const Layout: React.FC<LayoutProps> = ({ children, customMeta }) => {
+const LayoutPlain: React.FC<LayoutProps> = ({ children, customMeta }) => {
   return (
     <>
       <Head customMeta={customMeta} />
-      <Header />
-      <main>
-        <div className="max-w-5xl px-8 py-4 mx-auto">{children}</div>
-      </main>
-      <Footer />
+      {children}
     </>
   );
 };
 
-export default Layout;
+export default LayoutPlain;
