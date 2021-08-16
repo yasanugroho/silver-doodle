@@ -15,7 +15,11 @@ type PostItems = {
   [key: string]: string;
 };
 
-export function getPostBySlug(lang: 'en' | 'id', slug: string, fields: string[] = []): PostItems {
+export function getPostBySlug(
+  lang: 'en' | 'id',
+  slug: string,
+  fields: string[] = []
+): PostItems {
   const path = lang === 'en' ? EN_POSTS_PATH : ID_POSTS_PATH;
   const realSlug = slug.replace(/\.mdx$/, '');
   const fullPath = join(path, `${realSlug}.mdx`);
@@ -42,7 +46,10 @@ export function getPostBySlug(lang: 'en' | 'id', slug: string, fields: string[] 
   return items;
 }
 
-export function getAllPosts(lang: 'en' | 'id', fields: string[] = []): PostItems[] {
+export function getAllPosts(
+  lang: 'en' | 'id',
+  fields: string[] = []
+): PostItems[] {
   const slugs = getPostSlugs(lang);
   const posts = slugs
     .map((slug) => getPostBySlug(lang, slug, fields))
