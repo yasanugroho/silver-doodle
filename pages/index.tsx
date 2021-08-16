@@ -1,8 +1,10 @@
+import Image from 'next/image';
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LayoutPlain from '../components/LayoutPlain';
 import { L, useLocale } from '../lib/i18n';
+import { proofreading, translation, subtitle, transcription } from '../lib/images';
 
 export const Index: React.FC = () => {
   const l = useLocale();
@@ -52,15 +54,74 @@ export const Index: React.FC = () => {
         </div>
       </div>
       <div className="relative">
+        {/* Background */}
         <div className="w-full h-full flex flex-col absolute">
           <div className="flex-1 bg-xerpihan-hero-gradient-end dark:bg-gray-900"></div>
           <div className="flex-1 "></div>
         </div>
+        {/* Box */}
         <div className="max-w-5xl px-8 py-4 mx-auto relative">
-          <div className="border-2 rounded-md p-5 bg-white dark:bg-black">
-            Dapatkan estimasi biaya proofreading, terjemahan, subtitle, dan transkripsi, gratis!
+          <div className="border-2 text-lg rounded-md p-5 bg-white dark:bg-black">
+            <L>
+              <>Dapatkan estimasi biaya proofreading, terjemahan, subtitle, dan transkripsi, gratis!</>
+              <>Get cost estimation of proofreading, translation, subtitles and transcription, for free! </>
+            </L>
           </div>
         </div>
+      </div>
+      <div className="max-w-5xl px-8 py-4 mx-auto">
+        <section className="flex items-center my-12">
+          <div className="flex-1 flex justify-center items-center">
+            <Image src={proofreading} alt="Proofreading" width={250} height={250} objectFit="contain" />
+          </div>
+          <div className="flex-1">
+            <div className="text-xl font-bold mb-1 text-gray-500">proofreading</div>
+            <h2 className="text-3xl font-bold mb-2">Hilangkan kesalahan penulisan di dokumen kamu</h2>
+            <p className="text-lg">
+              Terlalu banyak jasa proofreading di luar sana dengan rekam jejak dan hasil yang kurang jelas. Coba
+              sekarang dan dapatkan sertifikat proofreading untuk dokumenmu.
+            </p>
+          </div>
+        </section>
+        <section className="flex items-center my-12 flex-row-reverse">
+          <div className="flex-1 flex justify-center items-center">
+            <Image src={translation} alt="Translation" width={250} height={250} objectFit="contain" />
+          </div>
+          <div className="flex-1">
+            <div className="text-xl font-bold mb-1 text-gray-500">terjemahan</div>
+            <h2 className="text-3xl font-bold mb-2">Alih bahasa dokumen</h2>
+            <p className="text-lg">
+              Untuk kamu yang bingung dengan hasil mesin penerjemah dan tidak dapat menilai hasilnya. Pilih harga dan
+              waktu penyelesaian sesuai kebutuhanmu. Jasa translate dokumen kamu yang kekinian.
+            </p>
+          </div>
+        </section>
+        <section className="flex items-center my-12">
+          <div className="flex-1 flex justify-center items-center">
+            <Image src={subtitle} alt="Subtitle" width={250} height={250} objectFit="contain" />
+          </div>
+          <div className="flex-1">
+            <div className="text-xl font-bold mb-1 text-gray-500">subtitle</div>
+            <h2 className="text-3xl font-bold mb-2">Tingkatkan aksesibilitas di video kamu</h2>
+            <p className="text-lg">
+              Content creator menjadi pengguna utama jasa subtitle ini. Cocok buat kamu yang ingin meningkatkan
+              engagement konten.
+            </p>
+          </div>
+        </section>
+        <section className="flex items-center my-12 flex-row-reverse">
+          <div className="flex-1 flex justify-center items-center">
+            <Image src={transcription} alt="Transcription" width={250} height={250} objectFit="contain" />
+          </div>
+          <div className="flex-1">
+            <div className="text-xl font-bold mb-1 text-gray-500">transkripsi</div>
+            <h2 className="text-3xl font-bold mb-2">Konversi audio ke teks</h2>
+            <p className="text-lg">
+              Ada rekaman hasil wawancara atau sedang membuat konten dan ingin ditranskripsi? Tersedia jasa transkrip
+              instan atau manual yang mudah dan cepat.
+            </p>
+          </div>
+        </section>
       </div>
       <Footer />
     </LayoutPlain>
