@@ -1,10 +1,12 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LayoutPlain from '../components/LayoutPlain';
 import { L, useLocale } from '../lib/i18n';
 import { proofreading, translation, subtitle, transcription } from '../lib/images';
+import { ArrowSmRightIcon } from '@heroicons/react/solid';
 
 export const Index: React.FC = () => {
   const l = useLocale();
@@ -62,10 +64,23 @@ export const Index: React.FC = () => {
         {/* Box */}
         <div className="max-w-5xl px-8 py-4 mx-auto relative">
           <div className="border-2 text-lg rounded-md p-5 bg-white dark:bg-black">
-            <L>
-              <>Dapatkan estimasi biaya proofreading, terjemahan, subtitle, dan transkripsi, gratis!</>
-              <>Get cost estimation of proofreading, translation, subtitles and transcription, for free! </>
-            </L>
+            <div className="mb-2">
+              <L>
+                <>Dapatkan estimasi biaya proofreading, terjemahan, subtitle, dan transkripsi, gratis!</>
+                <>Get cost estimation of proofreading, translation, subtitles and transcription, for free! </>
+              </L>
+            </div>
+            <Link href="/">
+              <a className="inline-flex xerp-a-button items-center">
+                <span>
+                  <L>
+                    {'Estimasi sekarang, gratis!'}
+                    {'Get free estimation now!'}
+                  </L>
+                </span>
+                <ArrowSmRightIcon className="ml-1 w-8" />
+              </a>
+            </Link>
           </div>
         </div>
       </div>
