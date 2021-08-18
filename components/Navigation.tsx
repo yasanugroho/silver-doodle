@@ -4,6 +4,9 @@ import React from 'react';
 import { useLocale, _ } from '../lib/i18n';
 import LocaleSwitcher from './LocaleSwitcher';
 
+import { xerpihanLogoWhite, xerpihanLogoBlack } from '../lib/images';
+import Image from 'next/image';
+
 const Navigation: React.FC = () => {
   const router = useRouter();
   const l = useLocale();
@@ -12,7 +15,21 @@ const Navigation: React.FC = () => {
   return (
     <nav className="flex flex-1 justify-center items-center">
       <Link href="/">
-        <a className="text-gray-900 dark:text-white pr-6 py-4 font-bold ">Xerpihan</a>
+        <a className="text-gray-900 dark:text-white pr-6 py-4 font-bold flex justify-center items-center">
+          <div className="flex dark:hidden justify-center items-center">
+            <Image src={xerpihanLogoBlack} alt="Xerpihan Logo" height={37} width={125} objectFit="contain" />
+          </div>
+          <div className="hidden dark:flex justify-center items-center">
+            <Image
+              className="light"
+              src={xerpihanLogoWhite}
+              alt="Xerpihan Logo"
+              height={37}
+              width={125}
+              objectFit="contain"
+            />
+          </div>
+        </a>
       </Link>
       <Link href="/for-corporates">
         <a className="text-gray-900 dark:text-white px-6 py-4">{_(l, 'Untuk Korporat', 'For Corporates')}</a>
