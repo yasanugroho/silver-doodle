@@ -8,7 +8,6 @@ const Header: React.FC = () => {
       <div className="max-w-5xl px-8 mx-auto">
         <div className="flex items-center justify-between py-6">
           <Navigation />
-          <ThemeSwitch />
         </div>
       </div>
     </header>
