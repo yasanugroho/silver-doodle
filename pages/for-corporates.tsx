@@ -10,6 +10,7 @@ import TeamIcon from '../images/TeamIcon.svg';
 import BrandLogo from '../images/Brand-Logo.png';
 import Image from 'next/image';
 import { proofreading, translation, subtitle, transcription } from '../lib/images';
+import Footer from '../components/Footer';
 
 export const Page: React.FC = () => {
   const router = useRouter();
@@ -314,6 +315,7 @@ export const Page: React.FC = () => {
           <Image className="" src={BrandLogo} alt="" />
         </div>
       </div>
+      <Footer></Footer>
     </LayoutPlain>
   );
 };
