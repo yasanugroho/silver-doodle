@@ -41,6 +41,9 @@ const config = {
             800: '#006774',
             900: '#00545f',
           },
+          secondary: {
+            DEFAULT: '#D78789',
+          },
           'hero-gradient': {
             start: '#FEFEFE',
             end: '#FAFAFA',

@@ -4,13 +4,11 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LayoutPlain from '../components/LayoutPlain';
-import { L, useLocale } from '../lib/i18n';
+import { L } from '../lib/i18n';
 import { proofreading, translation, subtitle, transcription } from '../lib/images';
 import { ArrowSmRightIcon } from '@heroicons/react/solid';
 
 export const Index: React.FC = () => {
-  const l = useLocale();
-
   return (
     <LayoutPlain>
       <div
