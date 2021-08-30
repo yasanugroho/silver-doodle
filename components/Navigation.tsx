@@ -38,19 +38,54 @@ const Navigation: React.FC = () => {
   const menu = (
     <>
       <Link href="/for-corporates">
-        <a className="text-gray-900 dark:text-white px-2 md:px-3 py-2">{_(l, 'Untuk Korporat', 'For Corporates')}</a>
+        <a
+          className={
+            router.pathname == '/for-corporates'
+              ? 'active:text-xerpihan-primary-500 dark:text-white px-2 md:px-3 py-2'
+              : 'text-gray-900 dark:text-white px-2 md:px-3 py-2'
+          }>
+          {_(l, 'Untuk Korporat', 'For Corporates')}
+        </a>
       </Link>
       <Link href="/for-individuals">
-        <a className="text-gray-900 dark:text-white px-2 md:px-3 py-2">{_(l, 'Untuk Individual', 'For Individuals')}</a>
+        <a
+          className={
+            router.pathname == '/for-individuals'
+              ? 'active:text-xerpihan-primary-500 dark:text-white px-2 md:px-3 py-2'
+              : 'text-gray-900 dark:text-white px-2 md:px-3 py-2'
+          }>
+          {_(l, 'Untuk Individual', 'For Individuals')}
+        </a>
       </Link>
       <Link href="/case-studies">
-        <a className="text-gray-900 dark:text-white px-2 md:px-3 py-2">{_(l, 'Studi Kasus', 'Case Studies')}</a>
+        <a
+          className={
+            router.pathname == '/case-studies'
+              ? 'active:text-xerpihan-primary-500 dark:text-white px-2 md:px-3 py-2'
+              : 'text-gray-900 dark:text-white px-2 md:px-3 py-2'
+          }>
+          {_(l, 'Studi Kasus', 'Case Studies')}
+        </a>
       </Link>
       <Link href="/blog">
-        <a className="text-gray-900 dark:text-white px-2 md:px-3 py-2">Blog</a>
+        <a
+          className={
+            router.pathname == '/blog'
+              ? 'active:text-xerpihan-primary-500 dark:text-white px-2 md:px-3 py-2'
+              : 'text-gray-900 dark:text-white px-2 md:px-3 py-2'
+          }>
+          Blog
+        </a>
       </Link>
       <Link href="/about">
-        <a className="text-gray-900 dark:text-white px-2 md:px-3 py-2">{_(l, 'Tentang', 'About')}</a>
+        <a
+          className={
+            router.pathname == '/about'
+              ? 'active:text-xerpihan-primary-500 dark:text-white px-2 md:px-3 py-2'
+              : 'text-gray-900 dark:text-white px-2 md:px-3 py-2'
+          }>
+          {_(l, 'Tentang', 'About')}
+        </a>
       </Link>
     </>
   );
