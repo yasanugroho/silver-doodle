@@ -49,12 +49,19 @@ export const Page: React.FC<IndexProps> = ({ posts }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  const enPosts = getAllPosts('en', ['date', 'description', 'slug', 'title']);
-  const idPosts = getAllPosts('id', ['date', 'description', 'slug', 'title']);
+export const getStaticProps: GetStaticProps = async context => {
+  const { locale } = context;
+
+  let posts: ReturnType<typeof getAllPosts>;
+
+  if (locale === 'id') {
+    posts = getAllPosts('id', ['date', 'description', 'slug', 'title']);
+  } else {
+    posts = getAllPosts('en', ['date', 'description', 'slug', 'title']);
+  }
 
   return {
-    props: { posts: [...enPosts, ...idPosts] },
+    props: { posts },
   };
 };
 
