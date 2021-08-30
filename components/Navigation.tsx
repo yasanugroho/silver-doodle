@@ -11,7 +11,6 @@ import Image from 'next/image';
 const Navigation: React.FC = () => {
   const router = useRouter();
   const l = useLocale();
-  const isPosts = router.pathname.split('/')[2] === '[slug]';
 
   const mainLogo = (
     <Link href="/">
@@ -92,7 +91,9 @@ const Navigation: React.FC = () => {
 
   const langAndTheme = (
     <>
-      <div className="mr-5">{!isPosts && <LocaleSwitcher />}</div>
+      <div className="mr-5">
+        <LocaleSwitcher />
+      </div>
       <ThemeSwitch />
     </>
   );
