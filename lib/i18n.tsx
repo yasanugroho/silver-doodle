@@ -35,3 +35,13 @@ export const useLocale = (): string => {
   const { locale } = router;
   return locale ?? 'id';
 };
+
+export const langNamesEn: Record<string, string> = {
+  en: 'English',
+  id: 'Indonesian',
+};
+
+export const langNamesId: Record<string, string> = {
+  en: 'Bahasa Inggris',
+  id: 'Bahasa Indonesia',
+};

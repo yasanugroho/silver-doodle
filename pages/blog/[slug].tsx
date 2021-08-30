@@ -17,6 +17,7 @@ import { WEBSITE_HOST_URL } from '../../lib/constants';
 import { MetaProps } from '../../types/layout';
 import { PostType } from '../../types/post';
 import { enPostFilePaths, EN_POSTS_PATH, idPostFilePaths, ID_POSTS_PATH } from '../../utils/mdxUtils';
+import { L, langNamesEn, langNamesId } from '../../lib/i18n';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -42,13 +43,36 @@ const PostPage: React.FC<PostPageProps> = ({ source, frontMatter }) => {
     type: 'article',
   };
 
+  const otherLangs: { lang: string; slug: string }[] = [];
+  Object.keys(frontMatter.otherLangs ?? {}).forEach(key => {
+    otherLangs.push({ lang: key, slug: frontMatter.otherLangs?.[key] ?? '' });
+  });
+
   return (
     <Layout customMeta={customMeta}>
       <article>
         <h1 className="mb-3 text-gray-900 dark:text-white">{frontMatter.title}</h1>
-        <p className="mb-10 text-sm text-gray-500 dark:text-gray-400">
-          {format(parseISO(frontMatter.date ?? ''), 'MMMM dd, yyyy')}
-        </p>
+        {/* Date and lang switcher */}
+        <div className="mb-10">
+          <span className="mb-10 text-sm text-gray-500 dark:text-gray-400">
+            {format(parseISO(frontMatter.date ?? ''), 'MMMM dd, yyyy')}
+          </span>
+          {otherLangs.map((otherLang, index) => (
+            <>
+              <span> - </span>
+              <span key={index} className="text-sm">
+                <Link href={otherLang.slug} locale={otherLang.lang}>
+                  <a>
+                    <L>
+                      {'Baca juga dalam ' + langNamesId[otherLang.lang]}
+                      {'Read this post in ' + langNamesEn[otherLang.lang]}
+                    </L>
+                  </a>
+                </Link>
+              </span>
+            </>
+          ))}
+        </div>
         <div className="prose dark:prose-dark">
           <MDXRemote {...source} components={components} />
         </div>
