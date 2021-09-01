@@ -1,12 +1,34 @@
-import Image from 'next/image';
-import Link from 'next/link';
+/* eslint-disable @next/next/link-passhref */
 import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { ArrowSmRightIcon } from '@heroicons/react/solid';
+
+// component
+import { L } from '../lib/i18n';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LayoutPlain from '../components/LayoutPlain';
-import { L } from '../lib/i18n';
 import { proofreading, translation, subtitle, transcription } from '../lib/images';
-import { ArrowSmRightIcon } from '@heroicons/react/solid';
+
+const listFitur = [
+  {
+    id: 'Proofreading',
+    en: 'Proofreading',
+  },
+  {
+    id: 'Terjemahan',
+    en: 'Translation',
+  },
+  {
+    id: 'Subtitle',
+    en: 'Subtitles',
+  },
+  {
+    id: 'Transkripsi',
+    en: 'Transcription',
+  },
+];
 
 export const Index: React.FC = () => {
   return (
@@ -16,41 +38,28 @@ export const Index: React.FC = () => {
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header />
         <L>
+          <>
+            <h1 className="text-6xl font-bold text-center">
+              Layanan bahasa
+              <br />
+              <span className="text-xerpihan-primary-600 leading-normal">No.1</span> di Indonesia
+            </h1>
+          </>
+
           <h1 className="text-6xl font-bold text-center">
-            Layanan bahasa
-            <br />
-            <span className="text-xerpihan-primary-600">No.1</span> di Indonesia
-          </h1>
-          <h1 className="text-6xl font-bold text-center">
-            Indonesian <span className="text-xerpihan-primary-600">No.1</span>
+            Indonesian <span className="text-xerpihan-primary-600 leading-normal">No.1</span>
             <br /> language service provider
           </h1>
         </L>
-        <div className="flex justify-center flex-wrap pb-5">
-          <div className="mx-5 text-2xl font-bold text-gray-500">
-            <L>
-              {'Proofreading'}
-              {'Proofreading'}
-            </L>
-          </div>
-          <div className="mx-5 text-2xl font-bold text-gray-500">
-            <L>
-              {'Terjemahan'}
-              {'Translation'}
-            </L>
-          </div>
-          <div className="mx-5 text-2xl font-bold text-gray-500">
-            <L>
-              {'Subtitle'}
-              {'Subtitles'}
-            </L>
-          </div>
-          <div className="mx-5 text-2xl font-bold text-gray-500">
-            <L>
-              {'Transkripsi'}
-              {'Transcription'}
-            </L>
-          </div>
+        <div className="flex justify-center flex-wrap py-5">
+          {listFitur.map(el => (
+            <div className="mx-5 text-2xl font-bold text-gray-400" key={el.id}>
+              <L>
+                {el.id}
+                {el.en}
+              </L>
+            </div>
+          ))}
         </div>
       </div>
       <div className="relative">
@@ -64,21 +73,41 @@ export const Index: React.FC = () => {
           <div className="border-2 text-lg rounded-md p-5 bg-white dark:bg-black">
             <div className="mb-2">
               <L>
-                <>Dapatkan estimasi biaya proofreading, terjemahan, subtitle, dan transkripsi, gratis!</>
-                <>Get cost estimation of proofreading, translation, subtitles and transcription, for free! </>
+                <p>Dapatkan estimasi biaya proofreading, terjemahan, subtitle, dan transkripsi, gratis!</p>
+                <p>Get cost estimation of proofreading, translation, subtitles and transcription, for free! </p>
               </L>
             </div>
-            <Link href="/">
-              <a className="inline-flex xerp-a-button items-center">
-                <span>
+            <div className="flex space-x-4 items-center">
+              <Link href="/">
+                <a className="xerp-a-button flex items-center space-x-4">
                   <L>
-                    {'Estimasi sekarang, gratis!'}
-                    {'Get free estimation now!'}
+                    {'Order Sekarang'}
+                    {'Order now'}
                   </L>
-                </span>
-                <ArrowSmRightIcon className="ml-1 w-8" />
+                  <ArrowSmRightIcon className="ml-1 w-8" />
+                </a>
+              </Link>
+              <L>
+                {'atau'}
+                {'or'}
+              </L>
+              <a
+                className="xerp-b-button flex items-center space-x-10 w-[270px]"
+                href="https://wa.me/081298765432"
+                target="_blank"
+                rel="noreferrer">
+                <div className="p-2 text-sm font-bold">
+                  <L>
+                    <p className="m-0">
+                      Konsultasi via WhatsApp <br />
+                      +62 812 9876 5432
+                    </p>
+                    <p>Konsultasi via WhatsApp</p>
+                  </L>
+                </div>
+                <ArrowSmRightIcon className="ml-1 w-8 h-8" />
               </a>
-            </Link>
+            </div>
           </div>
         </div>
       </div>

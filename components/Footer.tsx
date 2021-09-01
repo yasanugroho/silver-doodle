@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <footer
       className="bg-gradient-to-t
@@ -8,6 +8,4 @@ const Footer: React.FC = () => {
       <div className="max-w-5xl px-8 mx-auto text-center">Made with ❤️ by Xerpihan</div>
     </footer>
   );
-};
-
-export default Footer;
+}

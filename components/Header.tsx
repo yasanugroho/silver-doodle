@@ -1,6 +1,5 @@
 import React from 'react';
 import Navigation from './Navigation';
-import ThemeSwitch from './ThemeSwitch';
 
 const Header: React.FC = () => {
   return (

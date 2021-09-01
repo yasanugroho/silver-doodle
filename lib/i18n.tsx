@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { Children, FC } from 'react';
 
 export function _(lang: 'en' | 'id' | string | undefined, id: React.ReactNode, en: React.ReactNode): React.ReactNode;
 export function _(lang: 'en' | 'id' | string | undefined, id: string, en: string): string;
@@ -17,9 +17,9 @@ export function _(
   return id;
 }
 
-export const L: React.FC = ({ children }) => {
+export const L: FC = ({ children }) => {
   const l = useLocale();
-  const childrenArray = React.Children.toArray(children);
+  const childrenArray = Children.toArray(children);
 
   if (l === 'id') {
     return <>{childrenArray[0]}</>;
