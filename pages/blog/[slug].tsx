@@ -17,7 +17,7 @@ import { WEBSITE_HOST_URL } from '../../lib/constants';
 import { MetaProps } from '../../types/layout';
 import { PostType } from '../../types/post';
 import { enPostFilePaths, EN_POSTS_PATH, idPostFilePaths, ID_POSTS_PATH } from '../../utils/mdxUtils';
-import { L, langNamesEn, langNamesId } from '../../lib/i18n';
+import { L, langNames } from '../../lib/i18n';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -64,8 +64,8 @@ const PostPage: React.FC<PostPageProps> = ({ source, frontMatter }) => {
                 <Link href={otherLang.slug} locale={otherLang.lang}>
                   <a>
                     <L>
-                      {'Baca juga dalam ' + langNamesId[otherLang.lang]}
-                      {'Read this post in ' + langNamesEn[otherLang.lang]}
+                      {'Baca juga dalam ' + langNames.id[otherLang.lang]}
+                      {'Read this post in ' + langNames.en[otherLang.lang]}
                     </L>
                   </a>
                 </Link>

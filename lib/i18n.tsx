@@ -36,14 +36,13 @@ export const useLocale = (): string => {
   return locale ?? 'id';
 };
 
-// TODO: Update this area in double record
-
-export const langNamesEn: Record<string, string> = {
-  en: 'English',
-  id: 'Indonesian',
-};
-
-export const langNamesId: Record<string, string> = {
-  en: 'Bahasa Inggris',
-  id: 'Bahasa Indonesia',
+export const langNames: Record<string, Record<string, string>> = {
+  en: {
+    en: 'English',
+    id: 'Indonesian',
+  },
+  id: {
+    en: 'Bahasa Inggris',
+    id: 'Bahasa Indonesia',
+  },
 };
