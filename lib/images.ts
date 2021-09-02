@@ -11,8 +11,10 @@ import cirebon from '/images/cirebon-power.svg';
 import procon from '/images/procon.svg';
 import spoon from '/images/spoon.svg';
 import cpImg from '/images/imgcp.png';
+import contactImg from '/images/imgContact.png';
 
 export {
+  contactImg,
   cpImg,
   spoon,
   bps,

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowSmRightIcon } from '@heroicons/react/solid';
+import { contactImg } from '../lib/images';
 
 // component
 import { L } from '../lib/i18n';
@@ -120,60 +121,65 @@ export const Index: React.FC = () => {
         {/* Background */}
         <div className="w-full h-full flex flex-col absolute">
           <div className="flex-1 bg-xerpihan-hero-gradient-end dark:bg-gray-800"></div>
-          <div className="flex-1"></div>
+          <div className="flex-1 "></div>
         </div>
         {/* Box */}
-        <div className="max-w-5xl px-8 py-4 mx-auto relative">
-          <div className="border-2 text-lg rounded-md p-5 bg-white dark:bg-black">
-            <div className="mb-2">
-              <L>
-                <p>
-                  Dapatkan estimasi biaya proofreading, terjemahan, subtitle,
-                  <br /> dan transkripsi, <span className="font-bold">gratis!</span>
-                </p>
-                <p>
-                  Get cost estimation of proofreading, translation, subtitles
-                  <br /> and transcription, for <span className="font-bold">free!</span>
-                </p>
-              </L>
-            </div>
-            <div className="flex space-x-4 items-center">
-              <Link href="/">
-                <a className="xerp-a-button flex items-center justify-between p-4 text-sm font-bold  w-[270px] h-[61px]">
-                  <L>
-                    {'Order Sekarang'}
-                    {'Order now'}
-                  </L>
-                  <ArrowSmRightIcon className="ml-1 w-8" />
-                </a>
-              </Link>
-              <div>
-                <L>
-                  {'atau'}
-                  {'or'}
-                </L>
+        <div className="max-w-5xl px-8 pt-16 pb-10 mx-auto ">
+          <div className="relative">
+            <div className="border-2 text-lg rounded-md p-10 bg-white dark:bg-black overflow-hidden flex flex-1 flex-row-reverse">
+              <div className="absolute -bottom-2 left-0">
+                <Image src={contactImg} alt="cp" />
               </div>
-              <a
-                className="xerp-b-button flex items-center space-x-10 w-[270px]"
-                href="https://wa.me/081298765432"
-                target="_blank"
-                rel="noreferrer">
-                <div className="p-2 text-sm font-bold">
-                  <L>
-                    <p className="m-0">
-                      Konsultasi via WhatsApp <br />
-                      +62 812 9876 5432
-                    </p>
-                    <p>Konsultasi via WhatsApp</p>
-                  </L>
+              <div className="mr-10 space-y-4">
+                <L>
+                  <p>
+                    Dapatkan estimasi biaya proofreading, terjemahan, subtitle,
+                    <br /> dan transkripsi, <span className="font-bold">gratis!</span>
+                  </p>
+                  <p>
+                    Get cost estimation of proofreading, translation, subtitles
+                    <br /> and transcription, for <span className="font-bold">free!</span>
+                  </p>
+                </L>
+                <div className="flex space-x-4 items-center">
+                  <Link href="/">
+                    <a className="xerp-a-button flex items-center justify-between p-4 text-sm font-bold  w-[270px] h-[61px]">
+                      <L>
+                        {'Order Sekarang'}
+                        {'Order now'}
+                      </L>
+                      <ArrowSmRightIcon className="ml-1 w-8" />
+                    </a>
+                  </Link>
+                  <div>
+                    <L>
+                      {'atau'}
+                      {'or'}
+                    </L>
+                  </div>
+                  <a
+                    className="xerp-b-button flex items-center space-x-10 w-[270px]"
+                    href="https://wa.me/081298765432"
+                    target="_blank"
+                    rel="noreferrer">
+                    <div className="p-2 text-sm font-bold">
+                      <L>
+                        <p className="m-0">
+                          Konsultasi via WhatsApp <br />
+                          +62 812 9876 5432
+                        </p>
+                        <p>Konsultasi via WhatsApp</p>
+                      </L>
+                    </div>
+                    <ArrowSmRightIcon className="ml-1 w-8 h-8" />
+                  </a>
                 </div>
-                <ArrowSmRightIcon className="ml-1 w-8 h-8" />
-              </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="max-w-5xl px-8 mx-auto text-lg text-center">
+      <div className="max-w-5xl px-8 mx-auto text-lg text-center text-[#A0A0A0] space-y-10">
         <L>
           <p>Layanan kami telah digunakan oleh tim-tim terkemuka di Indonesia</p>
           <p>Layanan kami telah digunakan oleh tim-tim terkemuka di Indonesia</p>

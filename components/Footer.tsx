@@ -2,9 +2,52 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { cpImg } from '../lib/images';
-
 // component
 import { L } from '../lib/i18n';
+
+const listProduk = [
+  {
+    name: 'Produk',
+    list: [
+      { name: 'Untuk Korporat', link: '/' },
+      { name: 'Untuk Individual', link: '/' },
+      { name: 'Studi Kasus', link: '/' },
+    ],
+  },
+  {
+    name: 'Perusahaan',
+    list: [
+      { name: 'Blog', link: '/' },
+      { name: 'Tentang', link: '/' },
+      { name: 'Ketentuan Layanan', link: '/' },
+    ],
+  },
+  {
+    name: 'Media Sosial',
+    list: [
+      { name: 'Twitter', link: '/' },
+      { name: 'Facebook', link: '/' },
+      { name: 'Instagram', link: '/' },
+      { name: 'Youtube', link: '/' },
+    ],
+  },
+  {
+    name: 'Kontak',
+    list: [
+      { name: 'Whatsapp', link: '/' },
+      { name: 'Handphone', link: '/' },
+    ],
+  },
+  {
+    name: 'Kantor',
+    list: [
+      {
+        name: 'PT. Xerpihan Kata Digital Jl. Semangu No.4a, Rejowinangun, Kec. Kotagede, Kota Yogyakarta,Daerah Istimewa Yogyakarta 55171',
+        link: '#',
+      },
+    ],
+  },
+];
 
 export default function Footer() {
   return (
@@ -13,21 +56,19 @@ export default function Footer() {
     dark:from-gray-900 dark:to-gray-800 py-8">
       {/* Background */}
       <div className="w-full h-full flex flex-col absolute">
-        <div className="flex-1 bg-white"></div>
-
+        <div className="h-1/5 bg-white dark:bg-gray-800"></div>
         <div className="flex-1 bg-xerpihan-hero-gradient-end dark:bg-gray-800"></div>
       </div>
       {/* Box */}
-      <div className="max-w-5xl px-8 py-4 mx-auto relative">
+      <div className="max-w-5xl px-8 py-4 mx-auto relative ">
         <div className="border-2 text-lg rounded-lg border-[#7fd5df] p-10 bg-[#05acc2] dark:bg-black relative overflow-hidden">
-          <div className="mb-2 text-white">
-            <div className="text-3xl">
+          <div className="mb-4 text-white space-y-4">
+            <div className="text-3xl ">
               <L>
                 <p>Konsultasikan kebutuhan anda, gratis!</p>
                 <p>Konsultasikan kebutuhan anda, gratis!</p>
               </L>
             </div>
-
             <L>
               <p>
                 Tim Xerpihan akan membantu menemukan solusi untuk segala kebutuhan
@@ -66,13 +107,42 @@ export default function Footer() {
             <Image src={cpImg} alt="cp" />
           </div>
         </div>
-        {/* subscibtion */}
-        <div className="flex">
-          <div>
-            <p>Langganan Kabar Terbaru dari Kami </p>
-            <p>Artikel, berita dan kabar bulanan dari Xerpihan.</p>
+        <div className="bg-xerpihan-hero-gradient-end dark:bg-gray-800 my-10">
+          {/* subscibtion */}
+          <div className="flex">
+            <div className="w-1/2">
+              <p className="font-bold">Langganan Kabar Terbaru dari Kami</p>
+              <p className="text-[#838383]">Artikel, berita dan kabar bulanan dari Xerpihan.</p>
+            </div>
+            <div className="space-y-4 w-1/2">
+              <div className="border flex">
+                <input type="email" placeholder="Alamat email kamu" className="w-full focus:outline-none px-4 py-3" />
+                <button className="px-4 py-3 text-white bg-red-200">
+                  <p>Langganan</p>
+                </button>
+              </div>
+              <div className="flex items-center space-x-4 text-[#838383] text-xs">
+                <input type="checkbox" />
+                <p>Saya setuju untuk mendapatkan email marketing dari Xerpihan.</p>
+              </div>
+            </div>
           </div>
-          <div></div>
+          <div className="w-full h-0.5 bg-gray-200 my-10"></div>
+          {/* Produk */}
+          <div className="grid grid-cols-5">
+            {listProduk.map(el => (
+              <div key={el.name} className="space-y-2">
+                <p className="font-bold">{el.name}</p>
+                {el.list.map(item => (
+                  <div key={item.name}>
+                    <Link href={item.link}>
+                      <a className="text-[#838383]">{item.name}</a>
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
