@@ -1,4 +1,4 @@
-import { ezzat, profile4, yasa } from '../lib/images';
+import { cw, cwk, ezzat, yasa } from '../lib/images';
 
 export interface coreTeam {
   img: any;
@@ -26,14 +26,14 @@ export const teamCore: coreTeam[] = [
 
 export const listAdmin: coreTeam[] = [
   {
-    img: profile4,
+    img: cw,
     name: 'Asprilla Aqmarina',
     position: 'Operational Manager',
     about:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis, orci sed iaculis pharetra, libero sapien mollis erat, et ultrices ligula ex sed elit. Vestibulum vitae ipsum at lorem blandit tincidunt. Fusce eget turpis eleifend, accumsan sem pellentesque, posuere purus. Aenean ornare vehicula enim dictum vulputate. Phasellus id est a felis lobortis consectetur. Suspendisse potenti. In non tortor non metus rhoncus lacinia.',
   },
   {
-    img: profile4,
+    img: cw,
     name: 'Rika Rahmawati',
     position: 'Secretary',
     about:
@@ -41,7 +41,7 @@ export const listAdmin: coreTeam[] = [
   },
 
   {
-    img: profile4,
+    img: cw,
     name: 'Rika Rahmawati',
     position: 'SEO Specialist',
     about:
@@ -51,14 +51,14 @@ export const listAdmin: coreTeam[] = [
 
 export const creativeTeam: coreTeam[] = [
   {
-    img: profile4,
+    img: cwk,
     name: 'M Shidiq Hanif',
     position: 'Head of Creative',
     about:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis, orci sed iaculis pharetra, libero sapien mollis erat, et ultrices ligula ex sed elit. Vestibulum vitae ipsum at lorem blandit tincidunt. Fusce eget turpis eleifend, accumsan sem pellentesque, posuere purus. Aenean ornare vehicula enim dictum vulputate. Phasellus id est a felis lobortis consectetur. Suspendisse potenti. In non tortor non metus rhoncus lacinia.',
   },
   {
-    img: profile4,
+    img: cwk,
     name: 'Ferdian Sazali',
     position: 'Creative Agent',
     about:
@@ -68,14 +68,14 @@ export const creativeTeam: coreTeam[] = [
 
 export const LanguageOffice: coreTeam[] = [
   {
-    img: profile4,
+    img: cwk,
     name: 'Firosyan Sulaiman',
     position: 'Language Officer',
     about:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis, orci sed iaculis pharetra, libero sapien mollis erat, et ultrices ligula ex sed elit. Vestibulum vitae ipsum at lorem blandit tincidunt. Fusce eget turpis eleifend, accumsan sem pellentesque, posuere purus. Aenean ornare vehicula enim dictum vulputate. Phasellus id est a felis lobortis consectetur. Suspendisse potenti. In non tortor non metus rhoncus lacinia.',
   },
   {
-    img: profile4,
+    img: cw,
     name: 'Prahastuti Nastiti',
     position: 'Language Officer',
     about:

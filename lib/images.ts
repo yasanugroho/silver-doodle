@@ -35,9 +35,13 @@ import KoranTempo from '/images/KoranTempo.png';
 import csAbout from '/images/csAbout.png';
 import ezzat from '/images/ezzat.png';
 import yasa from '/images/yasa.png';
+import cw from '/images/profilecw.png';
+import cwk from '/images/profilecwk.png';
 
 export {
   yasa,
+  cw,
+  cwk,
   ezzat,
   csAbout,
   brandLogo,

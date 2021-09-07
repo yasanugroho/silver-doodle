@@ -132,22 +132,27 @@ export const Page: React.FC = () => {
                 {_(l, 'Konsultasikan kebutuhan bisnis anda, gratis!', 'Konsultasikan kebutuhan bisnis anda, gratis!')}
               </h2>
               <div className="justify-center block md:flex font-semibold space-x-3">
-                <Link href="/">
-                  <a className=" xerp-b-button items-center p-2 px-4 md:0">
-                    <p>
-                      {_(l, 'WhatsApp ke ', 'WhatsApp to')}
-                      <span className="underline text-xerpihan-primary-500 ">+62 812 9876 5432</span>
-                    </p>
-                  </a>
-                </Link>
-                <Link href="/">
-                  <a className=" xerp-b-button items-center  p-2 px-4 md:0">
-                    <p>
-                      {_(l, 'Email ke ', 'Email to')}
-                      <span className="underline text-xerpihan-primary-500">layanan@xerpihan.id</span>
-                    </p>
-                  </a>
-                </Link>
+                <a
+                  className=" xerp-b-button items-center p-2 px-4 md:0"
+                  href="https://wa.me/081298765432"
+                  target="_blank"
+                  rel="noreferrer">
+                  <p>
+                    {_(l, 'WhatsApp ke ', 'WhatsApp to')}
+                    <span className="underline text-xerpihan-primary-500 ">+62 812 9876 5432</span>
+                  </p>
+                </a>
+
+                <a
+                  className=" xerp-b-button items-center  p-2 px-4 md:0 "
+                  href="mailto:layanan@xerpihan.id"
+                  target="_blank"
+                  rel="noreferrer">
+                  <p>
+                    {_(l, 'Email ke ', 'Email to')}
+                    <span className="underline text-xerpihan-primary-500">layanan@xerpihan.id</span>
+                  </p>
+                </a>
               </div>
             </div>
           </div>

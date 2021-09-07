@@ -93,7 +93,7 @@ export default function Footer() {
             </a>
             <a
               className="border-white border rounded-lg items-center text-white space-x-10  p-4 text-sm font-semibold"
-              href="https://wa.me/081298765432"
+              href="mailto:layanan@xerpihan.id"
               target="_blank"
               rel="noreferrer">
               <L>
