@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { MetaProps } from '../types/layout';
 import CheckIcon from '../images/Path.svg';
 import Image from 'next/image';
+import { _ } from '../lib/i18n';
+import { useRouter } from 'next/router';
 
 type TabsProps = {
   children?: React.ReactNode[];
@@ -12,9 +14,6 @@ interface TabsContent {
   content: {
     title: string;
     alert: string;
-    /**
-     Harga layanan
-     **/
     price: string;
     description: string;
     services: string[];
@@ -27,23 +26,37 @@ const tab: TabsContent[] = [
       {
         title: 'Proofread',
         alert: 'Not eligible for proofreading certificate',
-        price: '150k',
+        price: '150K',
         description: 'ENG: per 2500 words \nID: per 3500 words',
         services: ['Double spaces', 'Writing format', 'Typo', 'Punctuation', 'Grammar', 'Unlimited version'],
       },
       {
         title: 'Premium Editing',
-        alert: 'Not eligible for proofreading certificate',
-        price: '150k',
+        alert: '',
+        price: '300K',
         description: 'ENG: per 2500 words \nID: per 3500 words',
-        services: ['Double spaces', 'Writing format', 'Typo', 'Punctuation', 'Grammar', 'Unlimited version'],
+        services: [
+          'Copy editing',
+          'Rejection shield',
+          'Edit your journal based on reviewers comment',
+          'Ensure all issues are appropiately handled',
+        ],
       },
       {
-        title: 'Premium Editing',
-        alert: 'Not eligible for proofreading certificate',
-        price: '150k',
+        title: 'Copy Editing',
+        alert: '',
+        price: '250K',
         description: 'ENG: per 2500 words \nID: per 3500 words',
-        services: ['Double spaces', 'Writing format', 'Typo', 'Punctuation', 'Grammar', 'Unlimited version'],
+        services: [
+          'Proof reading',
+          'Wordy',
+          'Conjunction',
+          'Hard to read sentence',
+          'Ambigous term',
+          'Fragment and run on sentence',
+          'Incoherent paragraph',
+          'Literal translation',
+        ],
       },
     ],
   },
@@ -84,84 +97,87 @@ const tab: TabsContent[] = [
     ],
   },
 ];
+
 const color = ['#F7E5E5', '#FFFFFF', '#ECE9E9'];
 
-const Tabs: React.FC<TabsProps> = ({ children, customMeta }) => {
+const Tabs: React.FC<TabsProps> = () => {
+  const router = useRouter();
+  const { locale: l } = router;
   const [activeTab, setActiveTab] = useState(tab[0].label);
   return (
-    <>
-      <div className="container max-w-5xl mx-auto pt-5 px-5 md:px-0">
-        <ul className="p-0 m-0 flex justify-center border-2 rounded-3xl list-none md:max-w-max mx-auto">
+    <div className="w-full max-w-5xl mx-auto pt-5 md:px-0 space-y-4 mb-20">
+      <ul className="flex justify-between border-2 rounded-full mx-28 items-center p-2">
+        {tab.map((val: TabsContent) => {
+          return (
+            <a
+              className={`${
+                val.label === activeTab && 'bg-xerpihan-primary-500 text-white font-bold rounded-full'
+              } cursor-pointer px-8 items-center text-sm md:text-lg`}
+              key={val.label}
+              onClick={() => setActiveTab(val.label)}>
+              {val.label}
+            </a>
+          );
+        })}
+      </ul>
+      <div className="p-6 rounded-3xl border-2 relative my-20 shadow-lg ">
+        <p className="text-center px-10">
+          {_(
+            l,
+            'Jasa proofreading Bahasa Indonesia atau Inggris untuk keperluan paper ilmiah, jurnal, essay, buku (fiksi dan non-fiksi), situs web, laporan, dan masih banyak lagi.',
+            'Indonesian or English proofreading service for scientific paper, journal, essay, books (fiction and non-fiction), website, reports, and many other',
+          )}
+        </p>
+        <div className="-mb-14">
           {tab.map((val: TabsContent, index: number) => {
-            return (
-              <a
-                className={
-                  val.label == activeTab
-                    ? 'cursor-pointer text-sm md:text-lg bg-xerpihan-primary-500 text-white font-bold rounded-2xl m-1 md:m-2 position-relative p-1 md:p-2'
-                    : 'cursor-pointer md:p-2 md:m-2 m-1 p-1 text-sm md:text-lg'
-                }
-                key={index}
-                onClick={() => setActiveTab(val.label)}>
-                {val.label}
-              </a>
-            );
-          })}
-        </ul>
-        {tab.map((val: TabsContent, index: number) => {
-          if (val.label == activeTab) {
-            return (
-              <div className="gap-5 pt-5 justify-center md:flex">
-                {val.content.map((content, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className="rounded-3xl border-2 p-8"
-                      style={{ background: color[index], color: '#585858' }}>
-                      <div key={index}>
-                        <h2 className="text-3xl font-bold">{content.title}</h2>
-                        <small>{content.alert}</small>
-                        <div className="py-5">
-                          <p className="mb-0 text-sm">IDR</p>
-                          <h2 className="text-4xl ml-4" style={{ textShadow: '5px 2px 2px rgba(171, 162, 162, 0.7)' }}>
-                            {content.price}
-                          </h2>
+            if (val.label == activeTab) {
+              return (
+                <div className="gap-4 pt-5 grid grid-cols-3 justify-center ">
+                  {val.content.map((content, index) => {
+                    return (
+                      <div
+                        key={content.title}
+                        className="rounded-3xl border-2 p-6 h-auto content-between	 shadow text-center space-y-10 items-stretch text-[#585858] flex-wrap flex"
+                        style={{ background: color[index] }}>
+                        <div className="text-center flex-col flex space-y-4">
+                          <h2 className="text-3xl font-bold">{content.title}</h2>
+                          <div className="flex items-center space-x-4 mx-auto">
+                            <p className="mb-0 text-sm">IDR</p>
+                            <h2 className="text-4xl ml-4">{content.price}</h2>
+                          </div>
                           <p className="whitespace-pre-wrap mt-2 font-light">{content.description}</p>
-                          <ul className="pt-5">
+                          <ul className="py-5 space-y-2">
                             {content.services.map(el => {
                               return (
-                                <li className="flex" key={index}>
-                                  <div className="w-6 mr-3">
-                                    <Image src={CheckIcon} alt="" className="flex-none h-full" />
+                                <li className="flex space-x-4 items-center text-left" key={index}>
+                                  <div className="w-6">
+                                    <Image src={CheckIcon} alt={el} className="h-full" />
                                   </div>
-                                  <p className="text-md mb-0">{el}</p>
+                                  <p>{el}</p>
                                 </li>
                               );
                             })}
                           </ul>
+                          <p className="text-sm">{content.alert}</p>
                         </div>
-                        <div
-                          className={
-                            index === 1
-                              ? 'bg-xerpihan-primary-500 w-full rounded-3xl p-3 text-center font-bold text-lg'
-                              : 'w-full rounded-3xl border-2 border-gray-500 p-3 text-center font-bold text-lg'
-                          }>
-                          <a
-                            href=""
-                            style={index == 1 ? { color: 'white' } : { color: '#585858' }}
-                            className={index === 1 ? 'text-white' : ''}>
+                        <button
+                          className={`rounded-full p-3 w-full font-bold text-center text-lg  flex-1 items-end ${
+                            index === 1 ? 'bg-xerpihan-primary-500' : 'border-1 bg-white border-gray-400'
+                          }`}>
+                          <a href="" className={index === 1 ? 'text-white' : 'text-[#585858]'}>
                             Beli Paket
                           </a>
-                        </div>
+                        </button>
                       </div>
-                    </div>
-                  );
-                })}
-              </div>
-            );
-          }
-        })}
+                    );
+                  })}
+                </div>
+              );
+            }
+          })}
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

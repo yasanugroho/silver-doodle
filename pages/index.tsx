@@ -3,89 +3,37 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowSmRightIcon } from '@heroicons/react/solid';
 import { contactImg } from '../lib/images';
-
 // component
 import { L } from '../lib/i18n';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LayoutPlain from '../components/LayoutPlain';
-import { proofreading, translation, subtitle, transcription, spoon, bps, cirebon, procon, herba } from '../lib/images';
-
-const listFitur = [
-  {
-    id: 'Proofreading',
-    en: 'Proofreading',
-  },
-  {
-    id: 'Terjemahan',
-    en: 'Translation',
-  },
-  {
-    id: 'Subtitle',
-    en: 'Subtitles',
-  },
-  {
-    id: 'Transkripsi',
-    en: 'Transcription',
-  },
-];
-
-const listLogoTim = [herba, bps, cirebon, procon, spoon];
-const dataSection = [
-  {
-    img: proofreading,
-    title: 'Proofreading',
-    subTitle: 'Hilangkan kesalahan penulisan di dokumen kamu',
-    content:
-      'Terlalu banyak jasa proofreading di luar sana dengan rekam jejak dan hasil yang kurang jelas. Coba sekarang dan dapatkan sertifikat proofreading untuk dokumenmu.',
-    styling: 'md:flex-row-reverse',
-  },
-  {
-    img: translation,
-    title: 'Terjemahan',
-    subTitle: 'Alih bahasa dokumen',
-    content:
-      'Untuk kamu yang bingung dengan hasil mesin penerjemah dan tidak dapat menilai hasilnya. Pilih harga dan waktu penyelesaian sesuai kebutuhanmu. Jasa translate dokumen kamu yang kekinian.',
-    styling: 'md:flex-row',
-  },
-  {
-    img: subtitle,
-    title: 'Subtitle',
-    subTitle: 'Alih bahasa dokumen',
-    content:
-      'Untuk kamu yang bingung dengan hasil mesin penerjemah dan tidak dapat menilai hasilnya. Pilih harga dan waktu penyelesaian sesuai kebutuhanmu. Jasa translate dokumen kamu yang kekinian.',
-    styling: 'md:flex-row-reverse',
-  },
-  {
-    img: transcription,
-    title: 'Transkripsi',
-    subTitle: 'Konversi audio ke teks',
-    content:
-      'Ada rekaman hasil wawancara atau sedang membuat konten dan ingin ditranskripsi? Tersedia jasa transkrip instan atau manual yang mudah dan cepat.',
-    styling: 'md:flex-row',
-  },
-];
-
-const SectionComp = (
-  <div className="max-w-5xl px-8 py-4 mx-auto">
-    {dataSection.map(el => (
-      <section key={el.title} className={`flex flex-col items-center my-14 space-x-4 ${el.styling}`}>
-        <div className="w-1/2 flex mb-5 md:mb-0 justify-center items-center">
-          <figure className="w-36 h-36 md:w-48 md:h-48">
-            <Image src={el.img} alt="Proofreading" objectFit="contain" />
-          </figure>
-        </div>
-        <div className="w-1/2 space-y-3">
-          <p className="text-xl font-bold mb-1 text-gray-500">{el.title}</p>
-          <h2 className="text-3xl font-bold mb-2">{el.subTitle}</h2>
-          <p className="text-lg">{el.content}</p>
-        </div>
-      </section>
-    ))}
-  </div>
-);
+import { listFitur, listLogoTim, dataSection } from '../utils/HomeVariables';
 
 export const Index: React.FC = () => {
+  const SectionComp = (
+    <div className="max-w-5xl px-8 py-4 mx-auto">
+      {dataSection.map(el => (
+        <section
+          key={el.title}
+          className={`flex flex-col items-center my-20 space-x-4 ${
+            el.styling ? 'md:flex-row-reverse' : 'md:flex-row'
+          }`}>
+          <div className="w-1/2 flex mb-5 md:mb-0 justify-center items-center">
+            <figure className="w-36 h-36 md:w-48 md:h-48">
+              <Image src={el.img} alt="Proofreading" objectFit="contain" />
+            </figure>
+          </div>
+          <div className="w-1/2 space-y-3">
+            <p className="text-xl font-bold mb-1 text-gray-500">{el.title}</p>
+            <h2 className="text-3xl font-bold mb-2">{el.subTitle}</h2>
+            <p className="text-lg">{el.content}</p>
+          </div>
+        </section>
+      ))}
+    </div>
+  );
+
   return (
     <LayoutPlain>
       <div

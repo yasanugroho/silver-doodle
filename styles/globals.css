@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply mb-6 text-3xl font-semibold;
+    @apply text-3xl font-semibold;
   }
   h2 {
     @apply text-2xl font-semibold;
