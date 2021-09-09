@@ -12,19 +12,19 @@ import { listFitur, listLogoTim, dataSection } from '../utils/HomeVariables';
 
 export const Index: React.FC = () => {
   const SectionComp = (
-    <div className="max-w-5xl px-8 py-4 mx-auto">
+    <div className="max-w-5xl px-8 py-4 md:mx-auto">
       {dataSection.map(el => (
         <section
           key={el.title}
           className={`flex flex-col items-center my-20 space-x-4 ${
             el.styling ? 'md:flex-row-reverse' : 'md:flex-row'
           }`}>
-          <div className="w-1/2 flex mb-5 md:mb-0 justify-center items-center">
+          <div className="md:w-1/2 flex mb-5 md:mb-0 justify-center items-center">
             <figure className="w-36 h-36 md:w-48 md:h-48">
               <Image src={el.img} alt="Proofreading" objectFit="contain" />
             </figure>
           </div>
-          <div className="w-1/2 space-y-3">
+          <div className="md:w-1/2 space-y-3">
             <p className="text-xl font-bold mb-1 text-gray-500">{el.title}</p>
             <h2 className="text-3xl font-bold mb-2">{el.subTitle}</h2>
             <p className="text-lg">{el.content}</p>
@@ -41,22 +41,19 @@ export const Index: React.FC = () => {
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header />
         <L>
-          <>
-            <h1 className="text-6xl font-bold text-center">
-              Layanan bahasa
-              <br />
-              <span className="text-xerpihan-primary-600 leading-normal">No.1</span> di Indonesia
-            </h1>
-          </>
-
-          <h1 className="text-6xl font-bold text-center">
+          <h1 className=" text-4xl md:text-6xl font-bold text-center">
+            Layanan bahasa
+            <br />
+            <span className="text-xerpihan-primary-600 leading-normal">No.1</span> di Indonesia
+          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-center">
             Indonesian <span className="text-xerpihan-primary-600 leading-normal">No.1</span>
             <br /> language service provider
           </h1>
         </L>
         <div className="flex justify-center flex-wrap py-5">
           {listFitur.map(el => (
-            <div className="mx-5 text-2xl font-bold text-gray-400" key={el.id}>
+            <div className="mx-5 md:text-2xl font-bold text-gray-400" key={el.id}>
               <L>
                 {el.id}
                 {el.en}
@@ -74,11 +71,11 @@ export const Index: React.FC = () => {
         {/* Box */}
         <div className="max-w-5xl px-8 pt-16 pb-10 mx-auto ">
           <div className="relative">
-            <div className="border-2 text-lg rounded-md p-10 bg-white dark:bg-black overflow-hidden flex flex-1 flex-row-reverse">
-              <div className="absolute -bottom-2 left-0">
+            <div className="border-2 text-lg rounded-md p-10 bg-white dark:bg-black overflow-hidden flex md:flex-1 md:flex-row-reverse">
+              <div className="absolute -bottom-2 left-0 md:block hidden">
                 <Image src={contactImg} alt="cp" />
               </div>
-              <div className="mr-10 space-y-4">
+              <div className="md:mr-10 space-y-4">
                 <L>
                   <p>
                     Dapatkan estimasi biaya proofreading, terjemahan, subtitle,
@@ -89,9 +86,9 @@ export const Index: React.FC = () => {
                     <br /> and transcription, for <span className="font-bold">free!</span>
                   </p>
                 </L>
-                <div className="flex space-x-4 items-center">
+                <div className="md:flex md:space-x-4 items-center">
                   <Link href="/order">
-                    <a className="xerp-a-button flex items-center justify-between p-4 text-sm font-bold  w-[270px] h-[61px]">
+                    <a className="xerp-a-button flex items-center justify-between p-4 text-sm font-bold  md:w-[270px] h-[61px]">
                       <L>
                         {'Order Sekarang'}
                         {'Order now'}
@@ -106,7 +103,7 @@ export const Index: React.FC = () => {
                     </L>
                   </div>
                   <a
-                    className="xerp-b-button flex items-center space-x-10 w-[270px]"
+                    className="xerp-b-button flex items-center space-x-10 md:w-[270px]"
                     href="https://wa.me/083119161413"
                     target="_blank"
                     rel="noreferrer">
@@ -132,7 +129,7 @@ export const Index: React.FC = () => {
           <p>Layanan kami telah digunakan oleh tim-tim terkemuka di Indonesia</p>
           <p>Layanan kami telah digunakan oleh tim-tim terkemuka di Indonesia</p>
         </L>
-        <div className="flex justify-between mx-20">
+        <div className="grid md:grid-cols-5 grid-cols-3 gap-2 md:mx-20">
           {listLogoTim.map(el => (
             <div key={el}>
               <Image src={el} alt="Proofreading" />
