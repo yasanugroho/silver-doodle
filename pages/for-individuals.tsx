@@ -79,7 +79,7 @@ export const Page: React.FC = () => {
                       <React.Fragment>
                         <li></li>
                         <li className=" ml-14">
-                          <Link href="/">
+                          <Link href="/order">
                             <a className="flex justify-between xerp-a-button p-2 items-center w-2/3 px-4">
                               <p>{_(l, 'Order sekarang', 'Order now')}</p>
                               <ArrowSmRightIcon className=" w-8" />

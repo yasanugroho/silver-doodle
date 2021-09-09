@@ -9,32 +9,32 @@ const listProduk = [
   {
     name: 'Produk',
     list: [
-      { name: 'Untuk Korporat', link: '/' },
-      { name: 'Untuk Individual', link: '/' },
-      { name: 'Studi Kasus', link: '/' },
+      { name: 'Untuk Korporat', link: '/for-corporates' },
+      { name: 'Untuk Individual', link: '/for-individuals' },
+      { name: 'Studi Kasus', link: '/case-studies' },
     ],
   },
   {
     name: 'Perusahaan',
     list: [
-      { name: 'Blog', link: '/' },
-      { name: 'Tentang', link: '/' },
-      { name: 'Ketentuan Layanan', link: '/' },
+      { name: 'Blog', link: '/blog' },
+      { name: 'Tentang', link: '/about' },
+      { name: 'Ketentuan Layanan', link: null },
     ],
   },
   {
     name: 'Media Sosial',
     list: [
-      { name: 'Twitter', link: '/' },
-      { name: 'Facebook', link: '/' },
-      { name: 'Instagram', link: '/' },
-      { name: 'Youtube', link: '/' },
+      { name: 'Twitter', link: 'https://twitter.com/xerpihan' },
+      { name: 'Facebook', link: 'https://facebook.com/xerpihan' },
+      { name: 'Instagram', link: 'https://www.instagram.com/xerpihan' },
+      { name: 'Youtube', link: '/https://youtube.com/channel/UC_ypxl44BSYNHjXAs5-zuaQ' },
     ],
   },
   {
     name: 'Kontak',
     list: [
-      { name: 'Whatsapp', link: '/' },
+      { name: 'Whatsapp', link: 'https://wa.me/083119161413' },
       { name: 'Handphone', link: '/' },
     ],
   },
@@ -83,7 +83,7 @@ export default function Footer() {
           <div className="flex space-x-4 items-center">
             <a
               className="border-white border rounded-lg flex items-center text-white space-x-10 p-4 text-sm font-semibold"
-              href="https://wa.me/081298765432"
+              href="https://wa.me/083119161413"
               target="_blank"
               rel="noreferrer">
               <L>
@@ -135,9 +135,15 @@ export default function Footer() {
                 <p className="font-bold">{el.name}</p>
                 {el.list.map(item => (
                   <div key={item.name}>
-                    <Link href={item.link}>
-                      <a className="text-[#838383]">{item.name}</a>
-                    </Link>
+                    {el.name === 'Media Sosial' ? (
+                      <a className="text-[#838383]" href={`${item.link}`} target="_blank" rel="noreferrer">
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link href={item.link ? item.link : ''}>
+                        <a className="text-[#838383]">{item.name}</a>
+                      </Link>
+                    )}
                   </div>
                 ))}
               </div>

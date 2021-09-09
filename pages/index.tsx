@@ -90,7 +90,7 @@ export const Index: React.FC = () => {
                   </p>
                 </L>
                 <div className="flex space-x-4 items-center">
-                  <Link href="/">
+                  <Link href="/order">
                     <a className="xerp-a-button flex items-center justify-between p-4 text-sm font-bold  w-[270px] h-[61px]">
                       <L>
                         {'Order Sekarang'}
@@ -107,14 +107,14 @@ export const Index: React.FC = () => {
                   </div>
                   <a
                     className="xerp-b-button flex items-center space-x-10 w-[270px]"
-                    href="https://wa.me/081298765432"
+                    href="https://wa.me/083119161413"
                     target="_blank"
                     rel="noreferrer">
                     <div className="p-2 text-sm font-bold">
                       <L>
                         <p className="m-0">
                           Konsultasi via WhatsApp <br />
-                          +62 812 9876 5432
+                          +62 831 1916 1413
                         </p>
                         <p>Konsultasi via WhatsApp</p>
                       </L>

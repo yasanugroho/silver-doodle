@@ -137,7 +137,7 @@ const Tabs: React.FC<TabsProps> = () => {
                     return (
                       <div
                         key={content.title}
-                        className="rounded-3xl border-2 p-6 h-auto content-between	 shadow text-center space-y-10 items-stretch text-[#585858] flex-wrap flex"
+                        className="rounded-3xl border-2 p-6 h-auto content-between shadow text-center space-y-10 items-stretch text-[#585858] flex-wrap flex"
                         style={{ background: color[index] }}>
                         <div className="text-center flex-col flex space-y-4">
                           <h2 className="text-3xl font-bold">{content.title}</h2>

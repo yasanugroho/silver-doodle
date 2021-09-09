@@ -37,8 +37,13 @@ import ezzat from '/images/ezzat.png';
 import yasa from '/images/yasa.png';
 import cw from '/images/profilecw.png';
 import cwk from '/images/profilecwk.png';
+import csOrder from '/images/csOrder.png';
+
+import pgdown from '/images/pgdown.svg';
 
 export {
+  pgdown,
+  csOrder,
   yasa,
   cw,
   cwk,

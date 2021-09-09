@@ -14,7 +14,7 @@ const CustomInput: React.FC<InputProps> = ({ value, setValue, title, type }) => 
   const router = useRouter();
   const { locale: l } = router;
   return (
-    <div className={`grid grid-cols-4 space-x-4 ${type ? 'items-start' : 'items-center'}`}>
+    <div className={`grid grid-cols-4 ${type ? 'items-start' : 'items-center'}`}>
       <p className="whitespace-nowrap">{title}</p>
       {type ? (
         <textarea

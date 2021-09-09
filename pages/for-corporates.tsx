@@ -134,12 +134,12 @@ export const Page: React.FC = () => {
               <div className="justify-center block md:flex font-semibold space-x-3">
                 <a
                   className=" xerp-b-button items-center p-2 px-4 md:0"
-                  href="https://wa.me/081298765432"
+                  href="https://wa.me/083119161413"
                   target="_blank"
                   rel="noreferrer">
                   <p>
                     {_(l, 'WhatsApp ke ', 'WhatsApp to')}
-                    <span className="underline text-xerpihan-primary-500 ">+62 812 9876 5432</span>
+                    <span className="underline text-xerpihan-primary-500 ">+62 831 1916 1413</span>
                   </p>
                 </a>
 
