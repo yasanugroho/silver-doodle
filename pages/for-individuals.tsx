@@ -27,14 +27,14 @@ export const Page: React.FC = () => {
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header></Header>
         <div className="mx-auto container px-8 max-w-5xl flex">
-          <div className="w-5/6">
-            <h1 className="text-5xl font-bold text-left mb-4">
+          <div className="md:w-5/6">
+            <h1 className="text-3xl md:text-5xl font-bold text-left mb-4">
               {_(l, 'Layanan bahasa dengan pemesanan yang ', 'Language service with order ')}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-xerpihan-primary-600 ">
                 {_(l, 'mudah dan terjangkau', 'easy and affordable')}
               </span>
             </h1>
-            <p className="text-2xl text-gray-500">
+            <p className="md:text-2xl text-gray-500">
               {_(
                 l,
                 'Dibantu oleh Ahli Bahasa Profesional dengan Pendekatan Personal.',
@@ -43,19 +43,19 @@ export const Page: React.FC = () => {
             </p>
           </div>
 
-          <div className="w-1/6 flex flex-row-reverse">
+          <div className="md:w-1/6 hidden md:flex flex-row-reverse">
             <Image src={csPerson} alt="cs-img" objectFit="contain" className="mt-auto" />
           </div>
         </div>
       </div>
-      <div className="relative mb-5">
+      <div className="relative mb-5 md:pt-0 pt-4">
         <div className="w-full h-full flex flex-col absolute">
           <div className="flex-1 bg-xerpihan-hero-gradient-end dark:bg-gray-800"></div>
           <div className="flex-1"></div>
         </div>
-        <div className="max-w-5xl px-8 mx-auto relative">
+        <div className="max-w-5xl px-4 md:px-8 mx-auto relative">
           <div className="border-2 text-lg rounded-md p-4 bg-white dark:lg-black">
-            <div className="py-2 px-28">
+            <div className="py-2 px-4 md:px-28">
               <h2 className="text-lg text-black">
                 {_(
                   l,
@@ -71,16 +71,16 @@ export const Page: React.FC = () => {
                         <div className="mr-3">
                           <CheckIcon className="w-12 text-xerpihan-primary-500 font-bold" />
                         </div>
-                        <p className="text-md text-black mb-0">{_(l, val.id, val.en)}</p>
+                        <p className="text-sm md:text-base text-black mb-0">{_(l, val.id, val.en)}</p>
                       </li>
                     );
                   else {
                     return (
                       <React.Fragment>
                         <li></li>
-                        <li className=" ml-14">
+                        <li className="md:ml-14">
                           <Link href="/order">
-                            <a className="flex justify-between xerp-a-button p-2 items-center w-2/3 px-4">
+                            <a className="flex justify-between xerp-a-button p-2 items-center mt-6 md:mt-0 md:w-2/3 px-4">
                               <p>{_(l, 'Order sekarang', 'Order now')}</p>
                               <ArrowSmRightIcon className=" w-8" />
                             </a>
@@ -99,14 +99,14 @@ export const Page: React.FC = () => {
         <h1 className="text-2xl font-bold">
           {_(l, 'Mengapa menggunakan layanan kami?', 'Why you should use our services?')}
         </h1>
-        <div className="w-full mx-auto md:grid md:grid-cols-3 pl-8 gap-10 max-w-5xl items-center">
+        <div className="w-full mx-auto md:grid md:grid-cols-3 px-8 md:px-0 md:pl-8 gap-10 max-w-5xl items-center">
           <div className="text-left space-y-6">
             <h1 className="text-4xl font-bold">{_(l, 'Untuk semua dokumen kamu', 'For your documents')}</h1>
             <p className="text-xl">
               {_(l, 'Kami siap melayani berbagai jenis kebutuhan anda.', 'We are ready to serve your kebutuhan')}
             </p>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-2 mt-3 md:mt-0">
             <Image src={XerpihanServices} alt="Layanan Xerpihan"></Image>
           </div>
         </div>

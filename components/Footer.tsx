@@ -71,26 +71,22 @@ export default function Footer() {
               </p>
             </L>
           </div>
-          <div className="flex md:space-x-4 space-y-10 md:space-y-0 items-center text-sm ">
-            <a
-              className="border-white border rounded-lg text-white p-4 font-semibold"
-              href="https://wa.me/083119161413"
-              target="_blank"
-              rel="noreferrer">
-              <L>
-                <p>WhatsApp ke +62 812 9876 5432</p>
-                <p> WhatsApp to +62 812 9876 5432</p>
-              </L>
+          <div className="md:flex md:space-x-4 items-center text-sm">
+            <a href="https://wa.me/083119161413" target="_blank" rel="noreferrer">
+              <div className="border-white border rounded-lg text-white p-4 md:mb-0 mb-4 font-semibold">
+                <L>
+                  <p>WhatsApp ke +62 812 9876 5432</p>
+                  <p> WhatsApp to +62 812 9876 5432</p>
+                </L>
+              </div>
             </a>
-            <a
-              className="border-white border rounded-lg text-white p-4 font-semibold"
-              href="mailto:layanan@xerpihan.id"
-              target="_blank"
-              rel="noreferrer">
-              <L>
-                <p>E-mail ke layanan@xerpihan.id</p>
-                <p> E-mail to layanan@xerpihan.id</p>
-              </L>
+            <a href="mailto:layanan@xerpihan.id" target="_blank" rel="noreferrer">
+              <div className="border-white border rounded-lg text-white p-4 font-semibold">
+                <L>
+                  <p>E-mail ke layanan@xerpihan.id</p>
+                  <p> E-mail to layanan@xerpihan.id</p>
+                </L>
+              </div>
             </a>
           </div>
 

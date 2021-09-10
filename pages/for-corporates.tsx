@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 // component
@@ -33,12 +32,12 @@ export const Page: React.FC = () => {
     <div className="max-w-5xl px-8 py-4 mx-auto">
       {dataSection.map(el => (
         <section key={el.title} className={`flex flex-col items-center my-14 space-x-4 ${el.styling}`}>
-          <div className="w-1/2 flex mb-5 md:mb-0 justify-center items-center">
+          <div className="md:w-1/2 flex mb-5 md:mb-0 justify-center items-center">
             <figure className="w-36 h-36 md:w-48 md:h-48">
               <Image src={el.img} alt="Proofreading" objectFit="contain" />
             </figure>
           </div>
-          <div className="w-1/2 space-y-3">
+          <div className="md:w-1/2 space-y-3">
             <p className="text-xl font-bold mb-1 text-gray-500">{el.title}</p>
             <h2 className="text-3xl font-bold mb-2">{el.subTitle}</h2>
             <p className="text-lg">{el.content}</p>
@@ -49,7 +48,7 @@ export const Page: React.FC = () => {
   );
 
   const card = (
-    <div className="grid grid-cols-3 gap-4 py-20 items-center">
+    <div className="grid md:grid-cols-3 gap-4 py-20 items-center">
       <h1 className="text-gray-500 text-2xl text-left font-bold">
         {_(l, 'Mengapa Menggunakan Layanan Kami?', 'Why Choose Us?')}
       </h1>
@@ -73,18 +72,18 @@ export const Page: React.FC = () => {
         <Header></Header>
         <div className="mx-auto container px-8 max-w-5xl flex">
           <div className="w-3/4">
-            <h1 className="text-5xl font-bold text-left mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-left md:mb-4">
               {_(l, 'Orientasi pada ', 'Oriented to ')}
               <span className="text-xerpihan-secondary">{_(l, 'brand bisnis', 'business brand')}</span>,
             </h1>
-            <h1 className="text-5xl font-bold text-left  whitespace-nowrap mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-left  md:whitespace-nowrap mb-4">
               {_(l, 'pengerjaan hingga ', 'Execution up to ')}
-              <span className="text-xerpihan-primary-500 whitespace-nowrap">
+              <span className="text-xerpihan-primary-500 md:whitespace-nowrap">
                 {_(l, 'detail terkecil', 'smallest detail')}
               </span>
               .
             </h1>
-            <p className="text-3xl text-gray-500 font-bold">
+            <p className="text-xl md:text-3xl text-gray-500 font-bold">
               <L>
                 <p>
                   Berikan tulisan terbaik untuk mewakili brand <br /> bisnis dengan teknologi dan tim profesional.
@@ -96,7 +95,7 @@ export const Page: React.FC = () => {
               </L>
             </p>
           </div>
-          <div className="w-1/4 flex flex-row-reverse">
+          <div className="w-1/4  flex-row-reverse md:flex hidden">
             <Image src={csCorp} alt="cs-img" objectFit="contain" className="mt-auto" />
           </div>
         </div>
@@ -106,9 +105,9 @@ export const Page: React.FC = () => {
           <div className="flex-1 bg-xerpihan-hero-gradient-end dark:bg-gray-800"></div>
           <div className="flex-1"></div>
         </div>
-        <div className="max-w-5xl py-4 px-8 mx-auto relative">
-          <div className="border-2 text-lg rounded-md p-5 bg-white dark:lg-black flex flex-col">
-            <div className="p-4 space-y-10">
+        <div className="max-w-5xl py-4 px-4 md:px-8 mx-auto relative">
+          <div className="border-2 text-lg rounded-md p-3 md:p-5 bg-white dark:lg-black flex flex-col">
+            <div className="p-2 md:p-4 space-y-10">
               <h2 className="text-lg text-black mb-4 text-center">
                 {_(
                   l,
@@ -116,42 +115,38 @@ export const Page: React.FC = () => {
                   'Xerpihan can help you menyelesaikan kebutuhan bahasa personal anda.',
                 )}
               </h2>
-              <ul className="block md:grid md:grid-cols-2 gap-4 mt-2 mx-10">
+              <ul className="grid md:grid-cols-2 md:gap-4 mt-2 gap-2 mx-4 md:mx-10">
                 {text.map((val: serviceText, index: number) => (
                   <li className="flex items-center space-x-4" key={index}>
-                    <div className="w-[36px] h-[28px]">
+                    <div className="w-1/6">
                       <Image src={checklist} alt={val.id} />
                     </div>
-                    <div>
-                      <p className="text-black whitespace-normal">{_(l, val.id, val.en)}</p>
+                    <div className="w-5/6">
+                      <p className="text-black md:whitespace-normal text-sm md:text-base">{_(l, val.id, val.en)}</p>
                     </div>
                   </li>
                 ))}
               </ul>
-              <h2 className="text-center">
+              <h2 className="text-center text-sm md:text-2xl">
                 {_(l, 'Konsultasikan kebutuhan bisnis anda, gratis!', 'Konsultasikan kebutuhan bisnis anda, gratis!')}
               </h2>
               <div className="justify-center block md:flex font-semibold space-x-3">
-                <a
-                  className=" xerp-b-button items-center p-2 px-4 md:0"
-                  href="https://wa.me/083119161413"
-                  target="_blank"
-                  rel="noreferrer">
-                  <p>
-                    {_(l, 'WhatsApp ke ', 'WhatsApp to')}
-                    <span className="underline text-xerpihan-primary-500 ">+62 831 1916 1413</span>
-                  </p>
+                <a href="https://wa.me/083119161413" target="_blank" rel="noreferrer">
+                  <div className=" xerp-b-button items-center p-2 px-4 md:0">
+                    <p>
+                      {_(l, 'WhatsApp ke ', 'WhatsApp to')}
+                      <span className="underline text-xerpihan-primary-500 ">+62 831 1916 1413</span>
+                    </p>
+                  </div>
                 </a>
 
-                <a
-                  className=" xerp-b-button items-center  p-2 px-4 md:0 "
-                  href="mailto:layanan@xerpihan.id"
-                  target="_blank"
-                  rel="noreferrer">
-                  <p>
-                    {_(l, 'Email ke ', 'Email to')}
-                    <span className="underline text-xerpihan-primary-500">layanan@xerpihan.id</span>
-                  </p>
+                <a href="mailto:layanan@xerpihan.id" target="_blank" rel="noreferrer">
+                  <div className=" xerp-b-button items-center  p-2 px-4 md:0 ">
+                    <p>
+                      {_(l, 'Email ke ', 'Email to')}
+                      <span className="underline text-xerpihan-primary-500">layanan@xerpihan.id</span>
+                    </p>
+                  </div>
                 </a>
               </div>
             </div>
@@ -168,10 +163,10 @@ export const Page: React.FC = () => {
       </div>
       <div className="max-w-5xl px-8 py-4 mx-auto pb-5">
         <h1 className="text-2xl font-bold text-center py-3">{_(l, 'Budaya Tim Kami', 'Team Culture')}</h1>
-        <div className="grid grid-cols-3 gap-6 py-5 border-b-4 border-gray">
+        <div className="grid md:grid-cols-3 gap-6 py-5 border-b-4 border-gray">
           {listBudaya.map(el => (
             <div key={el.subTitleId} className="space-y-6">
-              <div className="justify-left w-32 ">
+              <div className="md:justify-left md:w-32 ">
                 <Image src={TeamIcon} alt={el.titleEn} />
               </div>
               <h2 className="text-2xl font-bold">{_(l, el.titleId, el.titleEn)}</h2>
@@ -180,7 +175,6 @@ export const Page: React.FC = () => {
           ))}
         </div>
         {card}
-
         <div className="py-10 space-y-10">
           <h1 className="text-gray-500 text-2xl text-center font-bold mb-20">
             {_(
@@ -189,7 +183,7 @@ export const Page: React.FC = () => {
               'Our team had been colaborated with reputable team in Indonesia',
             )}
           </h1>
-          <div className="flex justify-between mx-20">
+          <div className="grid md:grid-cols-5 grid-cols-3 gap-4 md:mx-20">
             {listLogoTim.map(el => (
               <div key={el}>
                 <Image src={el} alt="Proofreading" />

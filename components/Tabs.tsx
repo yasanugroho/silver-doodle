@@ -27,7 +27,7 @@ const tab: TabsContent[] = [
         title: 'Proofread',
         alert: 'Not eligible for proofreading certificate',
         price: '150K',
-        description: 'ENG: per 2500 words \nID: per 3500 words',
+        description: 'ENG: per 2500 words \n ID: per 3500 words',
         services: ['Double spaces', 'Writing format', 'Typo', 'Punctuation', 'Grammar', 'Unlimited version'],
       },
       {
@@ -106,75 +106,74 @@ const Tabs: React.FC<TabsProps> = () => {
   const [activeTab, setActiveTab] = useState(tab[0].label);
   return (
     <div className="w-full max-w-5xl mx-auto pt-5 md:px-0 space-y-4 mb-20">
-      <ul className="flex justify-between border-2 rounded-full mx-28 items-center p-2">
+      <ul className="grid md:grid-cols-4 grid-cols-2 border-2 rounded-xl md:rounded-full mx-4 md:mx-28 md:items-center p-2">
         {tab.map((val: TabsContent) => {
           return (
-            <a
-              className={`${
-                val.label === activeTab && 'bg-xerpihan-primary-500 text-white font-bold rounded-full'
-              } cursor-pointer px-8 items-center text-sm md:text-lg`}
-              key={val.label}
-              onClick={() => setActiveTab(val.label)}>
-              {val.label}
-            </a>
+            <div key={val.label}>
+              <a
+                className={`${
+                  val.label === activeTab && 'bg-xerpihan-primary-500 text-white font-bold rounded-full p-1'
+                } cursor-pointer px-8 items-center text-sm md:text-lg`}
+                onClick={() => setActiveTab(val.label)}>
+                {val.label}
+              </a>
+            </div>
           );
         })}
       </ul>
-      <div className="p-6 rounded-3xl border-2 relative my-20 shadow-lg ">
-        <p className="text-center px-10">
+      <div className="p-6 rounded-3xl border-2 relative mx-4 md:mx-0 my-20 shadow-lg ">
+        <p className="text-center md:px-10">
           {_(
             l,
             'Jasa proofreading Bahasa Indonesia atau Inggris untuk keperluan paper ilmiah, jurnal, essay, buku (fiksi dan non-fiksi), situs web, laporan, dan masih banyak lagi.',
             'Indonesian or English proofreading service for scientific paper, journal, essay, books (fiction and non-fiction), website, reports, and many other',
           )}
         </p>
-        <div className="-mb-14">
-          {tab.map((val: TabsContent, index: number) => {
-            if (val.label == activeTab) {
-              return (
-                <div className="gap-4 pt-5 grid grid-cols-3 justify-center ">
-                  {val.content.map((content, index) => {
-                    return (
-                      <div
-                        key={content.title}
-                        className="rounded-3xl border-2 p-6 h-auto content-between shadow text-center space-y-10 items-stretch text-[#585858] flex-wrap flex"
-                        style={{ background: color[index] }}>
-                        <div className="text-center flex-col flex space-y-4">
-                          <h2 className="text-3xl font-bold">{content.title}</h2>
-                          <div className="flex items-center space-x-4 mx-auto">
-                            <p className="mb-0 text-sm">IDR</p>
-                            <h2 className="text-4xl ml-4">{content.price}</h2>
-                          </div>
-                          <p className="whitespace-pre-wrap mt-2 font-light">{content.description}</p>
-                          <ul className="py-5 space-y-2">
-                            {content.services.map(el => {
-                              return (
-                                <li className="flex space-x-4 items-center text-left" key={index}>
-                                  <div className="w-6">
-                                    <Image src={CheckIcon} alt={el} className="h-full" />
-                                  </div>
-                                  <p>{el}</p>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                          <p className="text-sm">{content.alert}</p>
+        <div className="-mb-14 overflow-auto">
+          {tab.map((val: TabsContent, index: number) => (
+            <div key={val.label}>
+              {val.label === activeTab && (
+                <div className="gap-4 pt-5 grid md:grid-cols-3 justify-center w-full">
+                  {val.content.map((content, index) => (
+                    <div
+                      key={content.title}
+                      className="rounded-3xl border-2 p-6 h-auto content-between shadow text-center space-y-10 items-stretch text-[#585858] flex-wrap flex"
+                      style={{ background: color[index] }}>
+                      <div className="text-center flex-col flex space-y-4">
+                        <h2 className="text-3xl font-bold">{content.title}</h2>
+                        <div className="flex items-center space-x-4 mx-auto">
+                          <p className="mb-0 text-sm">IDR</p>
+                          <h2 className="text-4xl ml-4">{content.price}</h2>
                         </div>
-                        <button
-                          className={`rounded-full p-3 w-full font-bold text-center text-lg  flex-1 items-end ${
-                            index === 1 ? 'bg-xerpihan-primary-500' : 'border-1 bg-white border-gray-400'
-                          }`}>
-                          <a href="" className={index === 1 ? 'text-white' : 'text-[#585858]'}>
-                            Beli Paket
-                          </a>
-                        </button>
+                        <p className="md:whitespace-pre-wrap mt-2 font-light">{content.description}</p>
+                        <ul className="py-5 space-y-2">
+                          {content.services.map(el => {
+                            return (
+                              <li className="flex space-x-4 items-center text-left" key={index}>
+                                <div className="w-1/6">
+                                  <Image src={CheckIcon} alt={el} className="h-full" />
+                                </div>
+                                <p className="w-5/6">{el}</p>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                        <p className="text-sm">{content.alert}</p>
                       </div>
-                    );
-                  })}
+                      <button
+                        className={`rounded-full p-3 w-full font-bold text-center text-lg  flex-1 items-end ${
+                          index === 1 ? 'bg-xerpihan-primary-500' : 'border-1 bg-white border-gray-400'
+                        }`}>
+                        <a href="" className={index === 1 ? 'text-white' : 'text-[#585858]'}>
+                          Beli Paket
+                        </a>
+                      </button>
+                    </div>
+                  ))}
                 </div>
-              );
-            }
-          })}
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>

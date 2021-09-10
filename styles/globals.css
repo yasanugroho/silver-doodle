@@ -119,7 +119,7 @@ pre {
     dark:text-white dark:hover:text-white;
 }
 .xerp-b-button {
-  @apply bg-white text-xerpihan-primary-500 rounded-lg border border-2 border-xerpihan-primary-500
+  @apply bg-white text-xerpihan-primary-500 rounded-lg border-2 border-xerpihan-primary-500
     hover:bg-gray-200 hover:text-xerpihan-primary-500 active:bg-xerpihan-primary-700 dark:text-white dark:hover:text-white
 }
 
