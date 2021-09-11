@@ -208,6 +208,7 @@ const Tabs: React.FC<TabsProps> = () => {
                             index === 1 ? 'bg-xerpihan-primary-500' : 'border-1 bg-white border-gray-400'
                           }`}>
                           <a href="" className={index === 1 ? 'text-white dark:text-white' : 'text-[#585858] '}>
+                            {/* TODO: Kalau klik ini, redirect ke halaman order yg sesuai */}
                             <L>
                               {'Beli Paket'}
                               {'Buy Package'}
