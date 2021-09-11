@@ -4,32 +4,48 @@ export const dataSection = [
   {
     img: proofreading,
     title: 'Proofreading',
+    titleEn: 'Proofreading',
     subTitle: 'Hilangkan kesalahan penulisan di dokumen perusahaan',
+    subTitleEn: 'Hilangkan kesalahan penulisan di dokumen perusahaan',
     content:
+      'Perbaikan penulisan dokumen baik untuk publik atau presentasi internal bisnis. Dokumen meliputi Laporan Keuangan, Kontrak Kerja, Dokumen Internal, dll.',
+    contentEn:
       'Perbaikan penulisan dokumen baik untuk publik atau presentasi internal bisnis. Dokumen meliputi Laporan Keuangan, Kontrak Kerja, Dokumen Internal, dll.',
     styling: 'md:flex-row',
   },
   {
     img: translation,
     title: 'Terjemahan',
+    titleEn: 'Terjemahan',
     subTitle: 'Alih bahasa dokumen',
+    subTitleEn: 'Alih bahasa dokumen',
     content:
+      'Menerjemahkan dokumen sesuai gaya bahasa dan permintaan bisnis. Sesuaikan tulisan yang dihasilkan menurut keinginan. Tidak perlu lagi memperbaiki dokumen setelah menerjemahkan sendiri. Dapatkan dua kali keuntungan dengan sekali pesan.',
+    contentEn:
       'Menerjemahkan dokumen sesuai gaya bahasa dan permintaan bisnis. Sesuaikan tulisan yang dihasilkan menurut keinginan. Tidak perlu lagi memperbaiki dokumen setelah menerjemahkan sendiri. Dapatkan dua kali keuntungan dengan sekali pesan.',
     styling: 'md:flex-row-reverse',
   },
   {
     img: subtitle,
     title: 'Subtitle',
+    titleEn: 'Subtitle',
     subTitle: 'Tingkatkan aksesibilitas di video',
+    subTitleEn: 'Tingkatkan aksesibilitas di video',
     content:
+      'Penulisan subtitle terbaik hingga detail terkecil. Mulai dari video korporat, video pelatihan, hingga film hasil rumah produksi.',
+    contentEn:
       'Penulisan subtitle terbaik hingga detail terkecil. Mulai dari video korporat, video pelatihan, hingga film hasil rumah produksi.',
     styling: 'md:flex-row',
   },
   {
     img: transcription,
     title: 'Transkripsi',
+    titleEn: 'Transkripsi',
     subTitle: 'Konversi audio ke teks',
+    subTitleEn: 'Konversi audio ke teks',
     content:
+      'Ubah rekaman atau video menjadi tulisan yang mudah dibaca. Laporan rapat atau hasil workshop kini dapat dibuat dengan cepat dan mudah.',
+    contentEn:
       'Ubah rekaman atau video menjadi tulisan yang mudah dibaca. Laporan rapat atau hasil workshop kini dapat dibuat dengan cepat dan mudah.',
     styling: 'md:flex-row-reverse',
   },

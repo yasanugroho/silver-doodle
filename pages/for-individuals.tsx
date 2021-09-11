@@ -54,9 +54,9 @@ export const Page: React.FC = () => {
           <div className="flex-1"></div>
         </div>
         <div className="max-w-5xl px-4 md:px-8 mx-auto relative">
-          <div className="border-2 text-lg rounded-md p-4 bg-white dark:lg-black">
+          <div className="border-2 text-lg rounded-md p-4 bg-white dark:bg-black">
             <div className="py-2 px-4 md:px-28">
-              <h2 className="text-lg text-black">
+              <h2 className="text-lg text-black dark:text-white">
                 {_(
                   l,
                   'Xerpihan dapan membantu menyelesaikan kebutuhan bahasa personal anda.',
@@ -71,7 +71,7 @@ export const Page: React.FC = () => {
                         <div className="mr-3">
                           <CheckIcon className="w-12 text-xerpihan-primary-500 font-bold" />
                         </div>
-                        <p className="text-sm md:text-base text-black mb-0">{_(l, val.id, val.en)}</p>
+                        <p className="text-sm md:text-base text-black dark:text-white mb-0">{_(l, val.id, val.en)}</p>
                       </li>
                     );
                   else {
@@ -118,8 +118,8 @@ export const Page: React.FC = () => {
           {listLayanan.map(el => (
             <div className="text-center md:text-left p-4 space-y-4" key={el.titleId}>
               <Image src={el.img} alt="icon" />
-              <h1 className="text-black text-3xl font-bold">{_(l, el.titleId, el.titleEn)}</h1>
-              <h2 className="text-md text-black font-light">{_(l, el.subTitleId, el.subTitleEn)}</h2>
+              <h1 className="text-black dark:text-white text-3xl font-bold">{_(l, el.titleId, el.titleEn)}</h1>
+              <h2 className="text-md text-black dark:text-white font-light">{_(l, el.subTitleId, el.subTitleEn)}</h2>
             </div>
           ))}
         </div>

@@ -120,7 +120,7 @@ pre {
 }
 .xerp-b-button {
   @apply bg-white text-xerpihan-primary-500 rounded-lg border-2 border-xerpihan-primary-500
-    hover:bg-gray-200 hover:text-xerpihan-primary-500 active:bg-xerpihan-primary-700 dark:text-white dark:hover:text-white
+    hover:bg-gray-200 hover:text-xerpihan-primary-500 active:bg-xerpihan-primary-700 dark:text-xerpihan-primary  dark:hover:text-xerpihan-primary
 }
 
 /* Box team culture */

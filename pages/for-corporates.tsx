@@ -38,9 +38,9 @@ export const Page: React.FC = () => {
             </figure>
           </div>
           <div className="md:w-1/2 space-y-3">
-            <p className="text-xl font-bold mb-1 text-gray-500">{el.title}</p>
-            <h2 className="text-3xl font-bold mb-2">{el.subTitle}</h2>
-            <p className="text-lg">{el.content}</p>
+            <p className="text-xl font-bold mb-1 text-gray-500">{_(l, el.title, el.titleEn)}</p>
+            <h2 className="text-3xl font-bold mb-2">{_(l, el.subTitle, el.subTitleEn)}</h2>
+            <p className="text-lg">{_(l, el.content, el.contentEn)}</p>
           </div>
         </section>
       ))}
@@ -106,9 +106,9 @@ export const Page: React.FC = () => {
           <div className="flex-1"></div>
         </div>
         <div className="max-w-5xl py-4 px-4 md:px-8 mx-auto relative">
-          <div className="border-2 text-lg rounded-md p-3 md:p-5 bg-white dark:lg-black flex flex-col">
+          <div className="border-2 text-lg rounded-md p-3 md:p-5 bg-white dark:bg-black  flex flex-col">
             <div className="p-2 md:p-4 space-y-10">
-              <h2 className="text-lg text-black mb-4 text-center">
+              <h2 className="text-lg text-black dark:text-white mb-4 text-center">
                 {_(
                   l,
                   'Xerpihan dapan membantu menyelesaikan kebutuhan bahasa personal anda.',
@@ -122,7 +122,9 @@ export const Page: React.FC = () => {
                       <Image src={checklist} alt={val.id} />
                     </div>
                     <div className="w-5/6">
-                      <p className="text-black md:whitespace-normal text-sm md:text-base">{_(l, val.id, val.en)}</p>
+                      <p className="text-black dark:text-white md:whitespace-normal text-sm md:text-base">
+                        {_(l, val.id, val.en)}
+                      </p>
                     </div>
                   </li>
                 ))}
@@ -134,7 +136,7 @@ export const Page: React.FC = () => {
                 <a href="https://wa.me/083119161413" target="_blank" rel="noreferrer">
                   <div className=" xerp-b-button items-center p-2 px-4 md:0">
                     <p>
-                      {_(l, 'WhatsApp ke ', 'WhatsApp to')}
+                      {_(l, 'WhatsApp ke ', 'WhatsApp to ')}
                       <span className="underline text-xerpihan-primary-500 ">+62 831 1916 1413</span>
                     </p>
                   </div>
@@ -143,7 +145,7 @@ export const Page: React.FC = () => {
                 <a href="mailto:layanan@xerpihan.id" target="_blank" rel="noreferrer">
                   <div className=" xerp-b-button items-center  p-2 px-4 md:0 ">
                     <p>
-                      {_(l, 'Email ke ', 'Email to')}
+                      {_(l, 'Email ke ', 'Email to ')}
                       <span className="underline text-xerpihan-primary-500">layanan@xerpihan.id</span>
                     </p>
                   </div>
@@ -153,9 +155,7 @@ export const Page: React.FC = () => {
           </div>
         </div>
       </div>
-      <div
-        className="bg-gradient-to-b
-        from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end">
+      <div className="bg-gradient-to-b">
         <div className="max-w-5xl py-4 mx-auto">
           <h1 className=" text-2xl font-bold text-center">{_(l, 'Layanan Bisnis', 'Business Services')}</h1>
           {SectionComp}

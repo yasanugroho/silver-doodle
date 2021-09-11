@@ -1,9 +1,5 @@
 import React from 'react';
-
-import { _ } from '../lib/i18n';
-import { useRouter } from 'next/router';
 import Image from 'next/image';
-
 import { pgdown } from '../lib/images';
 
 type InputProps = {
@@ -16,14 +12,12 @@ type InputProps = {
 };
 
 const SelectWithLabel: React.FC<InputProps> = ({ value, setValue, title, defaults, listData }) => {
-  const router = useRouter();
-  const { locale: l } = router;
   return (
-    <div className={'grid grid-cols-4 space-x-4'}>
+    <div className={'grid grid-cols-4'}>
       {title && <p className="whitespace-nowrap my-auto">{title}</p>}
       <div className="flex relative w-full col-span-3">
         <select
-          className="block appearance-none w-full bg-white border px-2 py-2 pr-8 rounded-lg focus:outline-none focus:shadow-outline"
+          className="block appearance-none w-full bg-white dark:bg-gray-800 border px-2 py-2 pr-8 rounded-lg focus:outline-none focus:shadow-outline"
           onChange={e => {
             setValue(e.target.value);
           }}

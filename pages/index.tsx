@@ -25,9 +25,24 @@ export const Index: React.FC = () => {
             </figure>
           </div>
           <div className="md:w-1/2 space-y-3">
-            <p className="text-xl font-bold mb-1 text-gray-500">{el.title}</p>
-            <h2 className="text-3xl font-bold mb-2">{el.subTitle}</h2>
-            <p className="text-lg">{el.content}</p>
+            <p className="text-xl font-bold mb-1 text-gray-500">
+              <L>
+                {el.title}
+                {el.titleEn}
+              </L>
+            </p>
+            <h2 className="text-3xl font-bold mb-2">
+              <L>
+                {el.subTitle}
+                {el.subTitleEn}
+              </L>
+            </h2>
+            <p className="text-lg">
+              <L>
+                {el.content}
+                {el.contentEn}
+              </L>
+            </p>
           </div>
         </section>
       ))}
@@ -113,7 +128,10 @@ export const Index: React.FC = () => {
                           Konsultasi via WhatsApp <br />
                           +62 831 1916 1413
                         </p>
-                        <p>Konsultasi via WhatsApp</p>
+                        <p>
+                          Konsultasi via WhatsApp <br />
+                          +62 831 1916 1413
+                        </p>
                       </L>
                     </div>
                     <ArrowSmRightIcon className="ml-1 w-8 h-8" />

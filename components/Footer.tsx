@@ -8,34 +8,38 @@ import { L } from '../lib/i18n';
 const listProduk = [
   {
     name: 'Produk',
+    nameEn: 'Product',
     list: [
-      { name: 'Untuk Korporat', link: '/for-corporates' },
-      { name: 'Untuk Individual', link: '/for-individuals' },
-      { name: 'Studi Kasus', link: '/case-studies' },
+      { name: 'Untuk Korporat', nameEn: 'For Corporates', link: '/for-corporates' },
+      { name: 'Untuk Individual', nameEn: 'For Individuals', link: '/for-individuals' },
+      { name: 'Studi Kasus', nameEn: 'Case Study', link: '/case-studies' },
     ],
   },
   {
     name: 'Perusahaan',
+    nameEn: 'Corporate',
     list: [
-      { name: 'Blog', link: '/blog' },
-      { name: 'Tentang', link: '/about' },
-      { name: 'Ketentuan Layanan', link: null },
+      { name: 'Blog', nameEn: 'Blog', link: '/blog' },
+      { name: 'Tentang', nameEn: 'About', link: '/about' },
+      { name: 'Ketentuan Layanan', nameEn: 'Ketentuan Layanan', link: null },
     ],
   },
   {
     name: 'Media Sosial',
+    nameEn: 'Social Media',
     list: [
-      { name: 'Twitter', link: 'https://twitter.com/xerpihan' },
-      { name: 'Facebook', link: 'https://facebook.com/xerpihan' },
-      { name: 'Instagram', link: 'https://www.instagram.com/xerpihan' },
-      { name: 'Youtube', link: 'https://youtube.com/channel/UC_ypxl44BSYNHjXAs5-zuaQ' },
+      { name: 'Twitter', nameEn: 'Twitter', link: 'https://twitter.com/xerpihan' },
+      { name: 'Facebook', nameEn: 'Facebook', link: 'https://facebook.com/xerpihan' },
+      { name: 'Instagram', nameEn: 'Instagram', link: 'https://www.instagram.com/xerpihan' },
+      { name: 'Youtube', nameEn: 'Youtube', link: 'https://youtube.com/channel/UC_ypxl44BSYNHjXAs5-zuaQ' },
     ],
   },
   {
     name: 'Kontak',
+    nameEn: 'Contact',
     list: [
-      { name: 'Whatsapp', link: 'https://wa.me/083119161413' },
-      { name: 'Handphone', link: '/' },
+      { name: 'Whatsapp', nameEn: 'Whatsapp', link: 'https://wa.me/083119161413' },
+      { name: 'Handphone', nameEn: 'Handphone', link: '/' },
     ],
   },
 ];
@@ -98,19 +102,34 @@ export default function Footer() {
           {/* subscibtion */}
           <div className="md:flex md:space-y-0 space-y-8">
             <div className="md:w-1/2">
-              <p className="font-bold">Langganan Kabar Terbaru dari Kami</p>
+              <p className="font-bold">
+                <L>
+                  {'Langganan Kabar Terbaru dari Kami'}
+                  {'Langganan Kabar Terbaru dari Kami'}
+                </L>
+              </p>
               <p className="text-[#838383]">Artikel, berita dan kabar bulanan dari Xerpihan.</p>
             </div>
             <div className="space-y-4 md:w-1/2">
               <div className="border flex">
                 <input type="email" placeholder="Alamat email kamu" className="w-full focus:outline-none px-4 py-3" />
-                <button className="px-4 py-3 text-white bg-red-200">
-                  <p>Langganan</p>
+                <button className="px-4 py-3 text-white bg-red-200 dark:bg-red-500">
+                  <p>
+                    <L>
+                      {'Langganan'}
+                      {'subscribe'}
+                    </L>
+                  </p>
                 </button>
               </div>
               <div className="flex items-center space-x-4 text-[#838383] text-xs">
                 <input type="checkbox" />
-                <p>Saya setuju untuk mendapatkan email marketing dari Xerpihan.</p>
+                <p>
+                  <L>
+                    {'Saya setuju untuk mendapatkan email marketing dari Xerpihan.'}
+                    {'Saya setuju untuk mendapatkan email marketing dari Xerpihan.'}
+                  </L>
+                </p>
               </div>
             </div>
           </div>
@@ -119,7 +138,12 @@ export default function Footer() {
           <div className="grid md:grid-cols-5 grid-cols-3 gap-4 md:gap-2">
             {listProduk.map(el => (
               <div key={el.name} className="space-y-2">
-                <p className="font-bold">{el.name}</p>
+                <p className="font-bold">
+                  <L>
+                    {el.name}
+                    {el.nameEn}
+                  </L>
+                </p>
                 {el.list.map(item => (
                   <div key={item.name}>
                     {el.name === 'Media Sosial' ? (
@@ -128,7 +152,12 @@ export default function Footer() {
                       </a>
                     ) : (
                       <Link href={item.link ? item.link : ''}>
-                        <a className="text-[#838383]">{item.name}</a>
+                        <a className="text-[#838383]">
+                          <L>
+                            {item.name}
+                            {item.nameEn}
+                          </L>
+                        </a>
                       </Link>
                     )}
                   </div>
@@ -136,8 +165,14 @@ export default function Footer() {
               </div>
             ))}
             <div className="space-y-2 md:col-span-1 col-span-2">
-              <p className="font-bold">Kantor</p>
-              <p className="text-[#838383] text-sm">
+              <p className="font-bold">
+                {' '}
+                <L>
+                  {'Kantor'}
+                  {'Office'}
+                </L>
+              </p>
+              <p className="text-[#838383] dark:text-white text-sm">
                 PT. Xerpihan Kata Digital Jl. Semangu No.4a, Rejowinangun, Kec. Kotagede, Kota Yogyakarta, Daerah
                 Istimewa Yogyakarta 55171
               </p>

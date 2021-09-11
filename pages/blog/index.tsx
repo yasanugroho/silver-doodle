@@ -20,7 +20,7 @@ export const Page: React.FC<IndexProps> = ({ posts }) => {
   return (
     <Layout>
       <h1>Blog</h1>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {posts.map(post => (
           <article key={post.slug} className="mt-12 border border-gray-200 rounded-lg">
             <Image src={articleImage} alt=""></Image>

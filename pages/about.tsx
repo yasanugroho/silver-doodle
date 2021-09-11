@@ -23,17 +23,26 @@ export const Page: React.FC = () => {
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header></Header>
         <div className="mx-auto container px-8 py-4 max-w-5xl flex space-x-10 items-center">
-          <div className="w-1/6">
+          <div className="md:w-1/6 md:block hidden">
             <Image src={csAbout} alt="cs-img" objectFit="contain" className="" />
           </div>
-          <div className="w-5/6 space-y-4 pb-4">
-            <h1 className="text-5xl font-bold">About Us</h1>
-            <p className="text-[26px] font-light">
-              Perusahaan startup teknologi yang membantu memperbaiki <br /> dokumen dalam Bahasa Inggris dan Bahasa
-              Indonesia. Sedang <br />
-              dalam pengembangan Al-based platform dalam menyediakan <br /> jasa proofread, translate, pembuatan
-              subtitle dan transkripsi <br /> berkualitas.
-            </p>
+          <div className="md:w-5/6 mx-auto space-y-4 pb-4">
+            <h1 className="text-3xl md:text-5xl font-bold">{_(l, 'About Us', 'About Us')}</h1>
+            {_(
+              l,
+              <p className="text-xl md:text-[26px] font-light">
+                Perusahaan startup teknologi yang membantu memperbaiki <br /> dokumen dalam Bahasa Inggris dan Bahasa
+                Indonesia. Sedang <br />
+                dalam pengembangan Al-based platform dalam menyediakan <br /> jasa proofread, translate, pembuatan
+                subtitle dan transkripsi <br /> berkualitas.
+              </p>,
+              <p className="text-xl md:text-[26px] font-light">
+                Perusahaan startup teknologi yang membantu memperbaiki <br /> dokumen dalam Bahasa Inggris dan Bahasa
+                Indonesia. Sedang <br />
+                dalam pengembangan Al-based platform dalam menyediakan <br /> jasa proofread, translate, pembuatan
+                subtitle dan transkripsi <br /> berkualitas.
+              </p>,
+            )}
           </div>
         </div>
       </div>
@@ -41,29 +50,29 @@ export const Page: React.FC = () => {
         <h1 className="text-4xl font-bold my-10">Core Team</h1>
         <div className="space-y-14">
           {teamCore.map((el: coreTeam) => (
-            <div className="flex items-center space-x-10 w-full" key={el.name}>
-              <div className=" w-2/6 ">
+            <div className="md:flex items-center md:space-x-10 w-full" key={el.name}>
+              <div className="md:w-2/6">
                 <Image src={el.img} alt="..." width="275" height="275" className="rounded-full object-cover" />
               </div>
-              <div className="text-left w-4/6">
+              <div className="text-center md:text-left md:w-4/6">
                 <p className="font-bold text-lg">{el.name}</p>
                 <p className="font-light mb-6">{el.position}</p>
-                <p>{el.about}</p>
+                <p className="text-left">{_(l, el.about, el.aboutEn)}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="max-w-100 bg-xerpihan-hero-gradient-end py-10">
+      <div className="max-w-100 bg-gradient-to-b from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end  py-10 dark:from-gray-900 dark:to-gray-800">
         <h1 className="text-4xl font-bold my-10 text-center">Admins</h1>
-        <div className="mx-auto grid grid-cols-3 gap-10 max-w-5xl py-10">
+        <div className="mx-auto grid md:grid-cols-3 gap-10 max-w-5xl py-10">
           {listAdmin.map((el: coreTeam) => (
             <div className=" text-center space-y-2" key={el.name}>
               <Image src={el.img} alt="..." width="120" height="120" className="rounded-full object-cover" />
               <div className="p-5 rounded-lg">
                 <p className="text-base font-bold">{el.name}</p>
                 <h1 className="text-base font-light text-gray-500 mb-4">{el.position}</h1>
-                <p className="text-sm font-light tracking-tight">{el.about}</p>
+                <p className="text-sm font-light tracking-tight">{_(l, el.about, el.aboutEn)}</p>
               </div>
             </div>
           ))}
@@ -71,14 +80,14 @@ export const Page: React.FC = () => {
       </div>
       <div className="max-w-100 py-10">
         <h1 className="text-4xl font-bold my-10 text-center">Creative Team</h1>
-        <div className="mx-auto px-10 grid grid-cols-2 gap-10 max-w-5xl py-10">
+        <div className="mx-auto px-10 grid md:grid-cols-2 gap-10 max-w-5xl py-10">
           {creativeTeam.map((el: coreTeam) => (
             <div className=" text-center space-y-2" key={el.name}>
               <Image src={el.img} alt="..." width="120" height="120" className="rounded-full object-cover" />
               <div className="p-5 rounded-lg">
                 <p className="text-base font-bold">{el.name}</p>
                 <h1 className="text-base font-light text-gray-500 mb-4">{el.position}</h1>
-                <p className="text-sm font-light tracking-tight">{el.about}</p>
+                <p className="text-sm font-light tracking-tight">{_(l, el.about, el.aboutEn)}</p>
               </div>
             </div>
           ))}
@@ -86,14 +95,14 @@ export const Page: React.FC = () => {
       </div>
       <div className="max-w-100 py-10">
         <h1 className="text-4xl font-bold my-10 text-center">Language Officer</h1>
-        <div className="mx-auto px-10 grid grid-cols-2 gap-10 max-w-5xl py-10">
+        <div className="mx-auto px-10 grid md:grid-cols-2 gap-10 max-w-5xl py-10">
           {LanguageOffice.map((el: coreTeam) => (
             <div className=" text-center space-y-2" key={el.name}>
               <Image src={el.img} alt="..." width="120" height="120" className="rounded-full object-cover" />
               <div className="p-5 rounded-lg">
                 <p className="text-base font-bold">{el.name}</p>
                 <h1 className="text-base font-light text-gray-500 mb-4">{el.position}</h1>
-                <p className="text-sm font-light tracking-tight">{el.about}</p>
+                <p className="text-sm font-light tracking-tight">{_(l, el.about, el.aboutEn)}</p>
               </div>
             </div>
           ))}

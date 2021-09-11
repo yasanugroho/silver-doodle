@@ -57,9 +57,6 @@ const config = {
               },
               code: { color: theme('colors.blue.400') },
             },
-            'h2,h3,h4': {
-              'scroll-margin-top': spacing[32],
-            },
             code: { color: theme('colors.pink.500') },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false,
@@ -75,13 +72,19 @@ const config = {
               },
               code: { color: theme('colors.blue.400') },
             },
+            p: {
+              color: theme('colors.blue.400'),
+              '&:hover': {
+                color: theme('colors.blue.600'),
+              },
+              code: { color: theme('colors.blue.400') },
+            },
             blockquote: {
               borderLeftColor: theme('colors.gray.700'),
               color: theme('colors.gray.300'),
             },
             'h2,h3,h4': {
               color: theme('colors.gray.100'),
-              'scroll-margin-top': spacing[32],
             },
             hr: { borderColor: theme('colors.gray.700') },
             ol: {
