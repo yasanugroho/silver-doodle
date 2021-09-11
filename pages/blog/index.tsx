@@ -23,6 +23,7 @@ export const Page: React.FC<IndexProps> = ({ posts }) => {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {posts.map(post => (
           <article key={post.slug} className="mt-12 border border-gray-200 rounded-lg">
+            {/* TODO: BUat dynamic thumbnails, ambil dari post metadata */}
             <Image src={articleImage} alt=""></Image>
             <div className="p-4">
               <h1 className="mb-2 text-xl">
