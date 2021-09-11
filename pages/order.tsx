@@ -34,15 +34,6 @@ export const Page: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   const [totalPrice, setTotalPrice] = useState(0);
 
-  // const getData = useCallback(async () => {
-  //   const querySnapshot = await getDocs(collection(db, 'new-order-db'));
-  //   console.log(querySnapshot.docs.map(doc => doc.data()));
-  // }, []);
-
-  // useEffect(() => {
-  //   getData();
-  // }, [getData]);
-
   const totalPriceText = useCallback(() => {
     let totalPriceToText = totalPrice.toString();
     let totalPriceLength = totalPriceToText.length;
@@ -56,7 +47,7 @@ export const Page: React.FC = () => {
   const sendEmail = useCallback(async () => {
     let deliveryEst = `${Math.ceil(parseInt(panjang) / (panjang && selectionData[service].delivery)) || ''}`;
     try {
-      const res = await fetch('https://wordpress.xerpihan.id/wp-json/wp/v2/posts/api/sendemail', {
+      const res = await fetch('https://xerpihan.id/api/sendemail', {
         method: 'POST',
         body: JSON.stringify({
           name,
