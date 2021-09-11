@@ -47,7 +47,7 @@ export const Page: React.FC = () => {
   const sendEmail = useCallback(async () => {
     let deliveryEst = `${Math.ceil(parseInt(panjang) / (panjang && selectionData[service].delivery)) || ''}`;
     try {
-      const res = await fetch('https://xerpihan.id/api/sendemail', {
+      const res = await fetch('https://xerpihan-site-hgdpd4jc4-devxerpihan.vercel.app/api/sendemail', {
         method: 'POST',
         body: JSON.stringify({
           name,
