@@ -49,6 +49,7 @@ export const Page: React.FC = () => {
     try {
       const res = await fetch('https://xerpihan-site-hgdpd4jc4-devxerpihan.vercel.app/api/sendemail', {
         method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name,
           email,
