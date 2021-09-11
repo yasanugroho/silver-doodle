@@ -18,6 +18,13 @@ const config = {
       // { source: "/:lang(en|id)?/tentang", destination: "/about" },
     ];
   },
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
 };
 
 module.exports = config;
