@@ -46,6 +46,7 @@ export const Page: React.FC = () => {
 
   const sendEmail = useCallback(async () => {
     let deliveryEst = `${Math.ceil(parseInt(panjang) / (panjang && selectionData[service].delivery)) || ''}`;
+    // TODO: Pakai axios biar hasil sama
     try {
       const res = await fetch('https://xerpihan-site.vercel.app/api/sendemail', {
         method: 'POST',
