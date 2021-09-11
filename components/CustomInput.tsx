@@ -4,7 +4,7 @@ import { _ } from '../lib/i18n';
 import { useRouter } from 'next/router';
 
 type InputProps = {
-  value: string;
+  value: any;
   setValue: any;
   title: string;
   type?: boolean;

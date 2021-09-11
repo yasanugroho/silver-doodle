@@ -40,8 +40,10 @@ import cwk from '/images/profilecwk.png';
 import csOrder from '/images/csOrder.png';
 
 import pgdown from '/images/pgdown.svg';
+import Spinner from '/images/spinner.gif';
 
 export {
+  Spinner,
   pgdown,
   csOrder,
   yasa,
