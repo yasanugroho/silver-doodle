@@ -79,8 +79,8 @@ export default function Footer() {
             <a href="https://wa.me/083119161413" target="_blank" rel="noreferrer">
               <div className="border-white border rounded-lg text-white p-4 md:mb-0 mb-4 font-semibold">
                 <L>
-                  <p>WhatsApp ke +62 812 9876 5432</p>
-                  <p> WhatsApp to +62 812 9876 5432</p>
+                  <p>WhatsApp ke +62 831 1916 1413</p>
+                  <p> WhatsApp to +62 831 1916 1413</p>
                 </L>
               </div>
             </a>
@@ -173,7 +173,7 @@ export default function Footer() {
                 </L>
               </p>
               <p className="text-[#838383] dark:text-white text-sm">
-                PT. Xerpihan Kata Digital Jl. Semangu No.4a, Rejowinangun, Kec. Kotagede, Kota Yogyakarta, Daerah
+                PT Xerpihan Kata Digital <br /> Jl. Semangu No.4a, Rejowinangun, Kec. Kotagede, Kota Yogyakarta, Daerah
                 Istimewa Yogyakarta 55171
               </p>
             </div>

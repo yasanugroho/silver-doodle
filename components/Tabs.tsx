@@ -96,7 +96,7 @@ const tab: TabsContent[] = [
     ],
   },
   {
-    label: 'Subscription',
+    label: 'Subtitle',
     desc: [
       'Jasa subtitle Bahasa Indonesia dan Inggris untuk video dan film yang mengikuti permintaan khusus kamu.',
       'Indonesian and English subtitling service for videos and films packaged with custom request just for you.',
