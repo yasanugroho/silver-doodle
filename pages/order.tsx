@@ -6,6 +6,8 @@ import { useRouter } from 'next/router';
 import db from '../firebase/clientApp';
 import React, { useState, useEffect, useCallback } from 'react';
 import { collection, getDocs, addDoc } from 'firebase/firestore';
+import axios from 'axios';
+
 //component
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -47,31 +49,54 @@ export const Page: React.FC = () => {
   const sendEmail = useCallback(async () => {
     let deliveryEst = `${Math.ceil(parseInt(panjang) / (panjang && selectionData[service].delivery)) || ''}`;
     // TODO: Pakai axios biar hasil sama
-    try {
-      const res = await fetch('https://xerpihan-site.vercel.app/api/sendemail', {
-        method: 'POST',
+    // try {
+    //   const res = await fetch('https://xerpihan-site.vercel.app/api/sendemail', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({
+    //       name,
+    //       email,
+    //       service,
+    //       paket,
+    //       panjang,
+    //       totalPrice: totalPriceText(),
+    //       dueDate: showDate(new Date()),
+    //       orderId: (new Date().getTime() % 100000) + 100000,
+    //       deliveryEst,
+    //       addInfo: info,
+    //     }),
+    //   });
+    //   const resData = await res.json();
+    //   console.log(resData);
+    //   if (resData?.data?.status === '200') {
+    //     console.log('success');
+    //   }
+    // } catch (e) {
+    //   console.error('Error Send Email: ', e);
+    // }
+    axios
+      .post('/api/sendemail', {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name,
           email,
           service,
           paket,
-          panjang,
+          length,
           totalPrice: totalPriceText(),
           dueDate: showDate(new Date()),
           orderId: (new Date().getTime() % 100000) + 100000,
           deliveryEst,
           addInfo: info,
         }),
+      })
+      .then(function (response) {
+        console.log(response);
+        console.log('berhasil');
+      })
+      .catch(function (error) {
+        console.log(error);
       });
-      const resData = await res.json();
-      console.log(resData);
-      if (resData?.data?.status === '200') {
-        console.log('success');
-      }
-    } catch (e) {
-      console.error('Error Send Email: ', e);
-    }
   }, [email, info, name, paket, panjang, service, totalPriceText]);
 
   const handleSubmit = useCallback(
