@@ -84,13 +84,13 @@ export const Index: React.FC = () => {
           <div className="flex-1 "></div>
         </div>
         {/* Box */}
-        <div className="max-w-5xl px-8 pt-16 pb-10 mx-auto ">
+        <div className="max-w-5xl px-8 pt-8 md:pt-16 pb-10 mx-auto ">
           <div className="relative">
-            <div className="border-2 text-lg rounded-md p-10 bg-white dark:bg-black overflow-hidden flex md:flex-1 md:flex-row-reverse">
-              <div className="absolute -bottom-2 left-0 md:block hidden">
+            <div className="border-2 text-lg rounded-md md:p-10 p-6 bg-white dark:bg-black overflow-hidden lg:flex lg:flex-1 md:flex-row-reverse">
+              <div className="absolute -bottom-2 left-0 lg:block hidden">
                 <Image src={contactImg} alt="cp" />
               </div>
-              <div className="md:mr-10 space-y-4">
+              <div className="lg:mr-10 mr-0 space-y-4">
                 <L>
                   <p>
                     Dapatkan estimasi biaya proofreading, terjemahan, subtitle,
@@ -118,11 +118,11 @@ export const Index: React.FC = () => {
                     </L>
                   </div>
                   <a
-                    className="xerp-b-button flex items-center space-x-10 md:w-[270px]"
+                    className="xerp-b-button flex items-center  justify-between lg:p-2.5 p-4   md:w-[270px]"
                     href="https://wa.me/083119161413"
                     target="_blank"
                     rel="noreferrer">
-                    <div className="p-2 text-sm font-bold">
+                    <div className=" text-sm font-bold">
                       <L>
                         <p className="m-0">
                           Konsultasi via WhatsApp <br />
@@ -134,7 +134,7 @@ export const Index: React.FC = () => {
                         </p>
                       </L>
                     </div>
-                    <ArrowSmRightIcon className="ml-1 w-8 h-8" />
+                    <ArrowSmRightIcon className="  w-8 h-8" />
                   </a>
                 </div>
               </div>

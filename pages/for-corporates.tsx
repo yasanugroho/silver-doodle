@@ -72,24 +72,24 @@ export const Page: React.FC = () => {
         <Header></Header>
         <div className="mx-auto container px-8 max-w-5xl flex">
           <div className="w-3/4">
-            <h1 className="text-3xl md:text-5xl font-bold text-left md:mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-left md:mb-2">
               {_(l, 'Orientasi pada ', 'Oriented to ')}
               <span className="text-xerpihan-secondary">{_(l, 'brand bisnis', 'business brand')}</span>,
             </h1>
-            <h1 className="text-3xl md:text-5xl font-bold text-left  md:whitespace-nowrap mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-left md:whitespace-nowrap mb-4">
               {_(l, 'pengerjaan hingga ', 'Execution up to ')}
               <span className="text-xerpihan-primary-500 md:whitespace-nowrap">
                 {_(l, 'detail terkecil', 'smallest detail')}
               </span>
               .
             </h1>
-            <p className="text-xl md:text-3xl text-gray-500 font-bold">
+            <p className="text-xl md:text-2xl text-gray-500">
               <L>
                 <p>
-                  Berikan tulisan terbaik untuk mewakili brand <br /> bisnis dengan teknologi dan tim profesional.
+                  Berikan tulisan terbaik untuk mewakili brand bisnis dengan <br /> teknologi dan tim profesional.
                 </p>
                 <p>
-                  Hands on your best script to represent your business brand <br /> with technology and profesional
+                  Hands on your best script to represent your business brand with <br /> technology and profesional
                   team.
                 </p>
               </L>
@@ -106,8 +106,8 @@ export const Page: React.FC = () => {
           <div className="flex-1"></div>
         </div>
         <div className="max-w-5xl py-4 px-4 md:px-8 mx-auto relative">
-          <div className="border-2 text-lg rounded-md p-3 md:p-5 bg-white dark:bg-black  flex flex-col">
-            <div className="p-2 md:p-4 space-y-10">
+          <div className="border-2 text-lg rounded-md p-2 bg-white dark:bg-black  flex flex-col">
+            <div className="p-2 md:p-4 space-y-6">
               <h2 className="text-lg text-black dark:text-white mb-4 text-center">
                 {_(
                   l,
@@ -115,7 +115,7 @@ export const Page: React.FC = () => {
                   'Xerpihan can help you menyelesaikan kebutuhan bahasa personal anda.',
                 )}
               </h2>
-              <ul className="grid md:grid-cols-2 md:gap-4 mt-2 gap-2 mx-4 md:mx-10">
+              <ul className="grid md:grid-cols-2 mt-2 gap-2 mx-4 md:mx-10">
                 {text.map((val: serviceText, index: number) => (
                   <li className="flex items-center space-x-4" key={index}>
                     <div className="w-1/6">

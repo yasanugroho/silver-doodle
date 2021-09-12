@@ -30,13 +30,13 @@ export const Page: React.FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold">{_(l, 'About Us', 'About Us')}</h1>
             {_(
               l,
-              <p className="text-xl md:text-[26px] font-light">
+              <p className="text-xl md:text-2xl text-gray-500">
                 Perusahaan startup teknologi yang membantu memperbaiki <br /> dokumen dalam Bahasa Inggris dan Bahasa
                 Indonesia. Sedang <br />
                 dalam pengembangan Al-based platform dalam menyediakan <br /> jasa proofread, translate, pembuatan
                 subtitle dan transkripsi <br /> berkualitas.
               </p>,
-              <p className="text-xl md:text-[26px] font-light">
+              <p className="text-xl md:text-2xl text-gray-500">
                 Perusahaan startup teknologi yang membantu memperbaiki <br /> dokumen dalam Bahasa Inggris dan Bahasa
                 Indonesia. Sedang <br />
                 dalam pengembangan Al-based platform dalam menyediakan <br /> jasa proofread, translate, pembuatan
@@ -57,7 +57,7 @@ export const Page: React.FC = () => {
               <div className="text-center md:text-left md:w-4/6">
                 <p className="font-bold text-lg">{el.name}</p>
                 <p className="font-light mb-6">{el.position}</p>
-                <p className="text-left">{_(l, el.about, el.aboutEn)}</p>
+                <p className="text-left md:text-lg">{_(l, el.about, el.aboutEn)}</p>
               </div>
             </div>
           ))}
@@ -72,7 +72,7 @@ export const Page: React.FC = () => {
               <div className="p-5 rounded-lg">
                 <p className="text-base font-bold">{el.name}</p>
                 <h1 className="text-base font-light text-gray-500 mb-4">{el.position}</h1>
-                <p className="text-sm font-light tracking-tight">{_(l, el.about, el.aboutEn)}</p>
+                <p className="text-sm font-light tracking-tight md:text-lg">{_(l, el.about, el.aboutEn)}</p>
               </div>
             </div>
           ))}
@@ -87,7 +87,7 @@ export const Page: React.FC = () => {
               <div className="p-5 rounded-lg">
                 <p className="text-base font-bold">{el.name}</p>
                 <h1 className="text-base font-light text-gray-500 mb-4">{el.position}</h1>
-                <p className="text-sm font-light tracking-tight">{_(l, el.about, el.aboutEn)}</p>
+                <p className="text-sm font-light tracking-tight md:text-lg">{_(l, el.about, el.aboutEn)}</p>
               </div>
             </div>
           ))}
@@ -102,7 +102,7 @@ export const Page: React.FC = () => {
               <div className="p-5 rounded-lg">
                 <p className="text-base font-bold">{el.name}</p>
                 <h1 className="text-base font-light text-gray-500 mb-4">{el.position}</h1>
-                <p className="text-sm font-light tracking-tight">{_(l, el.about, el.aboutEn)}</p>
+                <p className="text-sm font-light tracking-tight md:text-lg">{_(l, el.about, el.aboutEn)}</p>
               </div>
             </div>
           ))}

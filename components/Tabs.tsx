@@ -178,17 +178,17 @@ const Tabs: React.FC<TabsProps> = () => {
                     {val.content.map((content, index) => (
                       <div
                         key={content.title}
-                        className={`rounded-3xl border-2 p-6 h-auto content-between shadow text-center space-y-10 items-stretch text-[#585858] flex-wrap flex ${
+                        className={`rounded-3xl border-2 p-6 content-between shadow text-center space-y-10 items-stretch text-[#585858] flex-wrap flex ${
                           val.content.length < 3 && index === 0 && 'justify-self-auto'
                         }`}
                         style={{ background: color[index] }}>
-                        <div className="text-center flex-col flex space-y-4">
-                          <h2 className="text-3xl font-bold">{content.title}</h2>
-                          <div className="flex items-center space-x-4 mx-auto">
-                            <p className="mb-0 text-sm">IDR</p>
-                            <h2 className="text-4xl ml-4">{content.price}</h2>
+                        <div className="text-center items-center w-full flex-col flex space-y-3">
+                          <h2 className="text-3xl font-semiBold">{content.title}</h2>
+                          <div className="flex items-center space-x-2">
+                            <p className="text-sm">IDR</p>
+                            <h2 className="text-4xl">{content.price}</h2>
                           </div>
-                          <p className="md:whitespace-pre-wrap mt-2 font-light">{content.description}</p>
+                          <p className="md:whitespace-pre-wrap font-light">{content.description}</p>
                           <ul className="py-5 space-y-2">
                             {content.services.map(el => {
                               return (

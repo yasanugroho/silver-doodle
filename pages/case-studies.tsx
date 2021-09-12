@@ -58,7 +58,7 @@ export const Page: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className=" md:mx-0 mx-10 md:ml-52 md:px-0 md:py-10 md:grid-cols-3 md:grid gap-6 mt-10">
+      <div className=" px-8 max-w-5xl container mx-auto md:py-10 md:grid-cols-3 md:grid gap-6 mt-10">
         <div className="text-left space-y-6">
           <h1 className="text-4xl font-bold"> {_(l, 'Studi Kasus', 'Case Study')}</h1>
           <p className="text-lg text-gray-500 font-light">

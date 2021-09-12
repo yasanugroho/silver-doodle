@@ -4,9 +4,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { L, _ } from '../lib/i18n';
 import { useRouter } from 'next/router';
-import { ArrowSmRightIcon, CheckIcon } from '@heroicons/react/solid';
+import { ArrowSmRightIcon } from '@heroicons/react/solid';
 import { listLayanan, serviceText, text } from '../utils/IndividualsVariables';
-import { XerpihanServices, csPerson } from '../lib/images';
+import { XerpihanServices, csPerson, checklist } from '../lib/images';
 //component
 import Tabs from '../components/Tabs';
 import Footer from '../components/Footer';
@@ -27,7 +27,7 @@ export const Page: React.FC = () => {
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header></Header>
         <div className="mx-auto container px-8 max-w-5xl flex">
-          <div className="md:w-5/6">
+          <div className="md:w-5/6 pb-6 md:pb-0">
             <h1 className="text-3xl md:text-5xl font-bold text-left mb-4">
               {_(l, 'Layanan bahasa dengan pemesanan yang ', 'Language service with order ')}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-xerpihan-primary-600 ">
@@ -48,7 +48,7 @@ export const Page: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="relative mb-5 md:pt-0 pt-4">
+      <div className="relative mb-5">
         <div className="w-full h-full flex flex-col absolute">
           <div className="flex-1 bg-xerpihan-hero-gradient-end dark:bg-gray-800"></div>
           <div className="flex-1"></div>
@@ -68,10 +68,12 @@ export const Page: React.FC = () => {
                   if (val.id != '')
                     return (
                       <li className="flex items-center" key={index}>
-                        <div className="mr-3">
-                          <CheckIcon className="w-12 text-xerpihan-primary-500 font-bold" />
+                        <div className="w-1/6 mr-3">
+                          <Image src={checklist} alt={val.id} />
                         </div>
-                        <p className="text-sm md:text-base text-black dark:text-white mb-0">{_(l, val.id, val.en)}</p>
+                        <p className="w-5/6 text-sm md:text-base text-black dark:text-white mb-0">
+                          {_(l, val.id, val.en)}
+                        </p>
                       </li>
                     );
                   else {
@@ -116,10 +118,10 @@ export const Page: React.FC = () => {
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <div className="block md:grid md:grid-cols-2 gap-10 container max-w-5xl mx-auto py-20 px-10">
           {listLayanan.map(el => (
-            <div className="text-center md:text-left p-4 space-y-4" key={el.titleId}>
+            <div className="text-left p-4 space-y-4" key={el.titleId}>
               <Image src={el.img} alt="icon" />
               <h1 className="text-black dark:text-white text-3xl font-bold">{_(l, el.titleId, el.titleEn)}</h1>
-              <h2 className="text-md text-black dark:text-white font-light">{_(l, el.subTitleId, el.subTitleEn)}</h2>
+              <h2 className="text-lg text-black dark:text-white font-light">{_(l, el.subTitleId, el.subTitleEn)}</h2>
             </div>
           ))}
         </div>
