@@ -10,9 +10,10 @@ type InputProps = {
   type?: boolean;
   require?: boolean;
   isNumber?: boolean;
+  isEmail?: boolean;
 };
 
-const CustomInput: React.FC<InputProps> = ({ value, setValue, title, type, require, isNumber }) => {
+const CustomInput: React.FC<InputProps> = ({ value, setValue, title, type, require, isNumber, isEmail }) => {
   const router = useRouter();
   const { locale: l } = router;
   return (
@@ -27,7 +28,7 @@ const CustomInput: React.FC<InputProps> = ({ value, setValue, title, type, requi
           }}></textarea>
       ) : (
         <input
-          type={isNumber ? 'number' : 'text'}
+          type={isNumber ? 'number' : isEmail ? 'email' : 'text'}
           required={require}
           className="focus:outline-none border rounded-lg py-1 px-2 w-full col-span-3"
           value={value}

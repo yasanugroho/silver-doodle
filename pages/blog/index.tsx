@@ -24,7 +24,7 @@ export const Page: React.FC<IndexProps> = ({ posts }) => {
         {posts.map(post => (
           <article key={post.slug} className="mt-12 border border-gray-200 rounded-lg">
             {/* TODO: BUat dynamic thumbnails, ambil dari post metadata */}
-            <Image src={articleImage} alt=""></Image>
+            <Image src={articleImage} alt="Picture of the author" width={500} height={500} />
             <div className="p-4">
               <h1 className="mb-2 text-xl">
                 <Link as={`/blog/${post.slug}`} href={'/blog/[slug]'} locale={post.lang}>

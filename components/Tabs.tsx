@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/link-passhref */
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { L, _ } from '../lib/i18n';
 import { useRouter } from 'next/router';
 import { MetaProps } from '../types/layout';
 import CheckIcon from '../images/Path.svg';
+import Link from 'next/link';
 
 type TabsProps = {
   children?: React.ReactNode[];
@@ -14,6 +16,7 @@ interface TabsContent {
   desc: string[];
   content: {
     title: string;
+    id: string;
     alert: string;
     price: string;
     description: string;
@@ -29,6 +32,7 @@ const tab: TabsContent[] = [
     ],
     content: [
       {
+        id: '0-0',
         title: 'Proofread',
         alert: 'Not eligible for proofreading certificate',
         price: '150K',
@@ -36,6 +40,7 @@ const tab: TabsContent[] = [
         services: ['Double spaces', 'Writing format', 'Typo', 'Punctuation', 'Grammar', 'Unlimited version'],
       },
       {
+        id: '0-1',
         title: 'Premium Editing',
         alert: '',
         price: '300K',
@@ -48,6 +53,7 @@ const tab: TabsContent[] = [
         ],
       },
       {
+        id: '0-2',
         title: 'Copy Editing',
         alert: '',
         price: '250K',
@@ -73,6 +79,7 @@ const tab: TabsContent[] = [
     ],
     content: [
       {
+        id: '3-0',
         title: 'Standard',
         alert: '',
         price: '200K',
@@ -80,6 +87,7 @@ const tab: TabsContent[] = [
         services: ['UK/US Writing Style', 'Copy Editing', 'Unlimited Revision'],
       },
       {
+        id: '3-1',
         title: 'Premium',
         alert: '',
         price: '250K',
@@ -87,6 +95,7 @@ const tab: TabsContent[] = [
         services: ['UK/US Writing Style', 'Premium Editing', 'Unlimited Revision'],
       },
       {
+        id: '3-2',
         title: 'BACK TRANSLATION',
         alert: '',
         price: '100K',
@@ -103,6 +112,7 @@ const tab: TabsContent[] = [
     ],
     content: [
       {
+        id: '4-0',
         title: 'Standard',
         alert: '',
         price: '200K',
@@ -110,6 +120,7 @@ const tab: TabsContent[] = [
         services: ['Hardsub/SRT', 'English/Bahasa Indonesia', 'Unlimited Revision'],
       },
       {
+        id: '4-1',
         title: 'Premium',
         alert: '',
         price: '300K',
@@ -126,6 +137,7 @@ const tab: TabsContent[] = [
     ],
     content: [
       {
+        id: '5-0',
         title: 'Standard',
         alert: '',
         price: '200K',
@@ -133,6 +145,7 @@ const tab: TabsContent[] = [
         services: ['Docs File As Requested', 'English/Bahasa Indonesia', 'Unlimited Revision'],
       },
       {
+        id: '5-1',
         title: 'Premium',
         alert: '',
         price: '300K',
@@ -203,17 +216,22 @@ const Tabs: React.FC<TabsProps> = () => {
                           </ul>
                           <p className="text-sm">{content.alert}</p>
                         </div>
+
                         <button
+                          onClick={() => {
+                            window.localStorage.setItem('order-paket', content.id);
+                          }}
                           className={`rounded-full p-3 w-full font-bold text-center text-lg  flex-1 items-end ${
                             index === 1 ? 'bg-xerpihan-primary-500' : 'border-1 bg-white border-gray-400'
                           }`}>
-                          <a href="" className={index === 1 ? 'text-white dark:text-white' : 'text-[#585858] '}>
-                            {/* TODO: Kalau klik ini, redirect ke halaman order yg sesuai */}
-                            <L>
-                              {'Beli Paket'}
-                              {'Buy Package'}
-                            </L>
-                          </a>
+                          <Link href="/order">
+                            <p className={index === 1 ? 'text-white dark:text-white' : 'text-[#585858] '}>
+                              <L>
+                                {'Beli Paket'}
+                                {'Buy Package'}
+                              </L>
+                            </p>
+                          </Link>
                         </button>
                       </div>
                     ))}

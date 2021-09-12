@@ -25,6 +25,10 @@ const config = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
+  // @ts-ignore
+  images: {
+    domains: ['http://localhost:3000'],
+  },
 };
 
 module.exports = config;

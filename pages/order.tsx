@@ -9,14 +9,18 @@ import { collection, getDocs, addDoc } from 'firebase/firestore';
 import axios from 'axios';
 
 //component
+import Modal from '../components/Modal';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import Modal from '../components/Modal';
 
 import LayoutPlain from '../components/LayoutPlain';
 import CustomInput from '../components/CustomInput';
 import SelectWithLabel from '../components/SelectWithLabel';
 import { topicMultiplier, listService, selectionData, showDate } from '../utils/OrderVars';
+
+type dataProps = {
+  newData?: string[];
+};
 
 export const Page: React.FC = () => {
   const router = useRouter();
@@ -36,6 +40,34 @@ export const Page: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   const [totalPrice, setTotalPrice] = useState(0);
 
+  const clearState = () => {
+    setName('');
+    setEmail('');
+    setPhone('');
+    setTopik('');
+    setPanjang('');
+    setInfo('');
+    setService('');
+    setPaket('');
+    setIsNeedCertif(false);
+    setIsNeedNda(false);
+    setTotalPrice(0);
+  };
+
+  useEffect(() => {
+    if (localStorage.getItem('order-paket')) {
+      console.log();
+      let splits = localStorage.getItem('order-paket');
+      let newData: string[] = [];
+      newData = splits?.split('-');
+      setService(newData[0]);
+      setPaket(newData[1]);
+    }
+    return () => {
+      localStorage.removeItem('order-paket');
+    };
+  }, []);
+
   const totalPriceText = useCallback(() => {
     let totalPriceToText = totalPrice.toString();
     let totalPriceLength = totalPriceToText.length;
@@ -48,7 +80,6 @@ export const Page: React.FC = () => {
 
   const sendEmail = useCallback(async () => {
     let deliveryEst = `${Math.ceil(parseInt(panjang) / (panjang && selectionData[service].delivery)) || ''}`;
-    // TODO: Pakai axios biar hasil sama
     // try {
     //   const res = await fetch('https://xerpihan-site.vercel.app/api/sendemail', {
     //     method: 'POST',
@@ -176,6 +207,7 @@ export const Page: React.FC = () => {
               onClick={() => {
                 setShowModal(false);
                 setIsSuccess(false);
+                clearState();
               }}>
               Close
             </button>
@@ -197,7 +229,7 @@ export const Page: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className="space-y-6">
               <CustomInput title="Full Name" value={name} setValue={setName} require={true} />
-              <CustomInput title="Email" value={email} setValue={setEmail} require={true} />
+              <CustomInput title="Email" value={email} setValue={setEmail} require={true} isEmail={true} />
               <CustomInput title="Phone" value={phone} setValue={setPhone} require={true} isNumber={true} />
               <div className="grid grid-cols-4 space-x-4 text-[#838383] text-xs">
                 <div></div>
@@ -285,16 +317,16 @@ export const Page: React.FC = () => {
                   {paket && selectionData[service]?.packages[paket]?.perunit} {paket && selectionData[service]?.unit}
                 </p>
                 <p>{_(l, 'Topic adjustment', 'Topic adjustment')}</p>
-                <p className="font-bold">{topik && topicMultiplier[topik].multiplier + 'x price'}</p>
+                <p className="font-bold">{topik && topicMultiplier[topik]?.multiplier + 'x price'}</p>
                 <p>{_(l, 'Length', 'Length')}</p>
                 <p className="font-bold">
-                  {panjang} {panjang && service && selectionData[service].unit}
+                  {panjang} {panjang && service && selectionData[service]?.unit}
                 </p>
                 <p>{_(l, 'Delivery estimation', 'Delivery estimation')}</p>
                 <p className="font-bold">
-                  {Math.ceil(parseInt(panjang) / (paket && selectionData[service].delivery)) || ''}
+                  {Math.ceil(parseInt(panjang) / (paket && selectionData[service]?.delivery)) || ''}
                   {panjang
-                    ? Math.ceil(parseInt(panjang) / (paket && selectionData[service].delivery)) > 1
+                    ? Math.ceil(parseInt(panjang) / (paket && selectionData[service]?.delivery)) > 1
                       ? ' days'
                       : ' day'
                     : ''}
