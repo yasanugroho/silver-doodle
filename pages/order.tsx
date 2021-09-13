@@ -112,7 +112,7 @@ export const Page: React.FC = () => {
           name,
           email,
           service,
-          paket,
+          packages: paket,
           length,
           totalPrice: totalPriceText(),
           dueDate: showDate(new Date()),
