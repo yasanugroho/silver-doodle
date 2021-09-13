@@ -162,6 +162,7 @@ const Tabs: React.FC<TabsProps> = () => {
   const router = useRouter();
   const { locale: l } = router;
   const [activeTab, setActiveTab] = useState(tab[0].label);
+  console.log(tab);
   return (
     <div className="w-full max-w-5xl mx-auto pt-5 md:px-0 space-y-4 mb-20">
       <ul className="grid md:grid-cols-4 grid-cols-2 border-2 rounded-xl md:rounded-full mx-4 md:mx-28 md:items-center p-2">
@@ -187,11 +188,14 @@ const Tabs: React.FC<TabsProps> = () => {
               {val.label === activeTab && (
                 <div>
                   <p className="text-center py-4 md:px-10">{_(l, val.desc[0], val.desc[1])}</p>
-                  <div className="gap-8 pt-5 grid md:grid-cols-3 justify-center w-full">
+                  <div
+                    className={`gap-8 pt-5 grid  justify-center w-full ${
+                      val.content.length === 2 ? 'md:grid-cols-2 px-20' : 'md:grid-cols-3'
+                    }`}>
                     {val.content.map((content, index) => (
                       <div
                         key={content.title}
-                        className={`rounded-3xl border-2 p-6 content-between shadow text-center space-y-10 items-stretch text-[#585858] flex-wrap flex ${
+                        className={` rounded-3xl border-2 p-6 content-between shadow text-center space-y-10 items-stretch text-[#585858] flex-wrap flex ${
                           val.content.length < 3 && index === 0 && 'justify-self-auto'
                         }`}
                         style={{ background: color[index] }}>
