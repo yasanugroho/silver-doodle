@@ -7,7 +7,6 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import { getAllPosts } from '../../lib/api';
 import { PostType } from '../../types/post';
-import articleImage from '../../images/articleImage.png';
 
 type IndexProps = {
   posts: PostType[];
@@ -16,7 +15,7 @@ type IndexProps = {
 export const Page: React.FC<IndexProps> = ({ posts }) => {
   const router = useRouter();
   const { locale: l, locales, defaultLocale } = router;
-
+  console.log(posts);
   return (
     <Layout>
       <h1>Blog</h1>
@@ -24,7 +23,7 @@ export const Page: React.FC<IndexProps> = ({ posts }) => {
         {posts.map(post => (
           <article key={post.slug} className="mt-12 border border-gray-200 rounded-lg">
             {/* TODO: BUat dynamic thumbnails, ambil dari post metadata */}
-            <Image src={articleImage} alt="Picture of the author" width={500} height={500} />
+            <Image src={`${post.image}`} alt="Picture of the author" width={500} height={500} />
             <div className="p-4">
               <h1 className="mb-2 text-xl">
                 <Link as={`/blog/${post.slug}`} href={'/blog/[slug]'} locale={post.lang}>
@@ -56,9 +55,9 @@ export const getStaticProps: GetStaticProps = async context => {
   let posts: ReturnType<typeof getAllPosts>;
 
   if (locale === 'id') {
-    posts = getAllPosts('id', ['date', 'description', 'slug', 'title']);
+    posts = getAllPosts('id', ['date', 'description', 'slug', 'title', 'image']);
   } else {
-    posts = getAllPosts('en', ['date', 'description', 'slug', 'title']);
+    posts = getAllPosts('en', ['date', 'description', 'slug', 'title', 'image']);
   }
 
   return {
