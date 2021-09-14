@@ -5,8 +5,10 @@ export const listLayanan = [
     img: ServicesIcon1,
     titleId: 'Lebih dari 1.000 klien mempercayai Xerpihan',
     titleEn: 'Over than 1.000 clients trust Xerpihan',
-    subTitleId: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    subTitleEn: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    subTitleId:
+      'Jasa proofreading, translate, subtitle dan transkripsi kami telah membantu banyak pihak mulai dari institusi pemerintah, perusahaan swasta, hingga YouTuber',
+    subTitleEn:
+      'Jasa proofreading, translate, subtitle dan transkripsi kami telah membantu banyak pihak mulai dari institusi pemerintah, perusahaan swasta, hingga YouTuber',
     styling: '',
   },
   {
@@ -29,8 +31,8 @@ export const listLayanan = [
     img: ServicesIcon4,
     titleId: 'Jaminan Kerahasiaan',
     titleEn: 'Confidentiality Guarantee',
-    subTitleId: 'Nam ultricies ligula massa, ultricies efficitur risus efficitur quis. Aliquam vitae ipsum lectus.',
-    subTitleEn: 'Nam ultricies ligula massa, ultricies efficitur risus efficitur quis. Aliquam vitae ipsum lectus.',
+    subTitleId: 'Kami siap memberikan perjanjian kerahasiaan (non-disclosure agreement) setiap saat',
+    subTitleEn: 'Kami siap memberikan perjanjian kerahasiaan (non-disclosure agreement) setiap saat',
     styling: '',
   },
 ];

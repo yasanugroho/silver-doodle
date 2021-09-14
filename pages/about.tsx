@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Header from '../components/Header';
-import profile4 from '../images/Profile4.png';
 import LayoutPlain from '../components/LayoutPlain';
 import { _ } from '../lib/i18n';
 import { csAbout } from '../lib/images';
@@ -64,7 +63,7 @@ export const Page: React.FC = () => {
         </div>
       </div>
       <div className="max-w-100 bg-gradient-to-b from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end  py-10 dark:from-gray-900 dark:to-gray-800">
-        <h1 className="text-4xl font-bold my-10 text-center">Admins</h1>
+        <h1 className="text-4xl font-bold my-10 text-center">Support Team</h1>
         <div className="mx-auto grid md:grid-cols-3 gap-10 max-w-5xl py-10">
           {listAdmin.map((el: coreTeam) => (
             <div className=" text-center space-y-2" key={el.name}>

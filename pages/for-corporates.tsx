@@ -21,11 +21,11 @@ export const Page: React.FC = () => {
   const text: serviceText[] = [
     { id: 'Terjemahan laporan', en: 'Script translate' },
     { id: 'Terjemahan dokumen', en: 'Document translate' },
-    { id: 'Lorem ipsum', en: 'Lorem ipsum' },
-    { id: 'Lorem ipsum', en: 'Lorem ipsum' },
-    { id: 'Lorem ipsum', en: 'Lorem ipsum' },
+    { id: 'Penyuntingan laporan', en: 'Penyuntingan laporan' },
+    { id: 'Pembuatan subtitle video internal', en: 'Pembuatan subtitle video internal' },
+    { id: 'Transkripsi rapat direksi', en: 'Transkripsi rapat direksi' },
     { id: '…dan masih banyak lagi, sesuaikan dengan kebutuhan bisnis anda!', en: '..and many more, ' },
-    { id: 'Lorem ipsum', en: 'Lorem ipsum' },
+    { id: 'Terjemahan situs', en: 'Terjemahan situs' },
   ];
 
   const SectionComp = (

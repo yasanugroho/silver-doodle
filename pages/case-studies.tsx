@@ -1,12 +1,11 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { L, _ } from '../lib/i18n';
 import { brandLogo, illustration, KoranTempo, csKasus } from '../lib/images';
-import { caseStudy1, caseStudy2, theysSaid, komentar } from '../utils/CaseStudyVars';
+import { caseStudy1, caseStudy2, theysSaid, komentar, media } from '../utils/CaseStudyVars';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -67,7 +66,6 @@ export const Page: React.FC = () => {
               'Kami percaya merek dan perusahaan adalah penghubung antara perusahaan dengan pelanggan mereka.',
               ' Kami percaya merek dan perusahaan adalah penghubung antara perusahaan dengan pelanggan mereka.',
             )}
-            Kami percaya merek dan perusahaan adalah penghubung antara perusahaan dengan pelanggan mereka.
           </p>
           <Image className="mt-6" src={illustration} alt="" height="336" width="360" />
         </div>
@@ -121,30 +119,42 @@ export const Page: React.FC = () => {
             swipeable>
             <div className="flex flex-col mx-4">
               {caseStudy1.map((el, idx) => (
-                <div key={idx} className="bg-xerpihan-primary-500 text-white mt-4 text-left max-w-xl rounded-xl p-3">
-                  <h1 className="text-2xl text-bold mb-0">{_(l, el.title, el.titleEn)}</h1>
-                  <p className="text-lg text-light">{_(l, el.subtitle, el.subtitleEn)}</p>
-                  <div className="flex justify-end">
-                    <Link href={el.link}>
-                      <a className="px-4 py-2 items-center m-3 text-xerpihan-primary-500 bg-white rounded-lg">
-                        <span>{_(l, 'Detail', 'Detail')}</span>
-                      </a>
-                    </Link>
+                <div
+                  key={idx}
+                  className="bg-xerpihan-primary-500 text-white mt-4 text-left max-w-xl rounded-xl p-3 h-[200px] content-between flex-wrap flex">
+                  <h1 className="text-2xl text-bold">{_(l, el.title.substring(0, 40), el.titleEn.substring(0, 40))}</h1>
+                  <p className="text-lg text-light">
+                    {_(l, el.subtitle.substring(0, 52), el.subtitleEn.substring(0, 52))}
+                  </p>
+                  <div className="ml-auto">
+                    <a
+                      href={el.link}
+                      target="_blank"
+                      className="px-3 py-2 items-center my-3 text-xerpihan-primary-500 bg-white rounded-lg"
+                      rel="noreferrer">
+                      <span>{_(l, 'Detail', 'Detail')}</span>
+                    </a>
                   </div>
                 </div>
               ))}
             </div>
             <div className="flex flex-col-reverse mx-4">
               {caseStudy2.map(el => (
-                <div key={el.title} className="bg-xerpihan-secondary text-white mt-4 text-left max-w-xl rounded-xl p-3">
-                  <h1 className="text-2xl text-bold mb-0">{_(l, el.title, el.titleEn)}</h1>
-                  <p className="text-lg text-light">{_(l, el.subtitle, el.subtitleEn)}</p>
-                  <div className="flex justify-end">
-                    <Link href={el.link}>
-                      <a className="px-4 py-2 items-center m-3 text-xerpihan-primary-500 bg-white rounded-lg">
-                        <span>{_(l, 'Detail', 'Detail')}</span>
-                      </a>
-                    </Link>
+                <div
+                  key={el.title}
+                  className="bg-xerpihan-secondary text-white mt-4 text-left max-w-xl rounded-xl p-3 h-[200px] content-between flex-wrap flex ">
+                  <h1 className="text-2xl text-bold">{_(l, el.title.substring(0, 40), el.titleEn.substring(0, 40))}</h1>
+                  <p className="text-lg text-light">
+                    {_(l, el.subtitle.substring(0, 52), el.subtitleEn.substring(0, 52))}
+                  </p>
+                  <div className="ml-auto">
+                    <a
+                      href={el.link}
+                      target="_blank"
+                      className="px-3 py-2 items-center m-3 text-xerpihan-primary-500 bg-white rounded-lg"
+                      rel="noreferrer">
+                      <span>{_(l, 'Detail', 'Detail')}</span>
+                    </a>
                   </div>
                 </div>
               ))}
@@ -181,7 +191,7 @@ export const Page: React.FC = () => {
               <Image src={el.img} alt="..." width="120" height="120" className="rounded-full object-cover" />
               <p className=" font-bold mb-0 mt-3">{el.name}</p>
               <p className=" font-light text-gray-500 mb-0">{el.from}</p>
-              <p className="text-sm font-light text-justify dark:text-black tracking-tight mt-8">
+              <p className="text-sm font-light text-justify dark:text-black tracking-tight mt-4">
                 {_(l, el.title, el.titleEn)}
               </p>
             </div>
@@ -190,19 +200,15 @@ export const Page: React.FC = () => {
       </div>
       <div className="text-center py-10 max-w-5xl mx-auto">
         <h1 className=" text-4xl font-bold my-8">{_(l, 'Diliput Berbagai Media', 'Diliput Berbagai Media')}</h1>
-        {[1, 2, 3].map(el => (
-          <div className="grid md:grid-cols-4 py-4 px-10 space-x-8" key={el}>
+        {media.map(el => (
+          <div className="grid md:grid-cols-4 py-4 px-10 space-x-8" key={el.name}>
             <Image src={KoranTempo} alt="" objectFit="contain" />
             <div className="col-span-3 text-left">
-              <p className="text-base font-light">
-                {_(
-                  l,
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium aliquet mauris, vitae consequat ante dictum sed. Cras ultricies consectetur dui vitae elementum. Quisque in ante dignissim, facilisis',
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium aliquet mauris, vitae consequat',
-                )}
-              </p>
-              <p className=" font-bold mb-0 mt-3">Elizabeth Martin</p>
-              <p className="font-light text-gray-500 mb-0">{_(l, 'Reporter Koran Tempo', 'Reporter Koran Tempo')}</p>
+              <a href={el.url} target="_blank" rel="noreferrer" className="text-black hover:text-gray-500">
+                <p className="text-base font-light">{_(l, el.title, el.titleEn)}</p>
+              </a>
+              <p className=" font-bold mb-0 mt-3">{el.name}</p>
+              <p className="font-light text-gray-500 mb-0">{_(l, el.from, el.from)}</p>
             </div>
           </div>
         ))}
