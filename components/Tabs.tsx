@@ -27,7 +27,7 @@ const tab: TabsContent[] = [
   {
     label: 'Proofread',
     desc: [
-      'Jasa proofreading Bahasa Indonesia atau Inggris untuk keperluan paper ilmiah, jurnal, essay, buku (fiksi dan non-fiksi), situs web, laporan, dan masih banyak lagi.',
+      'Jasa proofreading bahasa Indonesia dan bahasa Inggris untuk berbagai dokumen secara online maupun offline.',
       'Indonesian or English proofreading service for scientific paper, journal, essay, books (fiction and non-fiction), website, reports, and many other',
     ],
     content: [
@@ -74,7 +74,7 @@ const tab: TabsContent[] = [
   {
     label: 'Translation',
     desc: [
-      'Jasa penerjemah sekaligus proofreading untuk Bahasa Inggris dan Indonesia.',
+      'Jasa translate dokumen sekaligus proofread untuk bahasa Inggris dan Indonesia. Penerjemah kami sudah berpengalaman menerjemahkan dokumen berbagai jenis, mulai dari jurnal internasional hingga konten kreatif.',
       'Translation service combined with proofreading for English and Indonesian.',
     ],
     content: [
@@ -107,7 +107,7 @@ const tab: TabsContent[] = [
   {
     label: 'Subtitle',
     desc: [
-      'Jasa subtitle Bahasa Indonesia dan Inggris untuk video dan film yang mengikuti permintaan khusus kamu.',
+      'Jasa pembuatan subtitle dan close caption (cc) untuk video dan film sesuai permintaan. Tersedia juga jasa terjemah subtitle bahasa Indonesia ke Inggris atau sebaliknya.',
       'Indonesian and English subtitling service for videos and films packaged with custom request just for you.',
     ],
     content: [
@@ -132,7 +132,7 @@ const tab: TabsContent[] = [
   {
     label: 'Transcription',
     desc: [
-      'Jasa transkripsi untuk Bahasa Indonesia dan/atau Inggris dengan hasil instan atau permintaan khusus sesukamu',
+      'Jasa transkripsi yang mengubah rekaman suara menjadi teks dengan hasil instan atau manual sesuai permintaan. Tersedia dalam bahasa Indonesia dan Bahasa Inggris.',
       'Speech-to-text or transcription service for Indonesian and/or English with instant result or custom request as you wish',
     ],
     content: [
