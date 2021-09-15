@@ -52,7 +52,7 @@ export const dataSection = [
     subTitle: 'Tingkatkan aksesibilitas di video kamu',
     subTitleEn: 'Tingkatkan aksesibilitas di video kamu',
     content:
-      'Content creator menjadi pengguna utama jasa subtitle ini. Cocok buat kamu yang ingin meningkatkan engagement konten.',
+      'Kamu aktif di YouTube dan media sosial lainnya? Ingin jangkauan audiensmu lebih luas? Gunakan jasa subtitle kami untuk meningkatkan engagement videomu.',
     contentEn:
       'Content creator menjadi pengguna utama jasa subtitle ini. Cocok buat kamu yang ingin meningkatkan engagement konten.',
     styling: true,
