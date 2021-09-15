@@ -29,7 +29,7 @@ export const dataSection = [
     subTitle: 'Hilangkan kesalahan penulisan di dokumen kamu',
     subTitleEn: 'Hilangkan kesalahan penulisan di dokumen kamu',
     content:
-      'Butuh jasa proofreading yang cepat dan akurat? Proofreader kami telah berpengalaman menangani berbagai jenis dokumen dalam bahasa Indonesia dan Inggris. Pesan sekarang dan dapatkan sertifikat proofreading untuk dokumenmu.',
+      'Butuh jasa proofreading yang murah dan berkualitas? Proofreader kami telah berpengalaman menangani berbagai jenis dokumen bahasa Indonesia dan Inggris. Pesan sekarang dan dapatkan sertifikat proofreading untuk dokumenmu.',
     contentEn:
       'Terlalu banyak jasa proofreading di luar sana dengan rekam jejak dan hasil yang kurang jelas. Coba sekarang dan dapatkan sertifikat proofreading untuk dokumenmu.',
     styling: true,
