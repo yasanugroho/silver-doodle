@@ -43,11 +43,11 @@ export interface serviceText {
 }
 
 export const text: serviceText[] = [
-  { id: 'Proofreading skripsi dan tesis', en: 'Script and thesis proofreading' },
-  { id: 'Terjemahan dokumen', en: 'Document translate' },
-  { id: 'Pemberian subtitle pada kanal YouTube', en: 'Subtitle on youtube channel' },
-  { id: 'Transkripsi audio clip', en: 'Audio clip transcript' },
-  { id: 'Jasa perbaikan proposal', en: 'Proposal perbaikan' },
+  { id: 'Proofreading jurnal dan skripsi', en: 'Script and thesis proofreading' },
+  { id: 'Subtitle YouTube dan film', en: 'Document translate' },
+  { id: 'Terjemah jurnal dan artikel', en: 'Subtitle on youtube channel' },
+  { id: 'Transkrip wawancara', en: 'Audio clip transcript' },
+  { id: 'Parafrasa kalimat', en: 'Proposal perbaikan' },
   { id: '…dan masih banyak lagi, sesuaikan dengan kebutuhan anda!', en: '..and many more, ' },
   { id: '', en: '' },
 ];
