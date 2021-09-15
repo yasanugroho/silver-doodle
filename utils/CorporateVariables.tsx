@@ -20,7 +20,7 @@ export const dataSection = [
     subTitle: 'Alih bahasa dokumen',
     subTitleEn: 'Alih bahasa dokumen',
     content:
-      'Menerjemahkan dokumen sesuai gaya bahasa dan permintaan bisnis. Sesuaikan tulisan yang dihasilkan menurut keinginan. Tidak perlu lagi memperbaiki dokumen setelah menerjemahkan sendiri. Dapatkan dua kali keuntungan dengan sekali pesan.',
+      'Menerjemahkan dokumen berbagai jenis sesuai gaya bahasa dan permintaan bisnis. Dapatkan layanan terjemah sekaligus proofreading dalam sekali pemesanan.',
     contentEn:
       'Menerjemahkan dokumen sesuai gaya bahasa dan permintaan bisnis. Sesuaikan tulisan yang dihasilkan menurut keinginan. Tidak perlu lagi memperbaiki dokumen setelah menerjemahkan sendiri. Dapatkan dua kali keuntungan dengan sekali pesan.',
     styling: 'md:flex-row-reverse',
