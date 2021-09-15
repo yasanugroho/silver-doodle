@@ -33,7 +33,7 @@ const tab: TabsContent[] = [
     content: [
       {
         id: '0-0',
-        title: 'Proofread',
+        title: 'Proofreading',
         alert: 'Not eligible for proofreading certificate',
         price: '150K',
         description: 'ENG: per 2500 words \n ID: per 3500 words',
@@ -59,7 +59,7 @@ const tab: TabsContent[] = [
         price: '250K',
         description: 'ENG: per 2500 words \nID: per 3500 words',
         services: [
-          'Proof reading',
+          'Proofreading',
           'Wordy',
           'Conjunction',
           'Hard to read sentence',
@@ -96,7 +96,7 @@ const tab: TabsContent[] = [
       },
       {
         id: '3-2',
-        title: 'BACK TRANSLATION',
+        title: 'Back Translation',
         alert: '',
         price: '100K',
         description: 'per 200 words',
