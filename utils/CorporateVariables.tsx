@@ -8,7 +8,7 @@ export const dataSection = [
     subTitle: 'Hilangkan kesalahan penulisan di dokumen perusahaan',
     subTitleEn: 'Hilangkan kesalahan penulisan di dokumen perusahaan',
     content:
-      'Perbaikan penulisan dokumen baik untuk publik atau presentasi internal bisnis. Dokumen meliputi Laporan Keuangan, Kontrak Kerja, Dokumen Internal, dll.',
+      'Perbaikan penulisan dokumen, baik untuk publik atau presentasi internal bisnis. Dokumen meliputi Laporan Keuangan, Kontrak Kerja, Dokumen Internal, dll.',
     contentEn:
       'Perbaikan penulisan dokumen baik untuk publik atau presentasi internal bisnis. Dokumen meliputi Laporan Keuangan, Kontrak Kerja, Dokumen Internal, dll.',
     styling: 'md:flex-row',
@@ -32,7 +32,7 @@ export const dataSection = [
     subTitle: 'Tingkatkan aksesibilitas di video',
     subTitleEn: 'Tingkatkan aksesibilitas di video',
     content:
-      'Penulisan subtitle terbaik hingga detail terkecil. Mulai dari video korporat, video pelatihan, hingga film hasil rumah produksi.',
+      'Pembuatan subtitle terbaik hingga detail terkecil. Mulai dari video korporat, pelatihan, iklan, hingga film hasil rumah produksi.',
     contentEn:
       'Penulisan subtitle terbaik hingga detail terkecil. Mulai dari video korporat, video pelatihan, hingga film hasil rumah produksi.',
     styling: 'md:flex-row',
@@ -44,7 +44,7 @@ export const dataSection = [
     subTitle: 'Konversi audio ke teks',
     subTitleEn: 'Konversi audio ke teks',
     content:
-      'Ubah rekaman atau video menjadi tulisan yang mudah dibaca. Laporan rapat atau hasil workshop kini dapat dibuat dengan cepat dan mudah.',
+      'Ubah video atau rekaman suara menjadi tulisan yang mudah dibaca. Laporan rapat atau hasil workshop kini dapat dibuat dengan cepat dan mudah.',
     contentEn:
       'Ubah rekaman atau video menjadi tulisan yang mudah dibaca. Laporan rapat atau hasil workshop kini dapat dibuat dengan cepat dan mudah.',
     styling: 'md:flex-row-reverse',
