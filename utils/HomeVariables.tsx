@@ -29,7 +29,7 @@ export const dataSection = [
     subTitle: 'Hilangkan kesalahan penulisan di dokumen kamu',
     subTitleEn: 'Hilangkan kesalahan penulisan di dokumen kamu',
     content:
-      'Terlalu banyak jasa proofreading di luar sana dengan rekam jejak dan hasil yang kurang jelas. Coba sekarang dan dapatkan sertifikat proofreading untuk dokumenmu.',
+      'Butuh jasa proofreading yang cepat dan akurat? Proofreader kami telah berpengalaman menangani berbagai jenis dokumen dalam bahasa Indonesia dan Inggris. Pesan sekarang dan dapatkan sertifikat proofreading untuk dokumenmu.',
     contentEn:
       'Terlalu banyak jasa proofreading di luar sana dengan rekam jejak dan hasil yang kurang jelas. Coba sekarang dan dapatkan sertifikat proofreading untuk dokumenmu.',
     styling: true,
@@ -41,7 +41,7 @@ export const dataSection = [
     subTitle: 'Alih bahasa dokumen',
     subTitleEn: 'Alih bahasa dokumen',
     content:
-      'Untuk kamu yang bingung dengan hasil mesin penerjemah dan tidak dapat menilai hasilnya. Pilih harga dan waktu penyelesaian sesuai kebutuhanmu. Jasa translate dokumen kamu yang kekinian.',
+      'Ingin menerjemahkan dokumen dari bahasa Inggris ke Indonesia atau sebaliknya? Gunakan jasa penerjemah kami dan dapatkan hasil terjemahan bahasa Inggris/Indonesia yang akurat dan cepat.',
     contentEn:
       'Untuk kamu yang bingung dengan hasil mesin penerjemah dan tidak dapat menilai hasilnya. Pilih harga dan waktu penyelesaian sesuai kebutuhanmu. Jasa translate dokumen kamu yang kekinian.',
   },
