@@ -2,11 +2,11 @@ import { cw, cwk, profile1, profile2, profile3 } from '../lib/images';
 
 export const caseStudy1 = [
   {
-    title: 'RunPool: A Dynamic Pooling Layer for Convolution Neural Network',
-    titleEn: 'RunPool: A Dynamic Pooling Layer for Convolution Neural Network',
-    subtitle: 'International Journal of Computational Intelligence Systems',
-    subtitleEn: 'International Journal of Computational Intelligence Systems',
-    link: 'https://www.atlantis-press.com/journals/ijcis/125932844',
+    title: 'Deep Learning for Indonesia Standard Industrial Classification',
+    titleEn: 'Deep Learning for Indonesia Standard Industrial Classification',
+    subtitle: '2020 International Conference on Electrical Engineering and Informatics',
+    subtitleEn: '2020 International Conference on Electrical Engineering and Informatics',
+    link: 'https://ieeexplore.ieee.org/abstract/document/9315361',
   },
   {
     title: 'Electrical Conductivity of Carbon Electrodes by Mixing Carbon Rod and Electrolyte Paste of Spent Battery',
