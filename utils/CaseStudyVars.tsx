@@ -9,30 +9,30 @@ export const caseStudy1 = [
     link: 'https://ieeexplore.ieee.org/abstract/document/9315361',
   },
   {
-    title: 'Electrical Conductivity of Carbon Electrodes by Mixing Carbon Rod and Electrolyte Paste of Spent Battery',
-    titleEn: 'Electrical Conductivity of Carbon Electrodes by Mixing Carbon Rod and Electrolyte Paste of Spent Battery',
-    subtitle: 'International Journal of Renewable Energy Development (IJRED)',
-    subtitleEn: 'International Journal of Renewable Energy Development (IJRED)',
-    link: 'https://ejournal.undip.ac.id/index.php/ijred/article/view/31637',
+    title: 'Selebrasi 3 Tahun Cerita Menjadi Manusia',
+    titleEn: 'Selebrasi 3 Tahun Cerita Menjadi Manusia',
+    subtitle: 'Menjadi Manusia YouTube Channel',
+    subtitleEn: 'Menjadi Manusia YouTube Channel',
+    link: 'https://www.youtube.com/watch?v=nCWD5MTb15I',
   },
 ];
 
 export const caseStudy2 = [
   {
     title:
-      'The Causality Among E-Money, Manufacturing, Services and Money Supply: An Empirical Evidence of ASEAN Countries',
+      'Mercury and Chromium Distribution in Soil Near Maros Karst Ecosystem',
     titleEn:
-      'The Causality Among E-Money, Manufacturing, Services and Money Supply: An Empirical Evidence of ASEAN Countries',
-    subtitle: 'Journal of Perspectives on Financing and Regional Development ',
-    subtitleEn: 'Journal of Perspectives on Financing and Regional Development ',
-    link: 'https://online-journal.unja.ac.id/JES/article/view/9518',
+      'Mercury and Chromium Distribution in Soil Near Maros Karst Ecosystem',
+    subtitle: 'Carpathian Journal of Earth and Environmental Sciences',
+    subtitleEn: 'Carpathian Journal of Earth and Environmental Sciences',
+    link: 'http://www.cjees.ro/viewTopic.php?topicId=871',
   },
   {
-    title: 'MARGINAL PART-TIME EMPLOYMENT IN INDONESIAN LABOR MARKET: PROFILE AND DETERMINANT',
-    titleEn: 'MARGINAL PART-TIME EMPLOYMENT IN INDONESIAN LABOR MARKET: PROFILE AND DETERMINANT',
-    subtitle: 'Jurnal Economia: Review of Business and Economics Studies',
-    subtitleEn: 'Jurnal Economia: Review of Business and Economics Studies',
-    link: 'https://journal.uny.ac.id/index.php/economia/article/view/30818',
+    title: 'BELANJA PERLENGKAPAN RUMAH LUCU SAMA KYRA! + Bamsae Michimomo w/Jovi, Bubs, Eatandtreats, Pat Gouw',
+    titleEn: 'BELANJA PERLENGKAPAN RUMAH LUCU SAMA KYRA! + Bamsae Michimomo w/Jovi, Bubs, Eatandtreats, Pat Gouw',
+    subtitle: 'Titan Tyra YouTube Channel',
+    subtitleEn: 'Titan Tyra YouTube Channel',
+    link: 'https://youtu.be/15il1LSLDq0',
   },
 ];
 
