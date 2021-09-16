@@ -27,11 +27,11 @@ export const dataSection = [
     title: 'Proofreading',
     titleEn: 'Proofreading',
     subTitle: 'Hilangkan kesalahan penulisan di dokumen kamu',
-    subTitleEn: 'Hilangkan kesalahan penulisan di dokumen kamu',
+    subTitleEn: 'Eliminate typos in your document',
     content:
-      'Butuh jasa proofreading yang murah dan berkualitas? Proofreader kami telah berpengalaman menangani berbagai jenis dokumen bahasa Indonesia dan Inggris. Pesan sekarang dan dapatkan sertifikat proofreading untuk dokumenmu.',
+      'Butuh jasa proofreading yang murah dan berkualitas? Proofreader kami telah berpengalaman menangani berbagai jenis dokumen bahasa Indonesia dan Inggris. Pesan sekarang dan dapatkan sertifikat proofreading untuk dokumenmu!',
     contentEn:
-      'Terlalu banyak jasa proofreading di luar sana dengan rekam jejak dan hasil yang kurang jelas. Coba sekarang dan dapatkan sertifikat proofreading untuk dokumenmu.',
+      'Do you need affordable and quality proofreading service? Our proofreaders have experienced in handling various Indonesian and English documents. Order now and get proofreading certificate for your document!',
     styling: true,
   },
   {
@@ -39,22 +39,22 @@ export const dataSection = [
     title: 'Terjemahan',
     titleEn: 'Translation',
     subTitle: 'Alih bahasa dokumen',
-    subTitleEn: 'Alih bahasa dokumen',
+    subTitleEn: 'Document translation',
     content:
       'Ingin menerjemahkan dokumen dari bahasa Inggris ke Indonesia atau sebaliknya? Gunakan jasa penerjemah kami dan dapatkan hasil terjemahan bahasa Inggris/Indonesia yang akurat dan cepat.',
     contentEn:
-      'Untuk kamu yang bingung dengan hasil mesin penerjemah dan tidak dapat menilai hasilnya. Pilih harga dan waktu penyelesaian sesuai kebutuhanmu. Jasa translate dokumen kamu yang kekinian.',
+      'Do you need to translate your English and Indonesian document or vice versa? Use our translation service and we make sure you get accurate and acceptable translation result!',
   },
   {
     img: subtitle,
     title: 'Subtitle',
     titleEn: 'Subtitles',
     subTitle: 'Tingkatkan aksesibilitas di video kamu',
-    subTitleEn: 'Tingkatkan aksesibilitas di video kamu',
+    subTitleEn: 'Increase your video accessibility rate',
     content:
-      'Kamu aktif di YouTube dan media sosial lainnya? Ingin jangkauan audiensmu lebih luas? Gunakan jasa subtitle kami untuk meningkatkan engagement videomu.',
+      'Kamu aktif di YouTube dan media sosial lainnya? Ingin jangkauan audiensmu lebih luas? Gunakan jasa subtitle kami untuk meningkatkan engagement videomu!',
     contentEn:
-      'Content creator menjadi pengguna utama jasa subtitle ini. Cocok buat kamu yang ingin meningkatkan engagement konten.',
+      'Are you a YouTuber and social media influencer? Do you want to reach more audience? Use out subtitling service to increase your engagement!',
     styling: true,
   },
   {
@@ -62,10 +62,10 @@ export const dataSection = [
     title: 'Transkripsi',
     titleEn: 'Transcription',
     subTitle: 'Konversi audio ke teks',
-    subTitleEn: 'Konversi audio ke teks',
+    subTitleEn: 'Converting audio to text',
     content:
       'Ada rekaman hasil wawancara atau sedang membuat konten dan ingin ditranskripsi? Tersedia jasa transkrip instan atau manual yang mudah dan cepat.',
     contentEn:
-      'Ada rekaman hasil wawancara atau sedang membuat konten dan ingin ditranskripsi? Tersedia jasa transkrip instan atau manual yang mudah dan cepat.',
+      'Do you need a service to transcribe any meeting or interview recording? We provide affordable and instant verbatim and non-verbatim transcription.',
   },
 ];
