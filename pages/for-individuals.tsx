@@ -128,7 +128,7 @@ export const Page: React.FC = () => {
       </div>
       <div className="text-center pt-28">
         <h1 className=" text-3xl font-bold">
-          {_(l, 'Pilih Paket Yang Sesuai Dengan Kebutuhan Kamu', 'Choose the Package That Fits Your Needs')}
+          {_(l, 'Pilih Paket yang Sesuai dengan Kebutuhan Kamu', 'Choose the Package That Fits Your Needs')}
         </h1>
       </div>
       <div>
