@@ -38,7 +38,7 @@ const listProduk = [
     name: 'Kontak',
     nameEn: 'Contact',
     list: [
-      { name: 'WhatsApp', nameEn: 'WhatsApp', link: 'https://wa.me/083119161413' },
+      { name: 'WhatsApp', nameEn: 'WhatsApp', link: 'https://wa.me/+6283119161413' },
       { name: 'Handphone', nameEn: 'Handphone', link: '/' },
     ],
   },
