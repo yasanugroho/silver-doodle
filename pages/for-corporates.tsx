@@ -19,7 +19,7 @@ export const Page: React.FC = () => {
     en: string;
   }
   const text: serviceText[] = [
-    { id: 'Proofreading dokumen perusahaan', en: 'Script translate' },
+    { id: 'Proofreading dokumen', en: 'Script translate' },
     { id: 'Terjemah dokumen perusahaan', en: 'Document translate' },
     { id: 'Penyuntingan buku', en: 'Penyuntingan laporan' },
     { id: 'Subtitle video dan film', en: 'Pembuatan subtitle video internal' },
