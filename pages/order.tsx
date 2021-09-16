@@ -189,8 +189,8 @@ export const Page: React.FC = () => {
           <div className="space-y-4 text-center flex flex-col p-6">
             <p className="text-2xl text-xerpihan-primary-500">Terimakasih, {name && name.split(' ')[0]}</p>
             <p>
-              Order anda telah kami terima <br />
-              Kami akan segera menghubungi nomor anda
+              Order Anda telah kami terima <br />
+              Kami akan segera menghubungi nomor Anda
             </p>
 
             <p>Silakan melakukan pembayaran sebesar</p>
@@ -201,7 +201,7 @@ export const Page: React.FC = () => {
               a.n PT Xerpihan Kata Digital
             </p>
             <p className="text-[#f542aa]">paling lambat {showDate(new Date())}</p>
-            <p>Kami mengirimkan invoice melalui email anda</p>
+            <p>Kami mengirimkan invoice melalui email Anda</p>
             <button
               className="xerp-a-button px-4 py-2 w-full !rounded-full my-6"
               onClick={() => {
