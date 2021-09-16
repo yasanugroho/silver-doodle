@@ -59,8 +59,8 @@ export const Page: React.FC = () => {
               <h2 className="text-lg text-black dark:text-white">
                 {_(
                   l,
-                  'Xerpihan dapan membantu menyelesaikan kebutuhan bahasa personal anda.',
-                  'Xerpihan can help you menyelesaikan kebutuhan bahasa personal anda.',
+                  'Xerpihan dapan membantu menyelesaikan kebutuhan bahasa personal Anda.',
+                  'Xerpihan can help you menyelesaikan kebutuhan bahasa personal Anda.',
                 )}
               </h2>
               <ul className="block md:grid grid-flow-col md:grid-cols-2 md:grid-rows-4 my-4 ">
