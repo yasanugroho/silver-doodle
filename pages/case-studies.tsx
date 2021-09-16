@@ -43,12 +43,12 @@ export const Page: React.FC = () => {
             <p className="text-xl md:text-3xl text-gray-500">
               <L>
                 <p>
-                  Kami percaya merek dan perusahaan adalah <br />
+                  Kami percaya citra dan pelayanan adalah <br />
                   penghubung antara perusahaan dengan
                   <br /> pelanggan mereka.
                 </p>
                 <p>
-                  Kami percaya merek dan perusahaan adalah <br />
+                  Kami percaya citra dan pelayanan adalah <br />
                   penghubung antara perusahaan dengan
                   <br /> pelanggan mereka.
                 </p>
