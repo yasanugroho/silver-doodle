@@ -5,7 +5,7 @@ import { csOrder, Spinner } from '../lib/images';
 import { useRouter } from 'next/router';
 import db from '../firebase/clientApp';
 import React, { useState, useEffect, useCallback } from 'react';
-import { collection, getDocs, addDoc } from 'firebase/firestore';
+import { collection, getDocs, addDoc, serverTimestamp, documentId } from 'firebase/firestore';
 import axios from 'axios';
 
 //component
@@ -115,7 +115,7 @@ export const Page: React.FC = () => {
           packages: paket,
           length,
           totalPrice: totalPriceText(),
-          dueDate: showDate(new Date()),
+          // dueDate: showDate(new Date()),
           orderId: (new Date().getTime() % 100000) + 100000,
           deliveryEst,
           addInfo: info,
@@ -146,11 +146,11 @@ export const Page: React.FC = () => {
           need_nda: isNeedNDA,
           topic: topicMultiplier[topik].topic,
           'order-additional-info': info,
-          'order-id': (new Date().getTime() % 100000) + 100000,
+          'order-id': documentId(), // TODO: double check
           'order-payment-completion': 0,
           'order-status': 0,
           'order-total-price': totalPrice,
-          'order-date': new Date().getTime(),
+          'order-date': serverTimestamp(), // TODO: double check
         });
         console.log('order Success with ID: ', docRef.id);
         setIsSuccess(true);

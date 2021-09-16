@@ -306,7 +306,8 @@ const emailTemplate = (
 module.exports = (req, res) => {
   const reqs = JSON.parse(req.body.body);
 
-  const { name, email, service, packages, length, totalPrice, dueDate, orderId, deliveryEst, addInfo } = reqs;
+  const { name, email, service, packages, length, totalPrice, orderId, deliveryEst, addInfo } = reqs;
+  const dueDate = new Date(); // TODO: fix this place
 
   const msg = {
     to: email,
