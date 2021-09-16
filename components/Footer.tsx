@@ -60,18 +60,18 @@ export default function Footer() {
           <div className="mb-4 text-white space-y-4">
             <div className="text-2xl md:text-3xl">
               <L>
-                <p>Konsultasikan kebutuhan anda, gratis!</p>
-                <p>Konsultasikan kebutuhan anda, gratis!</p>
+                <p>Konsultasikan kebutuhan Anda, gratis!</p>
+                <p>Konsultasikan kebutuhan Anda, gratis!</p>
               </L>
             </div>
             <L>
               <p>
                 Tim Xerpihan akan membantu menemukan solusi untuk segala kebutuhan
-                <br /> layanan bahasa anda.
+                <br /> layanan bahasa Anda.
               </p>
               <p>
                 Tim Xerpihan akan membantu menemukan solusi untuk segala kebutuhan
-                <br /> layanan bahasa anda.
+                <br /> layanan bahasa Anda.
               </p>
             </L>
           </div>
@@ -108,7 +108,7 @@ export default function Footer() {
                   {'Langganan Kabar Terbaru dari Kami'}
                 </L>
               </p>
-              <p className="text-[#838383]">Artikel, berita dan kabar bulanan dari Xerpihan.</p>
+              <p className="text-[#838383]">Artikel, berita, dan kabar bulanan dari Xerpihan.</p>
             </div>
             <div className="space-y-4 md:w-1/2">
               <div className="border flex">
