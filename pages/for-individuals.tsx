@@ -105,7 +105,7 @@ export const Page: React.FC = () => {
           <div className="text-left space-y-6">
             <h1 className="text-4xl font-bold">{_(l, 'Untuk semua dokumen kamu', 'For your documents')}</h1>
             <p className="text-xl">
-              {_(l, 'Kami siap melayani segala jenis kebutuhan anda.', 'We are ready to serve your kebutuhan')}
+              {_(l, 'Kami siap melayani segala jenis kebutuhan Anda.', 'We are ready to serve your kebutuhan')}
             </p>
           </div>
           <div className="col-span-2 mt-3 md:mt-0">
