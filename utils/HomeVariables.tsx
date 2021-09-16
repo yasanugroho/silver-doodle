@@ -64,7 +64,7 @@ export const dataSection = [
     subTitle: 'Konversi audio ke teks',
     subTitleEn: 'Converting audio to text',
     content:
-      'Ada rekaman hasil wawancara atau sedang membuat konten dan ingin ditranskripsi? Tersedia jasa transkrip instan atau manual yang mudah dan cepat.',
+      'Kamu butuh jasa untuk transkripsi rekaman rapat atau wawancara? Kami menyediakan jasa transkrip verbatim dan nonverbatim yang murah dan cepat.',
     contentEn:
       'Do you need a service to transcribe any meeting or interview recording? We provide affordable and instant verbatim and non-verbatim transcription.',
   },
