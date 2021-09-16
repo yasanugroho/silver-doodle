@@ -74,7 +74,7 @@ const tab: TabsContent[] = [
   {
     label: 'Translation',
     desc: [
-      'Jasa translate dokumen sekaligus proofread untuk bahasa Inggris dan Indonesia. Penerjemah kami sudah berpengalaman menerjemahkan dokumen berbagai jenis, mulai dari jurnal internasional hingga konten kreatif.',
+      'Jasa penerjemah dokumen sekaligus proofreading untuk bahasa Inggris dan bahasa Indonesia.',
       'Translation service combined with proofreading for English and Indonesian.',
     ],
     content: [
@@ -107,7 +107,7 @@ const tab: TabsContent[] = [
   {
     label: 'Subtitle',
     desc: [
-      'Jasa pembuatan subtitle dan close caption (cc) untuk video dan film sesuai permintaan. Tersedia juga jasa terjemah subtitle bahasa Indonesia ke Inggris atau sebaliknya.',
+      'Jasa pembuatan subtitle, close caption (cc), dan terjemah subtitle bahasa Indonesia dan Inggris untuk film dan berbagai video.',
       'Indonesian and English subtitling service for videos and films packaged with custom request just for you.',
     ],
     content: [
