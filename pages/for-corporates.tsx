@@ -24,8 +24,8 @@ export const Page: React.FC = () => {
     { id: 'Penyuntingan buku', en: 'Penyuntingan laporan' },
     { id: 'Subtitle video dan film', en: 'Pembuatan subtitle video internal' },
     { id: 'Transkripsi rekaman rapat', en: 'Transkripsi rapat direksi' },
-    { id: '…dan masih banyak lagi, sesuaikan dengan kebutuhan bisnis anda!', en: '..and many more, ' },
-    { id: 'Terjemah situs web', en: 'Terjemahan situs' },
+    { id: 'Terjemah situs web', en: 'Terjemah situs wes' },
+    { id: '…dan masih banyak lagi, sesuaikan dengan kebutuhan bisnis Anda!', en: '..and many more,' },
   ];
 
   const SectionComp = (
@@ -111,8 +111,8 @@ export const Page: React.FC = () => {
               <h2 className="text-lg text-black dark:text-white mb-4 text-center">
                 {_(
                   l,
-                  'Xerpihan dapan membantu menyelesaikan kebutuhan bahasa personal anda.',
-                  'Xerpihan can help you menyelesaikan kebutuhan bahasa personal anda.',
+                  'Xerpihan dapan membantu menyelesaikan kebutuhan bahasa personal Anda.',
+                  'Xerpihan can help you menyelesaikan kebutuhan bahasa personal Anda.',
                 )}
               </h2>
               <ul className="grid md:grid-cols-2 mt-2 gap-2 mx-4 md:mx-10">
@@ -130,7 +130,7 @@ export const Page: React.FC = () => {
                 ))}
               </ul>
               <h2 className="text-center text-sm md:text-2xl">
-                {_(l, 'Konsultasikan kebutuhan bisnis anda, gratis!', 'Konsultasikan kebutuhan bisnis anda, gratis!')}
+                {_(l, 'Konsultasikan kebutuhan bisnis Anda, gratis!', 'Konsultasikan kebutuhan bisnis Anda, gratis!')}
               </h2>
               <div className="justify-center block md:flex font-semibold space-x-3">
                 <a href="https://wa.me/083119161413" target="_blank" rel="noreferrer">
