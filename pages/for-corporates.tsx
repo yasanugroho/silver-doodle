@@ -19,13 +19,13 @@ export const Page: React.FC = () => {
     en: string;
   }
   const text: serviceText[] = [
-    { id: 'Terjemahan laporan', en: 'Script translate' },
-    { id: 'Terjemahan dokumen', en: 'Document translate' },
-    { id: 'Penyuntingan laporan', en: 'Penyuntingan laporan' },
-    { id: 'Pembuatan subtitle video internal', en: 'Pembuatan subtitle video internal' },
-    { id: 'Transkripsi rapat direksi', en: 'Transkripsi rapat direksi' },
+    { id: 'Proofreading dokumen perusahaan', en: 'Script translate' },
+    { id: 'Terjemah dokumen perusahaan', en: 'Document translate' },
+    { id: 'Penyuntingan buku', en: 'Penyuntingan laporan' },
+    { id: 'Subtitle video dan film', en: 'Pembuatan subtitle video internal' },
+    { id: 'Transkripsi rekaman rapat', en: 'Transkripsi rapat direksi' },
     { id: '…dan masih banyak lagi, sesuaikan dengan kebutuhan bisnis anda!', en: '..and many more, ' },
-    { id: 'Terjemahan situs', en: 'Terjemahan situs' },
+    { id: 'Terjemah situs web', en: 'Terjemahan situs' },
   ];
 
   const SectionComp = (
