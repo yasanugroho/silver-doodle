@@ -31,14 +31,14 @@ const listProduk = [
       { name: 'Twitter', nameEn: 'Twitter', link: 'https://twitter.com/xerpihan' },
       { name: 'Facebook', nameEn: 'Facebook', link: 'https://facebook.com/xerpihan' },
       { name: 'Instagram', nameEn: 'Instagram', link: 'https://www.instagram.com/xerpihan' },
-      { name: 'Youtube', nameEn: 'Youtube', link: 'https://youtube.com/channel/UC_ypxl44BSYNHjXAs5-zuaQ' },
+      { name: 'YouTube', nameEn: 'YouTube', link: 'https://youtube.com/channel/UC_ypxl44BSYNHjXAs5-zuaQ' },
     ],
   },
   {
     name: 'Kontak',
     nameEn: 'Contact',
     list: [
-      { name: 'Whatsapp', nameEn: 'Whatsapp', link: 'https://wa.me/083119161413' },
+      { name: 'WhatsApp', nameEn: 'WhatsApp', link: 'https://wa.me/083119161413' },
       { name: 'Handphone', nameEn: 'Handphone', link: '/' },
     ],
   },
