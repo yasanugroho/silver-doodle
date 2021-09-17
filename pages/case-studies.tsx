@@ -63,7 +63,7 @@ export const Page: React.FC = () => {
           <p className="text-lg text-gray-500 font-light">
             {_(
               l,
-              'Kami percaya citra dan pelayanan adalah penghubung antara perusahaan dengan pelanggan mereka.',
+              'Berikut beberapa klien dan contoh portofolio yang pernah kami tangani terkait layanan jasa proofreading, terjemahan, subtitle, dan transkripsi.',
               ' Kami percaya citra dan pelayanan adalah penghubung antara perusahaan dengan pelanggan mereka.',
             )}
           </p>
