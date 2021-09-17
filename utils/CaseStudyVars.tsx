@@ -1,4 +1,4 @@
-import { cw, cwk, profile1, profile2, profile3 } from '../lib/images';
+import { cw, cwk, profile1, profile2, profile3, gizmologi, KoranTempo, bppt } from '../lib/images';
 
 export const caseStudy1 = [
   {
@@ -19,10 +19,8 @@ export const caseStudy1 = [
 
 export const caseStudy2 = [
   {
-    title:
-      'Mercury and Chromium Distribution in Soil Near Maros Karst Ecosystem',
-    titleEn:
-      'Mercury and Chromium Distribution in Soil Near Maros Karst Ecosystem',
+    title: 'Mercury and Chromium Distribution in Soil Near Maros Karst Ecosystem',
+    titleEn: 'Mercury and Chromium Distribution in Soil Near Maros Karst Ecosystem',
     subtitle: 'Carpathian Journal of Earth and Environmental Sciences',
     subtitleEn: 'Carpathian Journal of Earth and Environmental Sciences',
     link: 'http://www.cjees.ro/viewTopic.php?topicId=871',
@@ -109,7 +107,7 @@ export const komentar = [
 
 export const media = [
   {
-    logo: '',
+    logo: KoranTempo,
     url: 'https://koran.tempo.co/read/ekonomi-dan-bisnis/464758/rapi-tulisan-dengan-xerpihan',
     title:
       'Startup Xerpihan berdiri sejak September 2020 menyasar pasar jasa editing dan proofreading. Tim Xerpihan berupaya mengembangkan kecerdasan buatan',
@@ -119,7 +117,7 @@ export const media = [
     from: 'Jurnalis Koran Tempo',
   },
   {
-    logo: '',
+    logo: bppt,
     url: 'http://technology-indonesia.com/ict/startup-ai-xerpihan-solusi-penulisan-dan-transkripsi-bahasa-indonesia-dan-inggris/',
     title: 'Xerpihan fokus pada pemenuhan kebutuhan klien individu dan ke depannya akan mudah digunakan untuk publikz',
     titleEn:
@@ -128,7 +126,7 @@ export const media = [
     from: 'Jurnalis BPPT',
   },
   {
-    logo: '',
+    logo: gizmologi,
     url: 'https://gizmologi.id/news/startup/startup-xerpihan-transkripsi-bahasa/',
     title:
       'Ke depannya, Xerpihan berencana untuk kembangkan sebuah alat berupa audio-to-text dan aplikasi writing assistant untuk bahasa Indonesia dan Inggris. Dengan harapan dapat membantu kebutuhan tulis-menulis dan konten digital setiap harinya.',

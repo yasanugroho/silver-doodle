@@ -299,8 +299,8 @@ export const Page: React.FC = () => {
 
             {/* Details Order */}
             <div className="rounded-lg border shadow text-center p-10 space-y-10 content-between relative">
-              <div className="absolute -top-5 -right-14 hidden md:block">
-                <Image src={csOrder} alt="order" objectFit="contain" />
+              <div className="absolute -top-5 -right-16 hidden md:block">
+                <Image src={csOrder} alt="order" objectFit="contain" width={190} height={190} />
               </div>
               <div>
                 <h1>{_(l, 'Invoice', 'Invoice')}</h1>

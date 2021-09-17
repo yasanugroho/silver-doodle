@@ -11,14 +11,14 @@ import { xerpihanLogoWhite, xerpihanLogoBlack } from '../lib/images';
 
 const listMenu = [
   {
+    link: '/service',
+    id: 'Layanan',
+    en: 'Service',
+  },
+  {
     link: '/for-corporates',
     id: 'Untuk Korporat',
     en: 'For Corporates',
-  },
-  {
-    link: '/for-individuals',
-    id: 'Untuk Individual',
-    en: 'For Individuals',
   },
   {
     link: '/case-studies',
@@ -64,15 +64,15 @@ const Navigation: React.FC = () => {
   );
 
   const menu = (
-    <div className="mx-auto">
-      {listMenu.map(el => (
+    <div className="grid md:flex grid-cols-6 gap-3 md:gap-0">
+      {listMenu.map((el, index) => (
         <Link href={el.link} key={el.link}>
           <a
-            className={
+            className={`text-center whitespace-nowrap ${index === 0 || index === 1 ? 'col-span-3' : 'col-span-2'} ${
               router.pathname == el.link
-                ? 'active:text-xerpihan-primary-500 dark:text-white px-2 md:px-3 py-2'
-                : 'text-gray-900 dark:text-white px-2 md:px-3 py-2'
-            }>
+                ? 'active:text-xerpihan-primary-500 dark:text-white px-2 md:px-3 py-2 bg-xerpihan-primary-100 md:bg-white'
+                : 'text-gray-900 dark:text-white px-2 md:px-3 py-2 bg-gray-100 md:bg-white'
+            }`}>
             {_(l, el.id, el.en)}
           </a>
         </Link>
@@ -90,7 +90,7 @@ const Navigation: React.FC = () => {
           <ThemeSwitch />
         </div>
       </div>
-      <div className="md:hidden flex w-full pb-6 border-b-2">{menu}</div>
+      <div className="md:hidden w-full pb-6 border-b-2">{menu}</div>
     </nav>
   );
 };

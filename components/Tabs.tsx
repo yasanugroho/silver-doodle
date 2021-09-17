@@ -189,8 +189,8 @@ const Tabs: React.FC<TabsProps> = () => {
                 <div>
                   <p className="text-center py-4 md:px-10">{_(l, val.desc[0], val.desc[1])}</p>
                   <div
-                    className={`gap-8 pt-5 grid  justify-center w-full ${
-                      val.content.length === 2 ? 'md:grid-cols-2 px-20' : 'md:grid-cols-3'
+                    className={`gap-8 pt-5 grid justify-center w-full ${
+                      val.content.length === 2 ? 'md:grid-cols-2 md:px-20' : 'md:grid-cols-3'
                     }`}>
                     {val.content.map((content, index) => (
                       <div

@@ -18,12 +18,14 @@ import XerpihanServices from '/images/Xerpihan-1.svg';
 import xerpihanLogoWhite from '/images/xerpihan-logo-white.svg';
 import xerpihanLogoBlack from '/images/xerpihan-logo-black.svg';
 
-import cpImg from '/images/imgcp.png';
-import csCorp from '/images/csCorp.png';
-import csKasus from '/images/csKasus.png';
-import csPerson from '/images/csPersonal.png';
-import BrandLogo from '/images/Brand-Logo.png';
-import contactImg from '/images/imgContact.png';
+import cpImg from '/images/imgcp.svg';
+import csCorp from '/images/csCorp.svg';
+import csKasus from '/images/csKasus.svg';
+import csPerson from '/images/csPersonal.svg';
+import contactImg from '/images/imgContact.svg';
+import csAbout from '/images/csAbout.svg';
+import csOrder from '/images/csOrder.svg';
+import csOrderFooter from '/images/csOrderFooter.svg';
 
 import brandLogo from '/images/BrandLogo2.svg';
 import illustration from '/images/IllustrationCaseStudy.svg';
@@ -32,17 +34,29 @@ import profile2 from '/images/Profile2.png';
 import profile3 from '/images/Profile3.png';
 import profile4 from '/images/Profile4.png';
 import KoranTempo from '/images/KoranTempo.png';
-import csAbout from '/images/csAbout.png';
 import ezzat from '/images/ezzat.png';
 import yasa from '/images/yasa.png';
 import cw from '/images/profilecw.png';
 import cwk from '/images/profilecwk.png';
-import csOrder from '/images/csOrder.png';
-
 import pgdown from '/images/pgdown.svg';
 import Spinner from '/images/spinner.gif';
+import amarta from '/public/images/amartha-logos.webp';
+import adhi from '/public/images/adhi-logos.webp';
+import as from '/public/images/as.webp';
+import dapus from '/public/images/dapus.webp';
+import sh from '/public/images/sh.webp';
+import gizmologi from '/public/images/gimologi.png';
+import bppt from '/public/images/bppt.png';
 
 export {
+  csOrderFooter,
+  gizmologi,
+  bppt,
+  as,
+  sh,
+  dapus,
+  amarta,
+  adhi,
   Spinner,
   pgdown,
   csOrder,
@@ -65,7 +79,6 @@ export {
   ServicesIcon2,
   ServicesIcon1,
   csPerson,
-  BrandLogo,
   TeamIcon,
   checklist,
   csCorp,

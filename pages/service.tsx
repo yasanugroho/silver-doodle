@@ -34,7 +34,7 @@ export const Page: React.FC = () => {
                 {_(l, 'mudah dan terjangkau', 'easy and affordable')}
               </span>
             </h1>
-            <p className="md:text-2xl text-gray-500">
+            <p className="md:text-2xl text-gray-500 mb-4">
               {_(
                 l,
                 'Dibantu oleh Ahli Bahasa Profesional dengan Pendekatan Personal.',
@@ -59,7 +59,7 @@ export const Page: React.FC = () => {
               <h2 className="text-lg text-black dark:text-white">
                 {_(
                   l,
-                  'Xerpihan dapan membantu menyelesaikan kebutuhan bahasa personal Anda.',
+                  'Xerpihan dapat membantu menyelesaikan kebutuhan bahasa personal Anda.',
                   'Xerpihan can help you menyelesaikan kebutuhan bahasa personal Anda.',
                 )}
               </h2>

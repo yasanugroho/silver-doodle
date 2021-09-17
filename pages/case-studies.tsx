@@ -10,6 +10,7 @@ import { caseStudy1, caseStudy2, theysSaid, komentar, media } from '../utils/Cas
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LayoutPlain from '../components/LayoutPlain';
+import { listLogoClient } from '../utils/HomeVariables';
 
 export const Page: React.FC = () => {
   const router = useRouter();
@@ -162,9 +163,13 @@ export const Page: React.FC = () => {
           </Carousel>
         </div>
       </div>
-      <div className="grid grid-cols-2 max-w-5xl mx-auto py-10 px-4 md:px-0 ">
-        <Image src={brandLogo} alt=""></Image>
-        <Image src={brandLogo} alt=""></Image>
+
+      <div className="grid md:grid-cols-5 grid-cols-3 gap-4 md:mx-20 items-center">
+        {listLogoClient.map(el => (
+          <div key={el} className="h-24 w-20 flex items-center mx-auto">
+            <Image src={el} alt="Proofreading" />
+          </div>
+        ))}
       </div>
       <div className="max-w-3xl mx-auto text-center py-10 px-4 md:px-0">
         <h1 className="pb-16 text-4xl font-bold mb-0">{_(l, 'Apa Kata Mereka?', 'Apa Kata Mereka?')}</h1>
@@ -202,7 +207,7 @@ export const Page: React.FC = () => {
         <h1 className=" text-4xl font-bold my-8">{_(l, 'Diliput Berbagai Media', 'Diliput Berbagai Media')}</h1>
         {media.map(el => (
           <div className="grid md:grid-cols-4 py-4 px-10 space-x-8" key={el.name}>
-            <Image src={KoranTempo} alt="" objectFit="contain" />
+            <Image src={el.logo} alt="" objectFit="contain" />
             <div className="col-span-3 text-left">
               <a href={el.url} target="_blank" rel="noreferrer" className="text-black hover:text-gray-500">
                 <p className="text-base font-light">{_(l, el.title, el.titleEn)}</p>

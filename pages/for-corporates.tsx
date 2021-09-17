@@ -25,7 +25,10 @@ export const Page: React.FC = () => {
     { id: 'Subtitle video dan film', en: 'Pembuatan subtitle video internal' },
     { id: 'Transkripsi rekaman rapat', en: 'Recording meeting transcription' },
     { id: 'Terjemah situs web', en: 'Website translation' },
-    { id: '…dan masih banyak lagi, sesuaikan dengan kebutuhan bisnis Anda!', en: '... and many more, customize to your business needs!' },
+    {
+      id: '…dan masih banyak lagi, sesuaikan dengan kebutuhan bisnis Anda!',
+      en: '... and many more, customize to your business needs!',
+    },
   ];
 
   const SectionComp = (
@@ -95,8 +98,8 @@ export const Page: React.FC = () => {
               </L>
             </p>
           </div>
-          <div className="w-1/4  flex-row-reverse md:flex hidden">
-            <Image src={csCorp} alt="cs-img" objectFit="contain" className="mt-auto" />
+          <div className="w-1/4 md:ml-6 flex-row-reverse md:flex hidden">
+            <Image src={csCorp} alt="cs-img" objectFit="contain" />
           </div>
         </div>
       </div>
@@ -111,7 +114,7 @@ export const Page: React.FC = () => {
               <h2 className="text-lg text-black dark:text-white mb-4 text-center">
                 {_(
                   l,
-                  'Xerpihan dapan membantu menyelesaikan kebutuhan bahasa personal Anda.',
+                  'Xerpihan dapat membantu menyelesaikan kebutuhan bahasa personal Anda.',
                   'Xerpihan can help you menyelesaikan kebutuhan bahasa personal Anda.',
                 )}
               </h2>
@@ -133,7 +136,7 @@ export const Page: React.FC = () => {
                 {_(l, 'Konsultasikan kebutuhan bisnis Anda, gratis!', 'Konsultasikan kebutuhan bisnis Anda, gratis!')}
               </h2>
               <div className="justify-center block md:flex font-semibold space-x-3">
-                <a href="https://wa.me/083119161413" target="_blank" rel="noreferrer">
+                <a href="https://wa.me/+6283119161413" target="_blank" rel="noreferrer">
                   <div className=" xerp-b-button items-center p-2 px-4 md:0">
                     <p>
                       {_(l, 'WhatsApp ke ', 'WhatsApp to ')}

@@ -1,4 +1,19 @@
-import { proofreading, translation, subtitle, transcription, spoon, bps, cirebon, procon, herba } from '../lib/images';
+import {
+  proofreading,
+  translation,
+  subtitle,
+  transcription,
+  spoon,
+  bps,
+  cirebon,
+  procon,
+  herba,
+  as,
+  sh,
+  dapus,
+  amarta,
+  adhi,
+} from '../lib/images';
 
 export const listFitur = [
   {
@@ -20,6 +35,8 @@ export const listFitur = [
 ];
 
 export const listLogoTim = [herba, bps, cirebon, procon, spoon];
+
+export const listLogoClient = [adhi, bps, amarta, procon, sh, spoon, as, dapus, cirebon, herba];
 
 export const dataSection = [
   {

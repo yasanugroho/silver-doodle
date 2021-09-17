@@ -11,7 +11,7 @@ const listProduk = [
     nameEn: 'Product',
     list: [
       { name: 'Untuk Korporat', nameEn: 'For Corporates', link: '/for-corporates' },
-      { name: 'Untuk Individual', nameEn: 'For Individuals', link: '/for-individuals' },
+      { name: 'Untuk Individual', nameEn: 'For Individuals', link: '/service' },
       { name: 'Studi Kasus', nameEn: 'Case Study', link: '/case-studies' },
     ],
   },
@@ -21,7 +21,8 @@ const listProduk = [
     list: [
       { name: 'Blog', nameEn: 'Blog', link: '/blog' },
       { name: 'Tentang', nameEn: 'About', link: '/about' },
-      { name: 'Ketentuan Layanan', nameEn: 'Ketentuan Layanan', link: null },
+      { name: 'Ketentuan Layanan', nameEn: 'Ketentuan Layanan', link: '/term-of-services' },
+      { name: 'Kebijakan Privasi', nameEn: 'Kebijakan Privasi', link: '/privacy-policy' },
     ],
   },
   {
@@ -76,7 +77,7 @@ export default function Footer() {
             </L>
           </div>
           <div className="md:flex md:space-x-4 items-center text-sm">
-            <a href="https://wa.me/083119161413" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/+6283119161413" target="_blank" rel="noreferrer">
               <div className="border-white border rounded-lg text-white p-4 md:mb-0 mb-4 font-semibold">
                 <L>
                   <p>WhatsApp ke +62 831 1916 1413</p>
@@ -95,7 +96,7 @@ export default function Footer() {
           </div>
 
           <div className="md:block hidden absolute -bottom-6 right-20">
-            <Image src={cpImg} alt="cp" />
+            <Image src={cpImg} alt="cp" width={190} height={220} />
           </div>
         </div>
         <div className="bg-xerpihan-hero-gradient-end dark:bg-gray-800 my-10">
