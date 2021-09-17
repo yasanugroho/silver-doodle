@@ -132,7 +132,7 @@ const tab: TabsContent[] = [
   {
     label: 'Transcription',
     desc: [
-      'Jasa transkripsi yang mengubah rekaman suara menjadi teks dengan hasil instan atau manual sesuai permintaan. Tersedia dalam bahasa Indonesia dan Bahasa Inggris.',
+      'Jasa transkripsi yang mengubah rekaman suara menjadi teks dengan hasil instan atau manual sesuai permintaan. Tersedia dalam bahasa Indonesia dan bahasa Inggris.',
       'Speech-to-text or transcription service for Indonesian and/or English with instant result or custom request as you wish',
     ],
     content: [
