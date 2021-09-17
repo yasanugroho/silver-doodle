@@ -13,6 +13,7 @@ const emailTemplate = (
   tempDelivery,
   tempAddInfo,
 ) => {
+  // TODO: remove this part
   const selectionData = [
     {
       name: 'Proofread English',
