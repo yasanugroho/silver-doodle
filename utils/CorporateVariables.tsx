@@ -53,7 +53,7 @@ export const dataSection = [
 
 export const listBudaya = [
   {
-    titleId: 'Komunikasi Yang Intensif',
+    titleId: 'Komunikasi yang Intensif',
     titleEn: 'Intensive Communication',
     subTitleId: 'Layanan berbasis komunikasi, online meeting yang fleksibel dan perhatian penuh dari kami.',
     subTitleEn: 'Communication-based services, flexible online meeting and full attention from us.',
