@@ -111,7 +111,7 @@ export const Page: React.FC = () => {
               <h2 className="text-lg text-black dark:text-white mb-4 text-center">
                 {_(
                   l,
-                  'Xerpihan dapan membantu menyelesaikan kebutuhan bahasa personal Anda.',
+                  'Xerpihan dapat membantu menyelesaikan kebutuhan bahasa personal Anda.',
                   'Xerpihan can help you menyelesaikan kebutuhan bahasa personal Anda.',
                 )}
               </h2>
