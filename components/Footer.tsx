@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { cpImg } from '../lib/images';
+import { cpImg, csOrderFooter } from '../lib/images';
 // component
 import { L } from '../lib/i18n';
 
@@ -46,6 +47,7 @@ const listProduk = [
 ];
 
 export default function Footer() {
+  const router = useRouter();
   return (
     <footer
       className="bg-gradient-to-t relative
@@ -56,47 +58,89 @@ export default function Footer() {
         <div className="flex-1 bg-xerpihan-hero-gradient-end dark:bg-gray-800"></div>
       </div>
       {/* Box */}
-      <div className="max-w-5xl px-8 py-4 mx-auto relative ">
-        <div className="border-2 text-lg rounded-lg border-[#7fd5df] p-10 bg-[#05acc2] dark:bg-black relative overflow-hidden">
-          <div className="mb-4 text-white space-y-4">
-            <div className="text-2xl md:text-3xl">
+      <div className="max-w-5xl px-8 py-4 mx-auto relative  ">
+        <div
+          className={`border-2 text-lg rounded-lg p-10 dark:bg-black relative overflow-hidden  ${
+            router.pathname === '/order'
+              ? 'bg-white flex flex-row-reverse border-gray-300'
+              : 'bg-[#05acc2] text-white border-[#7fd5df]'
+          }`}>
+          <div>
+            <div className="mb-4 space-y-4">
+              <div className="text-2xl md:text-3xl">
+                <L>
+                  <p>
+                    {router.pathname === '/order'
+                      ? 'Bingung mengisi formulir di atas?'
+                      : 'Konsultasikan kebutuhan Anda, gratis!'}
+                  </p>
+                  <p>
+                    {router.pathname === '/order'
+                      ? 'Bingung mengisi formulir di atas?'
+                      : 'Konsultasikan kebutuhan Anda, gratis!'}
+                  </p>
+                </L>
+              </div>
               <L>
-                <p>Konsultasikan kebutuhan Anda, gratis!</p>
-                <p>Konsultasikan kebutuhan Anda, gratis!</p>
+                {router.pathname === '/order' ? (
+                  <p>
+                    Konsultasikan kebutuhan anda dengan admin kami. Akan kami berikan <br />
+                    layanan yang paling pas untuk anda!
+                  </p>
+                ) : (
+                  <p>
+                    Tim Xerpihan akan membantu menemukan solusi untuk segala kebutuhan
+                    <br /> layanan bahasa Anda.
+                  </p>
+                )}
+                {router.pathname === '/order' ? (
+                  <p>
+                    Konsultasikan kebutuhan anda dengan admin kami. Akan kami berikan <br />
+                    layanan yang paling pas untuk anda!
+                  </p>
+                ) : (
+                  <p>
+                    Tim Xerpihan akan membantu menemukan solusi untuk segala kebutuhan
+                    <br /> layanan bahasa Anda.
+                  </p>
+                )}
               </L>
+            </div>{' '}
+            <div className="md:flex md:space-x-4 items-center text-sm">
+              <a href="https://wa.me/+6283119161413" target="_blank" rel="noreferrer">
+                <div
+                  className={` border rounded-lg  ${
+                    router.pathname === '/order'
+                      ? 'text-xerpihan-primary-500 border-xerpihan-primary-500'
+                      : 'border-white text-white'
+                  } p-4 md:mb-0 mb-4 font-semibold`}>
+                  <L>
+                    <p>WhatsApp ke +62 831 1916 1413</p>
+                    <p> WhatsApp to +62 831 1916 1413</p>
+                  </L>
+                </div>
+              </a>
+              <a href="mailto:layanan@xerpihan.id" target="_blank" rel="noreferrer">
+                <div
+                  className={` border rounded-lg  ${
+                    router.pathname === '/order'
+                      ? 'text-xerpihan-primary-500 border-xerpihan-primary-500'
+                      : 'border-white text-white'
+                  } p-4 md:mb-0 mb-4 font-semibold`}>
+                  <L>
+                    <p>E-mail ke layanan@xerpihan.id</p>
+                    <p> E-mail to layanan@xerpihan.id</p>
+                  </L>
+                </div>
+              </a>
             </div>
-            <L>
-              <p>
-                Tim Xerpihan akan membantu menemukan solusi untuk segala kebutuhan
-                <br /> layanan bahasa Anda.
-              </p>
-              <p>
-                Tim Xerpihan akan membantu menemukan solusi untuk segala kebutuhan
-                <br /> layanan bahasa Anda.
-              </p>
-            </L>
-          </div>
-          <div className="md:flex md:space-x-4 items-center text-sm">
-            <a href="https://wa.me/+6283119161413" target="_blank" rel="noreferrer">
-              <div className="border-white border rounded-lg text-white p-4 md:mb-0 mb-4 font-semibold">
-                <L>
-                  <p>WhatsApp ke +62 831 1916 1413</p>
-                  <p> WhatsApp to +62 831 1916 1413</p>
-                </L>
-              </div>
-            </a>
-            <a href="mailto:layanan@xerpihan.id" target="_blank" rel="noreferrer">
-              <div className="border-white border rounded-lg text-white p-4 font-semibold">
-                <L>
-                  <p>E-mail ke layanan@xerpihan.id</p>
-                  <p> E-mail to layanan@xerpihan.id</p>
-                </L>
-              </div>
-            </a>
           </div>
 
-          <div className="md:block hidden absolute -bottom-6 right-20">
-            <Image src={cpImg} alt="cp" width={190} height={220} />
+          <div
+            className={`${
+              router.pathname === '/order' ? 'left-20' : ' right-20'
+            } -bottom-6 lg:block hidden lg:absolute `}>
+            <Image src={router.pathname === '/order' ? csOrderFooter : cpImg} alt="cp" width={190} height={220} />
           </div>
         </div>
         <div className="bg-xerpihan-hero-gradient-end dark:bg-gray-800 my-10">
