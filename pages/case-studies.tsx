@@ -64,7 +64,7 @@ export const Page: React.FC = () => {
             {_(
               l,
               'Berikut beberapa klien dan contoh portofolio yang pernah kami tangani terkait layanan jasa proofreading, terjemahan, subtitle, dan transkripsi.',
-              ' Kami percaya citra dan pelayanan adalah penghubung antara perusahaan dengan pelanggan mereka.',
+              ' Berikut beberapa klien dan contoh portofolio yang pernah kami tangani terkait layanan jasa proofreading, terjemahan, subtitle, dan transkripsi.',
             )}
           </p>
           <Image className="mt-6" src={illustration} alt="" height="336" width="360" />
