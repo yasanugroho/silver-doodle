@@ -63,7 +63,7 @@ const tab: TabsContent[] = [
           'Wordy',
           'Conjunction',
           'Hard to read sentence',
-          'Ambigous term',
+          'Ambiguous term',
           'Fragment and run on sentence',
           'Incoherent paragraph',
           'Literal translation',
