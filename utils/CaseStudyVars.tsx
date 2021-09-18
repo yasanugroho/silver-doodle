@@ -88,7 +88,7 @@ export const theysSaid = [
     title: 'Good job!',
     titleEn: 'Good job!',
     name: 'Ahmad Shidqi',
-    positon: 'PT CIrebon Power Services',
+    positon: 'PT Cirebon Power Services',
   },
 ];
 
