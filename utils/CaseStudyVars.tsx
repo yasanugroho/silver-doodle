@@ -34,6 +34,40 @@ export const caseStudy2 = [
   },
 ];
 
+export const caseStudy3 = [
+  {
+    title: 'A Numerical Study of The Outflow of Makassar Strait Using Regional Ocean Modelling System (ROMS)',
+    titleEn: 'A Numerical Study of The Outflow of Makassar Strait Using Regional Ocean Modelling System (ROMS)',
+    subtitle: 'IOP Conference Series: Earth and Environmental Science',
+    subtitleEn: 'IOP Conference Series: Earth and Environmental Science',
+    link: 'https://iopscience.iop.org/article/10.1088/1755-1315/618/1/012012',
+  },
+  {
+    title: 'GUE BUAT SHADES CUSHION BUAT LU!! Somethinc x Lifni Sanders Copy Paste Cushion 4 NEW SHADES!',
+    titleEn: 'GUE BUAT SHADES CUSHION BUAT LU!! Somethinc x Lifni Sanders Copy Paste Cushion 4 NEW SHADES!',
+    subtitle: 'Lifni Sanders YouTube Channel',
+    subtitleEn: 'Lifni Sanders YouTube Channel',
+    link: 'https://www.youtube.com/watch?v=1An3sZc7KKk',
+  },
+];
+
+export const caseStudy4 = [
+  {
+    title: 'Motivations and Challenges of Women Entrepreneurs: The Indonesian Mumpreneur Perspective',
+    titleEn: 'Motivations and Challenges of Women Entrepreneurs: The Indonesian Mumpreneur Perspective',
+    subtitle: 'European Journal of Molecular & Clinical Medicine',
+    subtitleEn: 'European Journal of Molecular & Clinical Medicine',
+    link: 'https://ejmcm.com/article_5624.html',
+  },
+  {
+    title: 'CERITA DAPET BEASISWA CRYPTO (My Crypto Journey)',
+    titleEn: 'CERITA DAPET BEASISWA CRYPTO (My Crypto Journey)',
+    subtitle: 'Parama Suteja YouTube Channel',
+    subtitleEn: 'Parama Suteja YouTube Channel',
+    link: 'https://www.youtube.com/watch?v=EC8ywuha83w',
+  },
+];
+
 export const theysSaid = [
   {
     img: profile3,
