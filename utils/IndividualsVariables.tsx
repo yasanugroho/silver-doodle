@@ -3,8 +3,8 @@ import { ServicesIcon4, ServicesIcon3, ServicesIcon2, ServicesIcon1 } from '../l
 export const listLayanan = [
   {
     img: ServicesIcon1,
-    titleId: 'Lebih dari 1.000 klien mempercayai Xerpihan',
-    titleEn: 'Over than 1.000 clients trust Xerpihan',
+    titleId: 'Lebih dari 1.000 Klien Mempercayai Xerpihan',
+    titleEn: 'Over Than 1.000 Clients Trust Xerpihan',
     subTitleId:
       'Jasa proofreading, translate, subtitle dan transkripsi kami telah membantu banyak pihak mulai dari institusi pemerintah, perusahaan swasta, hingga YouTuber.',
     subTitleEn:
