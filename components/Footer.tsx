@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { cpImg, csOrderFooter } from '../lib/images';
+import db from '../firebase/clientApp';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+
 // component
 import { L } from '../lib/i18n';
 
@@ -48,6 +51,20 @@ const listProduk = [
 
 export default function Footer() {
   const router = useRouter();
+  const [email, setEmail] = useState('');
+
+  const subs = useCallback(async () => {
+    try {
+      const docRef = await addDoc(collection(db, 'email-subscription'), {
+        email: email,
+        timestamp: serverTimestamp(),
+      });
+      alert('subscribe success');
+      console.log('Success : ', docRef.id);
+    } catch (e) {
+      console.error('Error adding Order: ', e);
+    }
+  }, [email]);
   return (
     <footer
       className="bg-gradient-to-t relative
@@ -157,8 +174,20 @@ export default function Footer() {
             </div>
             <div className="space-y-4 md:w-1/2">
               <div className="border flex">
-                <input type="email" placeholder="Alamat email kamu" className="w-full focus:outline-none px-4 py-3" />
-                <button className="px-4 py-3 text-white bg-red-200 dark:bg-red-500">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={e => {
+                    setEmail(e.target.value);
+                  }}
+                  placeholder="Alamat email kamu"
+                  className="w-full focus:outline-none px-4 py-3"
+                />
+                <button
+                  className="px-4 py-3 text-white bg-red-200 dark:bg-red-500"
+                  onClick={() => {
+                    subs();
+                  }}>
                   <p>
                     <L>
                       {'Langganan'}
@@ -168,7 +197,7 @@ export default function Footer() {
                 </button>
               </div>
               <div className="flex items-center space-x-4 text-[#838383] text-xs">
-                <input type="checkbox" />
+                <input type="checkbox" required />
                 <p>
                   <L>
                     {'Saya setuju untuk mendapatkan email marketing dari Xerpihan.'}
@@ -227,4 +256,7 @@ export default function Footer() {
       </div>
     </footer>
   );
+}
+function async(): any {
+  throw new Error('Function not implemented.');
 }

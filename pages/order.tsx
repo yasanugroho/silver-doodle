@@ -5,7 +5,7 @@ import { csOrder, Spinner } from '../lib/images';
 import { useRouter } from 'next/router';
 import db from '../firebase/clientApp';
 import React, { useState, useEffect, useCallback } from 'react';
-import { collection, getDocs, addDoc, serverTimestamp, documentId } from 'firebase/firestore';
+import { collection, addDoc, serverTimestamp, documentId } from 'firebase/firestore';
 import axios from 'axios';
 
 //component
@@ -25,6 +25,8 @@ type dataProps = {
 export const Page: React.FC = () => {
   const router = useRouter();
   const { locale: l } = router;
+
+  // console.log(documentId());
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -80,45 +82,25 @@ export const Page: React.FC = () => {
 
   const sendEmail = useCallback(async () => {
     let deliveryEst = `${Math.ceil(parseInt(panjang) / (panjang && selectionData[service].delivery)) || ''}`;
-    // try {
-    //   const res = await fetch('https://xerpihan-site.vercel.app/api/sendemail', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify({
-    //       name,
-    //       email,
-    //       service,
-    //       paket,
-    //       panjang,
-    //       totalPrice: totalPriceText(),
-    //       dueDate: showDate(new Date()),
-    //       orderId: (new Date().getTime() % 100000) + 100000,
-    //       deliveryEst,
-    //       addInfo: info,
-    //     }),
-    //   });
-    //   const resData = await res.json();
-    //   console.log(resData);
-    //   if (resData?.data?.status === '200') {
-    //     console.log('success');
-    //   }
-    // } catch (e) {
-    //   console.error('Error Send Email: ', e);
-    // }
+    let pnj = panjang + ' ' + selectionData[service]?.unit;
     axios
       .post('/api/sendemail', {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name,
           email,
-          service,
-          packages: paket,
-          length,
+          service: selectionData[service]?.name,
+          packages: selectionData[service]?.packages[paket]?.package,
+          length: pnj,
           totalPrice: totalPriceText(),
-          // dueDate: showDate(new Date()),
+          dueDate: showDate(new Date()),
           orderId: (new Date().getTime() % 100000) + 100000,
           deliveryEst,
           addInfo: info,
+          orderDate: serverTimestamp(),
+          topic: topicMultiplier[topik].topic,
+          certif: isNeedCertif ? 'Ya' : 'Tidak',
+          nda: isNeedNDA ? 'Ya' : 'Tidak',
         }),
       })
       .then(function (response) {
@@ -128,29 +110,30 @@ export const Page: React.FC = () => {
       .catch(function (error) {
         console.log(error);
       });
-  }, [email, info, name, paket, panjang, service, totalPriceText]);
+  }, [email, info, name, paket, panjang, service, topik, totalPriceText]);
 
   const handleSubmit = useCallback(
     async e => {
       e.preventDefault();
       try {
         setShowModal(true);
+        let pnj = panjang + ' ' + selectionData[service]?.unit;
         const docRef = await addDoc(collection(db, 'new-order-db'), {
           'user-name': name,
           'user-email': email,
           'user-phone': phone,
-          'service-type': service,
-          'service-package': paket,
-          'order-length': panjang,
+          'service-type': selectionData[service]?.name,
+          'service-package': selectionData[service]?.packages[paket]?.package,
+          'order-length': pnj,
           need_certif: isNeedCertif,
           need_nda: isNeedNDA,
           topic: topicMultiplier[topik].topic,
           'order-additional-info': info,
-          'order-id': documentId(), // TODO: double check
+          'order-id': (new Date().getTime() % 100000) + 100000,
           'order-payment-completion': 0,
           'order-status': 0,
           'order-total-price': totalPrice,
-          'order-date': serverTimestamp(), // TODO: double check
+          'order-date': serverTimestamp(),
         });
         console.log('order Success with ID: ', docRef.id);
         setIsSuccess(true);

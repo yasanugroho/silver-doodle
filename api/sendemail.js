@@ -12,90 +12,11 @@ const emailTemplate = (
   tempOrderId,
   tempDelivery,
   tempAddInfo,
+  tempOrderDate,
+  tempTopic,
+  tempCertif,
+  tempNda,
 ) => {
-  // TODO: remove this part
-  const selectionData = [
-    {
-      name: 'Proofread English',
-      unit: 'words',
-      packages: [
-        {
-          package: 'Proofreading',
-        },
-        {
-          package: 'Premium Editing',
-        },
-        {
-          package: 'Copy Editing',
-        },
-      ],
-    },
-    {
-      name: 'Proofread Bahasa Indonesia',
-      unit: 'words',
-      packages: [
-        {
-          package: 'Proofreading',
-        },
-        {
-          package: 'Premium Editing',
-        },
-        {
-          package: 'Copy Editing',
-        },
-      ],
-    },
-    {
-      name: 'Proofread Paraphrase',
-      unit: 'words',
-      packages: [
-        {
-          package: 'Standard',
-        },
-      ],
-    },
-    {
-      name: 'Translation',
-      unit: 'words',
-      packages: [
-        {
-          package: 'Standard',
-        },
-        {
-          package: 'Premium',
-        },
-        {
-          package: 'Back Translation',
-        },
-      ],
-    },
-    {
-      name: 'Subtitle',
-      unit: 'minutes',
-      packages: [
-        {
-          package: 'Standard',
-        },
-        {
-          package: 'Premium',
-        },
-      ],
-    },
-
-    {
-      name: 'Transcription',
-      unit: 'minutes',
-      packages: [
-        {
-          package: 'Standard',
-        },
-        {
-          package: 'Premium',
-        },
-      ],
-    },
-  ];
-
   return `
 <html>
   <head>
@@ -218,16 +139,24 @@ const emailTemplate = (
                             <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${tempOrderId}</td>
                           </tr>
                           <tr style="background-color: #e3f2fd;">
+                          <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">Tanggal Order</td>
+                          <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${tempOrderDate}</td>
+                        </tr>
+                          <tr style="background-color: #e3f2fd;">
                             <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">Servis</td>
-                            <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${selectionData[tempService].name}</td>
+                            <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${tempService}</td>
                           </tr>
                           <tr style="border: 2px solid #e3f2fd;">
                             <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">Paket</td>
-                            <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${selectionData[tempService].packages[tempPackage].package}</td>
+                            <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${tempPackage}</td>
+                          </tr>
+                          <tr style="background-color: #e3f2fd;">
+                          <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">Topik</td>
+                          <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${tempTopic}</td>
                           </tr>
                           <tr style="background-color: #e3f2fd;">
                             <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">Kuantitas</td>
-                            <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${tempLength} ${selectionData[tempService].unit}</td>
+                            <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${tempLength}</td>
                           </tr>
                           <tr style="border: 2px solid #e3f2fd;">
                             <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 30px; padding: 8px;">Estimasi pengerjaan</td>
@@ -237,6 +166,14 @@ const emailTemplate = (
                             <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">Info Tambahan</td>
                             <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${tempAddInfo}</td>
                           </tr>
+                      <tr style="background-color: #e3f2fd;">
+                      <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">Need Proofread certificate</td>
+                      <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${tempCertif}</td>
+                    </tr>
+                    <tr style="background-color: #e3f2fd;">
+                    <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">Need non-disclosure agreement</td>
+                    <td style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; padding: 8px;">${tempNda}</td>
+                  </tr>
                           <tr style="border: 2px solid #e3f2fd;">
                             <td style="font-family: sans-serif; font-size: 14px; font-weight: bold; margin: 0; Margin-bottom: 30px; padding: 8px;">Total Harga</td>
                             <td style="font-family: sans-serif; font-size: 14px; font-weight: bold; margin: 0; Margin-bottom: 30px; padding: 8px;">Rp ${tempTotalPrice}</td>
@@ -302,13 +239,24 @@ const emailTemplate = (
 `;
 };
 
-// console.log(emailTemplate(name, service, packages, dueDate, totalPrice, length))
-
 module.exports = (req, res) => {
   const reqs = JSON.parse(req.body.body);
-
-  const { name, email, service, packages, length, totalPrice, orderId, deliveryEst, addInfo } = reqs;
-  const dueDate = new Date(); // TODO: fix this place
+  const {
+    name,
+    email,
+    service,
+    packages,
+    dueDate,
+    length,
+    totalPrice,
+    orderId,
+    deliveryEst,
+    addInfo,
+    orderDate,
+    topic,
+    certif,
+    nda,
+  } = reqs;
 
   const msg = {
     to: email,
@@ -316,7 +264,21 @@ module.exports = (req, res) => {
     from: 'admin@xerpihan.id',
     subject: `Xerpihan - Invoice - ${name}`,
     text: 'xerpihan',
-    html: emailTemplate(name, service, packages, dueDate, totalPrice, length, orderId, deliveryEst, addInfo),
+    html: emailTemplate(
+      name,
+      service,
+      packages,
+      dueDate,
+      totalPrice,
+      length,
+      orderId,
+      deliveryEst,
+      addInfo,
+      orderDate,
+      topic,
+      certif,
+      nda,
+    ),
   };
 
   res.statusCode = 200;
@@ -330,3 +292,86 @@ module.exports = (req, res) => {
       console.log(error);
     });
 };
+
+// TODO: remove this part
+// const selectionData = [
+//   {
+//     name: 'Proofread English',
+//     unit: 'words',
+//     packages: [
+//       {
+//         package: 'Proofreading',
+//       },
+//       {
+//         package: 'Premium Editing',
+//       },
+//       {
+//         package: 'Copy Editing',
+//       },
+//     ],
+//   },
+//   {
+//     name: 'Proofread Bahasa Indonesia',
+//     unit: 'words',
+//     packages: [
+//       {
+//         package: 'Proofreading',
+//       },
+//       {
+//         package: 'Premium Editing',
+//       },
+//       {
+//         package: 'Copy Editing',
+//       },
+//     ],
+//   },
+//   {
+//     name: 'Proofread Paraphrase',
+//     unit: 'words',
+//     packages: [
+//       {
+//         package: 'Standard',
+//       },
+//     ],
+//   },
+//   {
+//     name: 'Translation',
+//     unit: 'words',
+//     packages: [
+//       {
+//         package: 'Standard',
+//       },
+//       {
+//         package: 'Premium',
+//       },
+//       {
+//         package: 'Back Translation',
+//       },
+//     ],
+//   },
+//   {
+//     name: 'Subtitle',
+//     unit: 'minutes',
+//     packages: [
+//       {
+//         package: 'Standard',
+//       },
+//       {
+//         package: 'Premium',
+//       },
+//     ],
+//   },
+
+//   {
+//     name: 'Transcription',
+//     unit: 'minutes',
+//     packages: [
+//       {
+//         package: 'Standard',
+//       },
+//       {
+//         package: 'Premium',
+//       },
+//     ],
+//   },
+// ];
