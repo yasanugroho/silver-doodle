@@ -15,7 +15,7 @@ const listProduk = [
     nameEn: 'Product',
     list: [
       { name: 'Untuk Korporat', nameEn: 'For Corporates', link: '/for-corporates' },
-      { name: 'Untuk Individual', nameEn: 'For Individuals', link: '/service' },
+      { name: 'Layanan', nameEn: 'Service', link: '/service' },
       { name: 'Studi Kasus', nameEn: 'Case Study', link: '/case-studies' },
     ],
   },
