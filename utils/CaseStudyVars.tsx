@@ -34,6 +34,40 @@ export const caseStudy2 = [
   },
 ];
 
+export const caseStudy3 = [
+  {
+    title: 'A Numerical Study of The Outflow of Makassar Strait Using Regional Ocean Modelling System (ROMS)',
+    titleEn: 'A Numerical Study of The Outflow of Makassar Strait Using Regional Ocean Modelling System (ROMS)',
+    subtitle: 'IOP Conference Series: Earth and Environmental Science',
+    subtitleEn: 'IOP Conference Series: Earth and Environmental Science',
+    link: 'https://iopscience.iop.org/article/10.1088/1755-1315/618/1/012012',
+  },
+  {
+    title: 'GUE BUAT SHADES CUSHION BUAT LU!! Somethinc x Lifni Sanders Copy Paste Cushion 4 NEW SHADES!',
+    titleEn: 'GUE BUAT SHADES CUSHION BUAT LU!! Somethinc x Lifni Sanders Copy Paste Cushion 4 NEW SHADES!',
+    subtitle: 'Lifni Sanders YouTube Channel',
+    subtitleEn: 'Lifni Sanders YouTube Channel',
+    link: 'https://www.youtube.com/watch?v=1An3sZc7KKk',
+  },
+];
+
+export const caseStudy4 = [
+  {
+    title: 'Motivations and Challenges of Women Entrepreneurs: The Indonesian Mumpreneur Perspective',
+    titleEn: 'Motivations and Challenges of Women Entrepreneurs: The Indonesian Mumpreneur Perspective',
+    subtitle: 'European Journal of Molecular & Clinical Medicine',
+    subtitleEn: 'European Journal of Molecular & Clinical Medicine',
+    link: 'https://ejmcm.com/article_5624.html',
+  },
+  {
+    title: 'CERITA DAPET BEASISWA CRYPTO (My Crypto Journey)',
+    titleEn: 'CERITA DAPET BEASISWA CRYPTO (My Crypto Journey)',
+    subtitle: 'Parama Suteja YouTube Channel',
+    subtitleEn: 'Parama Suteja YouTube Channel',
+    link: 'https://www.youtube.com/watch?v=EC8ywuha83w',
+  },
+];
+
 export const theysSaid = [
   {
     img: profile3,
@@ -44,62 +78,62 @@ export const theysSaid = [
   },
   {
     img: profile2,
-    title: 'Sangat ramah dan profesional dalam membantu dokumen saya',
-    titleEn: 'Sangat ramah dan profesional dalam membantu dokumen saya',
+    title: 'Sangat ramah dan profesional dalam membantu dokumen saya.',
+    titleEn: 'Sangat ramah dan profesional dalam membantu dokumen saya.',
     name: 'Felix Sharief',
     positon: 'SYSTEMIQ Consulting',
   },
   {
     img: profile1,
-    title: 'Good Job',
-    titleEn: 'Good Job',
+    title: 'Good job!',
+    titleEn: 'Good job!',
     name: 'Ahmad Shidqi',
-    positon: 'PT CIrebon Power Services',
+    positon: 'PT Cirebon Power Services',
   },
 ];
 
 export const komentar = [
   {
     img: cwk,
-    title: 'Pengerjaan cepat dan sesuai deadline yang diberikan',
-    titleEn: 'Pengerjaan cepat dan sesuai deadline yang diberikan',
+    title: 'Pengerjaan cepat dan sesuai deadline yang diberikan.',
+    titleEn: 'Pengerjaan cepat dan sesuai deadline yang diberikan.',
     name: 'Brian Bramanto',
     from: 'Norwegian University of Life Science',
   },
   {
     img: cw,
-    title: 'Pekerjaan baik dan teliti, respon cepat, harga terjangkau',
-    titleEn: 'Pekerjaan baik dan teliti, respon cepat, harga terjangkau',
+    title: 'Pekerjaan baik dan teliti, respon cepat, harga terjangkau.',
+    titleEn: 'Pekerjaan baik dan teliti, respon cepat, harga terjangkau.',
     name: 'Farina',
     from: 'University of Birmingham',
   },
   {
     img: cwk,
     title:
-      'Respon dari beliau sangat cepat, selain itu pekerjaan dapat diselesaikan hanya dalam 1 hari. Hasil dari pekerjaan juga sangat memuaskan. Sangat direkomendasikan',
+      'Respon dari beliau sangat cepat, selain itu pekerjaan dapat diselesaikan hanya dalam 1 hari. Hasil dari pekerjaan juga sangat memuaskan. Sangat direkomendasikan.',
     titleEn:
-      'Respon dari beliau sangat cepat, selain itu pekerjaan dapat diselesaikan hanya dalam 1 hari. Hasil dari pekerjaan juga sangat memuaskan. Sangat direkomendasikan',
+      'Respon dari beliau sangat cepat, selain itu pekerjaan dapat diselesaikan hanya dalam 1 hari. Hasil dari pekerjaan juga sangat memuaskan. Sangat direkomendasikan.',
     name: 'Dio Triyoga',
     from: 'Vrije Universiteit Brussel',
   },
   {
     img: cw,
-    title: 'Fast respond banget dan tepat waktu',
-    titleEn: 'Fast respond banget dan tepat waktu',
+    title: 'Fast respond banget dan tepat waktu.',
+    titleEn: 'Fast respond banget dan tepat waktu.',
     name: 'Lafiona Grezelda',
     from: 'Universitas Gadjah Mada',
   },
   {
     img: cwk,
-    title: 'Respon dan pengerjaan projeknya cepat dan memuaskan',
-    titleEn: 'Respon dan pengerjaan projeknya cepat dan memuaskan',
+    title: 'Respon dan pengerjaan projeknya cepat dan memuaskan.',
+    titleEn: 'Respon dan pengerjaan projeknya cepat dan memuaskan.',
     name: 'Dede Mahmuda',
     from: 'Universitas Indonesia',
   },
   {
     img: cwk,
-    title: 'Proofreader terbaik yang pernah saya temui selama saya bekerja secara profesional',
-    titleEn: 'Proofreader terbaik yang pernah saya temui selama saya bekerja secara profesional',
+    title: 'Proofreader terbaik yang pernah saya temui selama saya bekerja secara profesional.',
+    titleEn: 'Proofreader terbaik yang pernah saya temui selama saya bekerja secara profesional.',
     name: 'Adam Maulana Sidik',
     from: 'Institut Teknologi Bandung',
   },
@@ -110,18 +144,18 @@ export const media = [
     logo: KoranTempo,
     url: 'https://koran.tempo.co/read/ekonomi-dan-bisnis/464758/rapi-tulisan-dengan-xerpihan',
     title:
-      'Startup Xerpihan berdiri sejak September 2020 menyasar pasar jasa editing dan proofreading. Tim Xerpihan berupaya mengembangkan kecerdasan buatan',
+      'Startup Xerpihan berdiri sejak September 2020 menyasar pasar jasa editing dan proofreading. Tim Xerpihan berupaya mengembangkan kecerdasan buatan.',
     titleEn:
-      'Startup Xerpihan berdiri sejak September 2020 menyasar pasar jasa editing dan proofreading. Tim Xerpihan berupaya mengembangkan kecerdasan buatan',
+      'Startup Xerpihan berdiri sejak September 2020 menyasar pasar jasa editing dan proofreading. Tim Xerpihan berupaya mengembangkan kecerdasan buatan.',
     name: 'Yohanes Paskalis',
     from: 'Jurnalis Koran Tempo',
   },
   {
     logo: bppt,
     url: 'http://technology-indonesia.com/ict/startup-ai-xerpihan-solusi-penulisan-dan-transkripsi-bahasa-indonesia-dan-inggris/',
-    title: 'Xerpihan fokus pada pemenuhan kebutuhan klien individu dan ke depannya akan mudah digunakan untuk publikz',
+    title: 'Xerpihan fokus pada pemenuhan kebutuhan klien individu dan ke depannya akan mudah digunakan untuk publik.',
     titleEn:
-      'Xerpihan fokus pada pemenuhan kebutuhan klien individu dan ke depannya akan mudah digunakan untuk publikz',
+      'Xerpihan fokus pada pemenuhan kebutuhan klien individu dan ke depannya akan mudah digunakan untuk publik.',
     name: 'Setiyo Bardono',
     from: 'Jurnalis BPPT',
   },
