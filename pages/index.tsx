@@ -66,7 +66,7 @@ export const Index: React.FC = () => {
             <br /> language service provider
           </h1>
         </L>
-        <div className="flex justify-center flex-wrap py-5">
+        <div className="grid grid-cols-2 text-center justify-center md:flex-wrap md:flex py-5">
           {listFitur.map(el => (
             <div className="mx-5 md:text-2xl font-bold text-gray-400" key={el.id}>
               <L>
