@@ -73,7 +73,7 @@ export const Page: React.FC = () => {
         className="bg-gradient-to-b
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header></Header>
-        <div className="mx-auto container px-8 max-w-5xl flex">
+        <div className="mx-auto container px-8 max-w-5xl  flex flex-col-reverse md:flex-row">
           <div className="md:w-3/4">
             <h1 className="text-3xl md:text-5xl font-bold text-left md:mb-2">
               {_(l, 'Orientasi pada ', 'Oriented to ')}
@@ -98,7 +98,7 @@ export const Page: React.FC = () => {
               </L>
             </p>
           </div>
-          <div className="w-1/4 md:ml-6 flex-row-reverse md:flex hidden">
+          <div className=" md:ml-6 w-2/4 mx-auto md:flex md:flex-row-reverse">
             <Image src={csCorp} alt="cs-img" objectFit="contain" />
           </div>
         </div>
@@ -140,7 +140,7 @@ export const Page: React.FC = () => {
                   <div className=" xerp-b-button items-center p-2 px-4 md:0">
                     <p>
                       {_(l, 'WhatsApp ke ', 'WhatsApp to ')}
-                      <span className="underline text-xerpihan-primary-500 ">+62 831 1916 1413</span>
+                      <span className="underline">+62 831 1916 1413</span>
                     </p>
                   </div>
                 </a>
@@ -149,7 +149,7 @@ export const Page: React.FC = () => {
                   <div className=" xerp-b-button items-center  p-2 px-4 md:0 ">
                     <p>
                       {_(l, 'Email ke ', 'Email to ')}
-                      <span className="underline text-xerpihan-primary-500">layanan@xerpihan.id</span>
+                      <span className="underline">layanan@xerpihan.id</span>
                     </p>
                   </div>
                 </a>

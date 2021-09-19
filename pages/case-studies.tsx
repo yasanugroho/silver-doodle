@@ -25,8 +25,8 @@ export const Page: React.FC = () => {
         className="bg-gradient-to-b
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header></Header>
-        <div className="mx-auto container px-8 max-w-5xl flex md:space-x-10">
-          <div className="md:w-1/6 hidden md:flex flex-row-reverse">
+        <div className="mx-auto container px-8 max-w-5xl md:flex md:space-x-10">
+          <div className="md:w-1/6 w-1/2 md:flex flex-row-reverse mx-auto">
             <Image src={csKasus} alt="cs-img" objectFit="contain" className="mt-auto" />
           </div>
           <div className="md:w-5/6 space-y-4 pb-4">
@@ -41,7 +41,7 @@ export const Page: React.FC = () => {
                 {_(l, ' universitas dan perusahaan.', ' university and company.')}
               </h1>
             </div>
-            <p className="text-xl md:text-3xl text-gray-500">
+            <p className="text-xl md:text-2xl text-gray-500">
               <L>
                 <p>
                   Kami percaya citra dan pelayanan adalah <br />
@@ -194,11 +194,11 @@ export const Page: React.FC = () => {
         <h1 className="text-white text-4xl font-bold">{_(l, 'Komentar Akademisi', 'Komentar Akademisi')}</h1>
         <div className="max-w-5xl grid md:grid-cols-3 gap-6 mx-4 md:mx-auto mt-10">
           {komentar.map(el => (
-            <div className="p-8 rounded-lg relative bg-white dark:bg-xerpihan-primary-300" key={el.name}>
+            <div className="p-8 rounded-lg relative bg-white dark:bg-gray-900" key={el.name}>
               <Image src={el.img} alt="..." width="120" height="120" className="rounded-full object-cover" />
               <p className=" font-bold mb-0 mt-3">{el.name}</p>
-              <p className=" font-light text-gray-500 mb-0">{el.from}</p>
-              <p className="text-sm font-light text-justify dark:text-black tracking-tight mt-4">
+              <p className=" font-light text-gray-500 dark:text-gray-400 mb-0">{el.from}</p>
+              <p className="text-sm font-light text-justify dark:text-white tracking-tight mt-4">
                 {_(l, el.title, el.titleEn)}
               </p>
             </div>
@@ -214,7 +214,7 @@ export const Page: React.FC = () => {
             <Image src={el.logo} alt="" objectFit="contain" width={150} height={150} />
             <div className="col-span-3 text-left">
               <a href={el.url} target="_blank" rel="noreferrer" className="text-black hover:text-gray-500">
-                <p className="text-base font-light">{_(l, el.title, el.titleEn)}</p>
+                <p className="text-base font-light dark:text-white">{_(l, el.title, el.titleEn)}</p>
               </a>
               <p className=" font-bold mb-0 mt-3">{el.name}</p>
               <p className="font-light text-gray-500 mb-0">{_(l, el.from, el.from)}</p>

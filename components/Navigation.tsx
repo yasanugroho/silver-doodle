@@ -70,8 +70,8 @@ const Navigation: React.FC = () => {
           <a
             className={`text-center whitespace-nowrap ${index === 0 || index === 1 ? 'col-span-3' : 'col-span-2'} ${
               router.pathname == el.link
-                ? 'active:text-xerpihan-primary-500 px-2 md:px-3 py-2 bg-xerpihan-primary-100 md:bg-white dark:bg-black '
-                : 'text-gray-900 dark:text-white px-2 md:px-3 py-2 bg-gray-100 md:bg-white dark:bg-black'
+                ? 'active:text-xerpihan-primary-500 px-2 md:px-3 py-2 bg-xerpihan-primary-100 md:bg-white dark:bg-black  md:dark:bg-opacity-0'
+                : 'text-gray-900 dark:text-white px-2 md:px-3 py-2 bg-gray-100 md:bg-white md:dark:bg-opacity-0  dark:bg-gray-800'
             }`}>
             {_(l, el.id, el.en)}
           </a>

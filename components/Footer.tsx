@@ -53,18 +53,22 @@ export default function Footer() {
   const router = useRouter();
   const [email, setEmail] = useState('');
 
-  const subs = useCallback(async () => {
-    try {
-      const docRef = await addDoc(collection(db, 'email-subscription'), {
-        email: email,
-        timestamp: serverTimestamp(),
-      });
-      alert('subscribe success');
-      console.log('Success : ', docRef.id);
-    } catch (e) {
-      console.error('Error adding Order: ', e);
-    }
-  }, [email]);
+  const subs = useCallback(
+    async e => {
+      e.preventDefault();
+      try {
+        const docRef = await addDoc(collection(db, 'email-subscription'), {
+          email: email,
+          timestamp: serverTimestamp(),
+        });
+        alert('subscribe success');
+        console.log('Success : ', docRef.id);
+      } catch (e) {
+        console.error('Error adding Order: ', e);
+      }
+    },
+    [email],
+  );
   return (
     <footer
       className="bg-gradient-to-t relative
@@ -80,7 +84,7 @@ export default function Footer() {
           className={`border-2 text-lg rounded-lg p-6 md:p-10 dark:bg-black relative overflow-hidden  ${
             router.pathname === '/order'
               ? 'bg-white flex flex-row-reverse border-gray-300'
-              : 'bg-[#05acc2] text-white border-[#7fd5df]'
+              : 'bg-[#05acc2] text-white border-[#7fd5df] flex md:flex-col flex-col-reverse '
           }`}>
           <div>
             <div className="mb-4 space-y-4">
@@ -128,8 +132,8 @@ export default function Footer() {
                 <div
                   className={` border rounded-lg  ${
                     router.pathname === '/order'
-                      ? 'text-xerpihan-primary-500 border-xerpihan-primary-500'
-                      : 'border-white text-white'
+                      ? 'text-xerpihan-primary-500  border-xerpihan-primary-500 hover:bg-xerpihan-primary-100 '
+                      : 'border-white text-white dark:hover:text-xerpihan-primary-500 hover:bg-xerpihan-primary-400  dark:hover:bg-black dark:hover:border-xerpihan-primary-400'
                   } p-4 md:mb-0 mb-4 font-semibold`}>
                   <L>
                     <p>WhatsApp ke +62 831 1916 1413</p>
@@ -141,8 +145,8 @@ export default function Footer() {
                 <div
                   className={` border rounded-lg  ${
                     router.pathname === '/order'
-                      ? 'text-xerpihan-primary-500 border-xerpihan-primary-500'
-                      : 'border-white text-white'
+                      ? 'text-xerpihan-primary-500 border-xerpihan-primary-500 hover:bg-xerpihan-primary-100'
+                      : 'border-white text-white dark:hover:text-xerpihan-primary-500 hover:bg-xerpihan-primary-400 dark:hover:bg-black dark:hover:border-xerpihan-primary-400'
                   } p-4 md:mb-0 mb-4 font-semibold`}>
                   <L>
                     <p>E-mail ke layanan@xerpihan.id</p>
@@ -152,11 +156,10 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
           <div
             className={`${
-              router.pathname === '/order' ? 'left-20' : ' right-20'
-            } -bottom-6 lg:block hidden lg:absolute `}>
+              router.pathname === '/order' ? 'left-20' : ' flex flex-row-reverse right-20'
+            } -bottom-6 lg:absolute `}>
             <Image src={router.pathname === '/order' ? csOrderFooter : cpImg} alt="cp" width={190} height={220} />
           </div>
         </div>
@@ -173,45 +176,44 @@ export default function Footer() {
               <p className="text-[#838383]">Artikel, berita, dan kabar bulanan dari Xerpihan.</p>
             </div>
             <div className="space-y-4 md:w-1/2">
-              <div className="border flex">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={e => {
-                    setEmail(e.target.value);
-                  }}
-                  placeholder="Alamat email kamu"
-                  className="w-full focus:outline-none px-4 py-3"
-                />
-                <button
-                  className="px-4 py-3 text-white bg-red-200 dark:bg-red-500"
-                  onClick={() => {
-                    subs();
-                  }}>
+              <form onSubmit={(e: any) => subs(e)}>
+                <div className="border flex">
+                  <input
+                    type="email"
+                    value={email}
+                    required
+                    onChange={e => {
+                      setEmail(e.target.value);
+                    }}
+                    placeholder="Alamat email kamu"
+                    className="w-full focus:outline-none px-4 py-3"
+                  />
+                  <button type="submit" className="px-4 py-3 text-white bg-red-400 dark:bg-red-500">
+                    <p>
+                      <L>
+                        {'Langganan'}
+                        {'subscribe'}
+                      </L>
+                    </p>
+                  </button>
+                </div>
+                <div className="flex items-center space-x-4 text-[#838383] text-xs mt-3">
+                  <input type="checkbox" required />
                   <p>
                     <L>
-                      {'Langganan'}
-                      {'subscribe'}
+                      {'Saya setuju untuk mendapatkan email marketing dari Xerpihan.'}
+                      {'Saya setuju untuk mendapatkan email marketing dari Xerpihan.'}
                     </L>
                   </p>
-                </button>
-              </div>
-              <div className="flex items-center space-x-4 text-[#838383] text-xs">
-                <input type="checkbox" required />
-                <p>
-                  <L>
-                    {'Saya setuju untuk mendapatkan email marketing dari Xerpihan.'}
-                    {'Saya setuju untuk mendapatkan email marketing dari Xerpihan.'}
-                  </L>
-                </p>
-              </div>
+                </div>
+              </form>
             </div>
           </div>
           <div className="w-full h-0.5 bg-gray-200 my-10"></div>
           {/* Produk */}
           <div className="grid md:grid-cols-5 grid-cols-3 gap-4 md:gap-2">
             {listProduk.map(el => (
-              <div key={el.name} className="space-y-2">
+              <div key={el.name} className="space-y-2 ">
                 <p className="font-bold">
                   <L>
                     {el.name}
@@ -221,12 +223,16 @@ export default function Footer() {
                 {el.list.map(item => (
                   <div key={item.name}>
                     {el.name === 'Media Sosial' ? (
-                      <a className="text-[#838383]" href={`${item.link}`} target="_blank" rel="noreferrer">
+                      <a
+                        className="text-[#838383] dark:text-white"
+                        href={`${item.link}`}
+                        target="_blank"
+                        rel="noreferrer">
                         {item.name}
                       </a>
                     ) : (
                       <Link href={item.link ? item.link : ''}>
-                        <a className="text-[#838383]">
+                        <a className="text-[#838383] dark:text-white">
                           <L>
                             {item.name}
                             {item.nameEn}

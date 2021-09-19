@@ -47,8 +47,16 @@ import dapus from '/public/images/dapus.webp';
 import sh from '/public/images/sh.webp';
 import gizmologi from '/public/images/gimologi.png';
 import bppt from '/public/images/bppt.png';
+import manPink from '/public/images/Pink-Man.png';
+import womenPink from '/public/images/Pink-Woman.png';
+import womenTeal from '/public/images/Teal-Woman.png';
+import manTeal from '/public/images/Teal-Man.png';
 
 export {
+  manTeal,
+  womenTeal,
+  womenPink,
+  manPink,
   csOrderFooter,
   gizmologi,
   bppt,

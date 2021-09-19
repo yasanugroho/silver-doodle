@@ -21,8 +21,8 @@ export const Page: React.FC = () => {
         className="bg-gradient-to-b
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header></Header>
-        <div className="mx-auto container px-8 py-4 max-w-5xl flex space-x-10 items-center">
-          <div className="md:w-1/6 md:block hidden">
+        <div className="mx-auto container md:px-8 px-6 py-4 max-w-5xl md:flex md:space-x-10 items-center">
+          <div className="md:w-1/6 w-1/2 mx-auto">
             <Image src={csAbout} alt="cs-img" objectFit="contain" className="" />
           </div>
           <div className="md:w-5/6 mx-auto space-y-4 pb-4">

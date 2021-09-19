@@ -1,4 +1,17 @@
-import { cw, cwk, profile1, profile2, profile3, gizmologi, KoranTempo, bppt } from '../lib/images';
+import {
+  cw,
+  cwk,
+  profile1,
+  profile2,
+  profile3,
+  gizmologi,
+  KoranTempo,
+  bppt,
+  manTeal,
+  womenTeal,
+  womenPink,
+  manPink,
+} from '../lib/images';
 
 export const caseStudy1 = [
   {
@@ -70,21 +83,21 @@ export const caseStudy4 = [
 
 export const theysSaid = [
   {
-    img: profile3,
+    img: womenPink,
     title: 'Response baik dan cepat dalam menyelesaikan pekerjaanya.',
     titleEn: 'Response baik dan cepat dalam menyelesaikan pekerjaanya.',
     name: 'Natasha Amanda',
     positon: 'PT Tugu Insurance Pratama',
   },
   {
-    img: profile2,
+    img: manTeal,
     title: 'Sangat ramah dan profesional dalam membantu dokumen saya.',
     titleEn: 'Sangat ramah dan profesional dalam membantu dokumen saya.',
     name: 'Felix Sharief',
     positon: 'SYSTEMIQ Consulting',
   },
   {
-    img: profile1,
+    img: manPink,
     title: 'Good job!',
     titleEn: 'Good job!',
     name: 'Ahmad Shidqi',

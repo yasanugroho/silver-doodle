@@ -87,7 +87,7 @@ export const Index: React.FC = () => {
         <div className="max-w-5xl px-8 pt-8 md:pt-16 pb-10 mx-auto ">
           <div className="relative">
             <div className="border-2 text-lg rounded-md md:p-10 p-6 bg-white dark:bg-black overflow-hidden lg:flex lg:flex-1 md:flex-row-reverse">
-              <div className="absolute -bottom-2 left-2 lg:block hidden ">
+              <div className="md:absolute -bottom-2 left-2 ">
                 <Image src={contactImg} alt="cp" width={190} height={190} />
               </div>
               <div className="lg:mr-10 mr-0 space-y-4">
@@ -118,7 +118,7 @@ export const Index: React.FC = () => {
                     </L>
                   </div>
                   <a
-                    className="xerp-b-button flex items-center  justify-between lg:p-2.5 p-4   md:w-[270px]"
+                    className="xerp-b-button flex items-center justify-between lg:p-2.5 p-4   md:w-[270px]"
                     href="https://wa.me/+6283119161413"
                     target="_blank"
                     rel="noreferrer">

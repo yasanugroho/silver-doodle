@@ -226,10 +226,12 @@ const Tabs: React.FC<TabsProps> = () => {
                             window.localStorage.setItem('order-paket', content.id);
                           }}
                           className={`rounded-full p-3 w-full font-bold text-center text-lg  flex-1 items-end ${
-                            index === 1 ? 'bg-xerpihan-primary-500' : 'border-1 bg-white border-gray-400'
+                            index === 1
+                              ? 'bg-xerpihan-primary-500 hover:bg-xerpihan-primary-400 text-white dark:text-white'
+                              : 'border-1 bg-white border-gray-400 hover:bg-xerpihan-primary-500 text-[#585858] hover:text-white  '
                           }`}>
                           <Link href="/order">
-                            <p className={index === 1 ? 'text-white dark:text-white' : 'text-[#585858] '}>
+                            <p>
                               <L>
                                 {'Beli Paket'}
                                 {'Buy Package'}
