@@ -30,7 +30,7 @@ export const Page: React.FC = () => {
           <div className="md:w-5/6 pb-6 md:pb-0">
             <h1 className="text-3xl md:text-5xl font-bold text-left mb-4">
               {_(l, 'Layanan bahasa dengan pemesanan yang ', 'Language service with order ')}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-xerpihan-primary-600 ">
+              <span className="text-xerpihan-primary-500">
                 {_(l, 'mudah dan terjangkau', 'easy and affordable')}
               </span>
             </h1>
