@@ -56,8 +56,8 @@ export const Page: React.FC = () => {
         {_(l, 'Mengapa Menggunakan Layanan Kami?', 'Why Choose Us?')}
       </h1>
       {layanan.map(el => (
-        <div className="shadow-xl rounded-xl p-5 h-full" key={el.titleEn}>
-          <h1 className="text-lg text-black mb-2">{_(l, el.titleId, el.titleEn)}</h1>
+        <div className="shadow-xl rounded-xl p-5 h-full dark:border" key={el.titleEn}>
+          <h1 className="text-lg text-black dark:text-white mb-2">{_(l, el.titleId, el.titleEn)}</h1>
           <p className="text-md font-light text-gray-500 mb-0">{_(l, el.subTitleId, el.subTitleEn)}</p>
         </div>
       ))}
@@ -74,7 +74,7 @@ export const Page: React.FC = () => {
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header></Header>
         <div className="mx-auto container px-8 max-w-5xl flex">
-          <div className="w-3/4">
+          <div className="md:w-3/4">
             <h1 className="text-3xl md:text-5xl font-bold text-left md:mb-2">
               {_(l, 'Orientasi pada ', 'Oriented to ')}
               <span className="text-xerpihan-secondary">{_(l, 'brand bisnis', 'business brand')}</span>,

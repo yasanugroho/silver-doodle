@@ -75,9 +75,9 @@ export default function Footer() {
         <div className="flex-1 bg-xerpihan-hero-gradient-end dark:bg-gray-800"></div>
       </div>
       {/* Box */}
-      <div className="max-w-5xl px-8 py-4 mx-auto relative  ">
+      <div className="max-w-5xl px-6 md:px-8 py-4 mx-auto relative  ">
         <div
-          className={`border-2 text-lg rounded-lg p-10 dark:bg-black relative overflow-hidden  ${
+          className={`border-2 text-lg rounded-lg p-6 md:p-10 dark:bg-black relative overflow-hidden  ${
             router.pathname === '/order'
               ? 'bg-white flex flex-row-reverse border-gray-300'
               : 'bg-[#05acc2] text-white border-[#7fd5df]'

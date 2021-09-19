@@ -64,14 +64,14 @@ const Navigation: React.FC = () => {
   );
 
   const menu = (
-    <div className="grid md:flex grid-cols-6 gap-3 md:gap-0">
+    <div className="grid md:flex grid-cols-6 gap-3 md:gap-0 text-xs md:text-base">
       {listMenu.map((el, index) => (
         <Link href={el.link} key={el.link}>
           <a
             className={`text-center whitespace-nowrap ${index === 0 || index === 1 ? 'col-span-3' : 'col-span-2'} ${
               router.pathname == el.link
-                ? 'active:text-xerpihan-primary-500 dark:text-white px-2 md:px-3 py-2 bg-xerpihan-primary-100 md:bg-white'
-                : 'text-gray-900 dark:text-white px-2 md:px-3 py-2 bg-gray-100 md:bg-white'
+                ? 'active:text-xerpihan-primary-500 px-2 md:px-3 py-2 bg-xerpihan-primary-100 md:bg-white dark:bg-black '
+                : 'text-gray-900 dark:text-white px-2 md:px-3 py-2 bg-gray-100 md:bg-white dark:bg-black'
             }`}>
             {_(l, el.id, el.en)}
           </a>

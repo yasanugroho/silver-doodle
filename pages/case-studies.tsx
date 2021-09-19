@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { L, _ } from '../lib/i18n';
-import { brandLogo, illustration, KoranTempo, csKasus } from '../lib/images';
+import { illustration, KoranTempo, csKasus } from '../lib/images';
 import { caseStudy1, caseStudy2, theysSaid, komentar, media } from '../utils/CaseStudyVars';
 
 import Footer from '../components/Footer';
@@ -25,11 +25,11 @@ export const Page: React.FC = () => {
         className="bg-gradient-to-b
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header></Header>
-        <div className="mx-auto container px-8 max-w-5xl flex space-x-10">
+        <div className="mx-auto container px-8 max-w-5xl flex md:space-x-10">
           <div className="md:w-1/6 hidden md:flex flex-row-reverse">
             <Image src={csKasus} alt="cs-img" objectFit="contain" className="mt-auto" />
           </div>
-          <div className="w-5/6 space-y-4 pb-4">
+          <div className="md:w-5/6 space-y-4 pb-4">
             <div>
               <h1 className="text-3xl md:text-5xl font-bold text-left">
                 {_(l, 'Dipercaya ', 'Trusted by ')}
@@ -164,7 +164,7 @@ export const Page: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-5 grid-cols-3 gap-4 md:mx-20 items-center">
+      <div className="grid md:grid-cols-5 grid-cols-3 gap-4 md:mx-20 items-center px-6 mt-6">
         {listLogoClient.map(el => (
           <div key={el} className="h-24 w-20 flex items-center mx-auto">
             <Image src={el} alt="Proofreading" />
@@ -174,11 +174,13 @@ export const Page: React.FC = () => {
       <div className="max-w-3xl mx-auto text-center py-10 px-4 md:px-0">
         <h1 className="pb-16 text-4xl font-bold mb-0">{_(l, 'Apa Kata Mereka?', 'Apa Kata Mereka?')}</h1>
         {theysSaid.map((el, idx) => (
-          <div className={`flex justify-between ${idx % 2 !== 0 && 'flex-row-reverse'} mb-20`} key={el.name}>
-            <div className="h-full w-1/2">
+          <div
+            className={`md:flex px-4 md:px-0 justify-between ${idx % 2 !== 0 && 'flex-row-reverse'} mb-20`}
+            key={el.name}>
+            <div className="h-full md:w-1/2">
               <Image src={el.img} alt={el.name} />
             </div>
-            <div className="text-left p-3 w-1/2">
+            <div className="text-left p-3 md:w-1/2">
               <p className="md:text-xl font-light text-black dark:text-white">{_(l, el.title, el.titleEn)}</p>
               <div className="mt-10">
                 <p className=" font-bold mb-0">{el.name}</p>
@@ -204,10 +206,12 @@ export const Page: React.FC = () => {
         </div>
       </div>
       <div className="text-center py-10 max-w-5xl mx-auto">
-        <h1 className=" text-4xl font-bold my-8">{_(l, 'Diliput Berbagai Media', 'Diliput Berbagai Media')}</h1>
+        <h1 className="text-2xl md:text-4xl font-bold my-8">
+          {_(l, 'Diliput Berbagai Media', 'Diliput Berbagai Media')}
+        </h1>
         {media.map(el => (
-          <div className="grid md:grid-cols-4 py-4 px-10 space-x-8" key={el.name}>
-            <Image src={el.logo} alt="" objectFit="contain" />
+          <div className="grid md:grid-cols-4 py-4 px-10 md:space-x-8" key={el.name}>
+            <Image src={el.logo} alt="" objectFit="contain" width={150} height={150} />
             <div className="col-span-3 text-left">
               <a href={el.url} target="_blank" rel="noreferrer" className="text-black hover:text-gray-500">
                 <p className="text-base font-light">{_(l, el.title, el.titleEn)}</p>
