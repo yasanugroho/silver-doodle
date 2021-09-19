@@ -339,10 +339,10 @@ export const Page: React.FC = () => {
                   <p>
                     Saya menyetujui{' '}
                     <a
-                      href="https://drive.google.com/file/d/1xNCzNgxapv7hNZmlFXonkJnAL5UgMqbi/view"
+                      href="https://xerpihan.id/term-of-services"
                       target="_blank"
                       rel="noreferrer">
-                      syarat dan ketentuan
+                      ketentuan layanan
                     </a>{' '}
                     yang berlaku
                   </p>

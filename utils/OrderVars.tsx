@@ -81,8 +81,8 @@ export const selectionData = [
       },
       {
         id: 2,
-        name: 'Premium Editing',
-        package: 'Premium Editing',
+        name: 'Copy Editing',
+        package: 'Copy Editing',
         price: 250,
         perunit: 3500,
       },
