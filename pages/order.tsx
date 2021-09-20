@@ -338,7 +338,7 @@ export const Page: React.FC = () => {
                   <input required type="checkbox" id="setuju" name="tuju" value="ahay" />
                   <p>
                     Saya menyetujui{' '}
-                    <a href="https://xerpihan-site.vercel.app/term-of-services" target="_blank" rel="noreferrer">
+                    <a href="/term-of-services" target="_blank" rel="noreferrer">
                       ketentuan layanan
                     </a>{' '}
                     yang berlaku
