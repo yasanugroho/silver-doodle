@@ -205,7 +205,7 @@ export const Page: React.FC = () => {
       </div>
       <div className=" max-w-5xl mx-auto py-8 px-7 md:px-0">
         <p className="text-[#00ACC1] font-bold text-2xl py-8">
-          {_(l, 'Order kebutuhanmu sekarang', 'Order kebutuhanmu sekarang')}
+          {_(l, 'Order kebutuhanmu sekarang', 'Order what you need now')}
         </p>
         <form onSubmit={e => handleSubmit(e)}>
           {/* Input Data Order */}
