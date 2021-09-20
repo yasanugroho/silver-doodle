@@ -97,8 +97,8 @@ export default function Footer() {
                   </p>
                   <p>
                     {router.pathname === '/order'
-                      ? 'Bingung mengisi formulir di atas?'
-                      : 'Konsultasikan kebutuhan Anda, gratis!'}
+                      ? 'Need help filling the form?'
+                      : 'Consult your needs, for free!'}
                   </p>
                 </L>
               </div>
@@ -116,13 +116,13 @@ export default function Footer() {
                 )}
                 {router.pathname === '/order' ? (
                   <p>
-                    Konsultasikan kebutuhan anda dengan admin kami. Akan kami berikan <br />
-                    layanan yang paling pas untuk anda!
+                    Consult your needs with our admin. We will offer <br />
+                    the most suitable service for you!
                   </p>
                 ) : (
                   <p>
-                    Tim Xerpihan akan membantu menemukan solusi untuk segala kebutuhan
-                    <br /> layanan bahasa Anda.
+                    Xerpihan team will help you find the solution to your
+                    <br /> language needs.
                   </p>
                 )}
               </L>
@@ -170,10 +170,15 @@ export default function Footer() {
               <p className="font-bold">
                 <L>
                   {'Langganan Kabar Terbaru dari Kami'}
-                  {'Langganan Kabar Terbaru dari Kami'}
+                  {'Subscribe to Our Newsletter'}
                 </L>
               </p>
-              <p className="text-[#838383]">Artikel, berita, dan kabar bulanan dari Xerpihan.</p>
+              <p className="text-[#838383]">
+                <L>
+                  {'Artikel, berita, dan kabar bulanan dari Xerpihan.'}
+                  {'Article, news, and monthly insights from Xerpihan.'}
+                </L>
+                  </p>
             </div>
             <div className="space-y-4 md:w-1/2">
               <form onSubmit={(e: any) => subs(e)}>
@@ -192,7 +197,7 @@ export default function Footer() {
                     <p>
                       <L>
                         {'Langganan'}
-                        {'subscribe'}
+                        {'Subscribe'}
                       </L>
                     </p>
                   </button>
@@ -202,7 +207,7 @@ export default function Footer() {
                   <p>
                     <L>
                       {'Saya setuju untuk mendapatkan email marketing dari Xerpihan.'}
-                      {'Saya setuju untuk mendapatkan email marketing dari Xerpihan.'}
+                      {'I agree to get marketing emails from Xerpihan.'}
                     </L>
                   </p>
                 </div>
