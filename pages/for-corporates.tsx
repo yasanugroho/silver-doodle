@@ -115,7 +115,7 @@ export const Page: React.FC = () => {
                 {_(
                   l,
                   'Xerpihan dapat membantu menyelesaikan kebutuhan bahasa personal Anda.',
-                  'Xerpihan can help you menyelesaikan kebutuhan bahasa personal Anda.',
+                  'Xerpihan is able to help your personal language needs.',
                 )}
               </h2>
               <ul className="grid md:grid-cols-2 mt-2 gap-2 mx-4 md:mx-10">
@@ -133,7 +133,7 @@ export const Page: React.FC = () => {
                 ))}
               </ul>
               <h2 className="text-center text-sm md:text-2xl">
-                {_(l, 'Konsultasikan kebutuhan bisnis Anda, gratis!', 'Konsultasikan kebutuhan bisnis Anda, gratis!')}
+                {_(l, 'Konsultasikan kebutuhan bisnis Anda, gratis!', 'Consult your business needs, for free!')}
               </h2>
               <div className="justify-center block md:flex font-semibold space-x-3">
                 <a href="https://wa.me/+6283119161413" target="_blank" rel="noreferrer">
@@ -183,7 +183,7 @@ export const Page: React.FC = () => {
             {_(
               l,
               'Layanan kami telah digunakan oleh tim-tim terkemuka di Indonesia',
-              'Our team had been colaborated with reputable team in Indonesia',
+              'Our team have collaborated with reputable teams in Indonesia',
             )}
           </h1>
           <div className="grid md:grid-cols-5 grid-cols-3 gap-4 md:mx-20">
