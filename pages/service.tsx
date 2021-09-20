@@ -29,16 +29,16 @@ export const Page: React.FC = () => {
         <div className="mx-auto container px-8 max-w-5xl flex flex-col-reverse md:flex-row">
           <div className="md:w-5/6 pb-6 md:pb-0">
             <h1 className="text-3xl md:text-5xl font-bold text-left mb-4">
-              {_(l, 'Layanan bahasa dengan pemesanan yang ', 'Language service with order ')}
+              {_(l, 'Layanan bahasa dengan pemesanan yang ', 'Language service with ')}
               <span className="text-xerpihan-primary-500">
-                {_(l, 'mudah dan terjangkau', 'easy and affordable')}
+                {_(l, 'mudah dan terjangkau', 'easy and affordable order')}
               </span>
             </h1>
             <p className="md:text-2xl text-gray-500 mb-4">
               {_(
                 l,
                 'Dibantu oleh Ahli Bahasa Profesional dengan Pendekatan Personal.',
-                'Helped by Expert Ahli Bahasa Profesional dengan Pendekatan Personal.',
+                'Helped by Professional Language Specialist with Personal Approach.',
               )}
             </p>
           </div>
@@ -60,7 +60,7 @@ export const Page: React.FC = () => {
                 {_(
                   l,
                   'Xerpihan dapat membantu menyelesaikan kebutuhan bahasa personal Anda.',
-                  'Xerpihan can help you menyelesaikan kebutuhan bahasa personal Anda.',
+                  'Xerpihan is able to help your personal language needs.',
                 )}
               </h2>
               <ul className="block md:grid grid-flow-col md:grid-cols-2 md:grid-rows-4 my-4 ">
@@ -105,7 +105,7 @@ export const Page: React.FC = () => {
           <div className="text-left space-y-6">
             <h1 className="text-4xl font-bold">{_(l, 'Untuk semua dokumen kamu', 'For your documents')}</h1>
             <p className="text-xl">
-              {_(l, 'Kami siap melayani segala jenis kebutuhan Anda.', 'We are ready to serve your kebutuhan')}
+              {_(l, 'Kami siap melayani segala jenis kebutuhan Anda.', 'We are ready to serve your needs')}
             </p>
           </div>
           <div className="col-span-2 mt-3 md:mt-0">
