@@ -32,7 +32,7 @@ export const listLayanan = [
     titleId: 'Jaminan Kerahasiaan',
     titleEn: 'Confidentiality Guarantee',
     subTitleId: 'Tersedia surat perjanjian kerahasiaan (non-disclosure agreement) apabila dibutuhkan.',
-    subTitleEn: 'Kami siap memberikan perjanjian kerahasiaan (non-disclosure agreement) setiap saat',
+    subTitleEn: 'A non-disclosure agreement is available if needed',
     styling: '',
   },
 ];
