@@ -2,7 +2,7 @@ export const listService = [
   { id: 0, name: 'Proofread - English' },
   { id: 1, name: 'Proofread - Bahasa Indonesia' },
   { id: 2, name: 'Proofread - Paraphrase' },
-  { id: 3, name: 'Translator' },
+  { id: 3, name: 'Translation' },
   { id: 4, name: 'Subtitle' },
   { id: 5, name: 'Transcription' },
 ];
