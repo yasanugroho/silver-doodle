@@ -44,7 +44,7 @@ const listProduk = [
     nameEn: 'Contact',
     list: [
       { name: 'WhatsApp', nameEn: 'WhatsApp', link: 'https://wa.me/+6283119161413' },
-      { name: 'Handphone', nameEn: 'Handphone', link: '/' },
+      { name: 'Email', nameEn: 'Email', link: 'mailto:layanan@xerpihan.id' },
     ],
   },
 ];
