@@ -25,8 +25,8 @@ const listProduk = [
     list: [
       { name: 'Blog', nameEn: 'Blog', link: '/blog' },
       { name: 'Tentang', nameEn: 'About', link: '/about' },
-      { name: 'Ketentuan Layanan', nameEn: 'Ketentuan Layanan', link: '/term-of-services' },
-      { name: 'Kebijakan Privasi', nameEn: 'Kebijakan Privasi', link: '/privacy-policy' },
+      { name: 'Ketentuan Layanan', nameEn: 'Term of Services', link: '/term-of-services' },
+      { name: 'Kebijakan Privasi', nameEn: 'Privacy Policy', link: '/privacy-policy' },
     ],
   },
   {
