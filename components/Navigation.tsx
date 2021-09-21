@@ -26,14 +26,14 @@ const listMenu = [
     en: 'Case Studies',
   },
   {
-    link: '/blog',
-    id: 'Blog',
-    en: 'Blog',
-  },
-  {
     link: '/about',
     id: 'Tentang',
     en: 'About',
+  },
+  {
+    link: '/blog',
+    id: 'Blog',
+    en: 'Blog',
   },
 ];
 
