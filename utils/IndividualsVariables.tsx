@@ -22,7 +22,7 @@ export const listLayanan = [
   {
     img: ServicesIcon3,
     titleId: 'Ahli Bahasa Profesional',
-    titleEn: 'Profesional Translator',
+    titleEn: 'Professional Translator',
     subTitleId: 'Proofreader dan penerjemah kami merupakan lulusan Sastra Inggris yang sudah berpengalaman menyunting dan menerjemahkan dokumen serta membuat subtitle dan transkrip.',
     subTitleEn: 'Our proofreaders and translators are English Literature graduates who are experienced in editing and translating documents and also in subtitling and transcribing',
     styling: '',
