@@ -30,7 +30,7 @@ export const dataSection = [
     title: 'Subtitle',
     titleEn: 'Subtitle',
     subTitle: 'Tingkatkan aksesibilitas di video',
-    subTitleEn: 'Improve accesibilities in video',
+    subTitleEn: 'Improve accessibilities in video',
     content:
       'Pembuatan subtitle terbaik hingga detail terkecil. Mulai dari video korporat, pelatihan, iklan, hingga film hasil rumah produksi.',
     contentEn:
