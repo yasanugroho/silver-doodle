@@ -22,7 +22,7 @@ export const Page: React.FC = () => {
     { id: 'Proofreading dokumen', en: 'Document proofreading' },
     { id: 'Terjemah dokumen perusahaan', en: 'Company document translation' },
     { id: 'Penyuntingan buku', en: 'Book editing' },
-    { id: 'Subtitle video dan film', en: 'Pembuatan subtitle video internal' },
+    { id: 'Subtitle video dan film', en: 'Video and film subtitles' },
     { id: 'Transkripsi rekaman rapat', en: 'Recording meeting transcription' },
     { id: 'Terjemah situs web', en: 'Website translation' },
     {
