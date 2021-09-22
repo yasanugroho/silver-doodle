@@ -97,7 +97,7 @@ export const Page: React.FC = () => {
           orderId: (new Date().getTime() % 100000) + 100000,
           deliveryEst,
           addInfo: info,
-          orderDate: serverTimestamp(),
+          orderDate: new Date().toLocaleString('id'),
           topic: topicMultiplier[topik].topic,
           certif: isNeedCertif ? 'Ya' : 'Tidak',
           nda: isNeedNDA ? 'Ya' : 'Tidak',
@@ -110,7 +110,7 @@ export const Page: React.FC = () => {
       .catch(function (error) {
         console.log(error);
       });
-  }, [email, info, name, paket, panjang, service, topik, totalPriceText]);
+  }, [email, info, isNeedCertif, isNeedNDA, name, paket, panjang, service, topik, totalPriceText]);
 
   const handleSubmit = useCallback(
     async e => {
