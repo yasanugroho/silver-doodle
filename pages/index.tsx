@@ -129,7 +129,7 @@ export const Index: React.FC = () => {
                           +62 831 1916 1413
                         </p>
                         <p>
-                          Konsultasi via WhatsApp <br />
+                          Consult via WhatsApp <br />
                           +62 831 1916 1413
                         </p>
                       </L>
@@ -145,7 +145,7 @@ export const Index: React.FC = () => {
       <div className="max-w-5xl px-8 mx-auto text-lg text-center text-[#A0A0A0] space-y-10">
         <L>
           <p>Layanan kami telah digunakan oleh tim-tim terkemuka di Indonesia</p>
-          <p>Layanan kami telah digunakan oleh tim-tim terkemuka di Indonesia</p>
+          <p>Our services have been widely used by great teams in Indonesia</p>
         </L>
         <div className="grid md:grid-cols-5 grid-cols-3 gap-2 md:mx-20">
           {listLogoTim.map(el => (

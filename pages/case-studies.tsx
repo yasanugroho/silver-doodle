@@ -49,9 +49,9 @@ export const Page: React.FC = () => {
                   <br /> pelanggan mereka.
                 </p>
                 <p>
-                  Kami percaya citra dan pelayanan adalah <br />
-                  penghubung antara perusahaan dengan
-                  <br /> pelanggan mereka.
+                  We believe brand and service are <br />
+                  the bridges between company and
+                  <br /> their clients.
                 </p>
               </L>
             </p>
@@ -65,7 +65,7 @@ export const Page: React.FC = () => {
             {_(
               l,
               'Berikut beberapa klien dan contoh portofolio yang pernah kami tangani terkait layanan jasa proofreading, terjemahan, subtitle, dan transkripsi.',
-              ' Berikut beberapa klien dan contoh portofolio yang pernah kami tangani terkait layanan jasa proofreading, terjemahan, subtitle, dan transkripsi.',
+              'Here are some clients and examples of portfolios that we have worked with regarding proofreading, translation, subtitle, and transcription services.',
             )}
           </p>
           <Image className="mt-6" src={illustration} alt="" height="336" width="360" />
@@ -172,7 +172,7 @@ export const Page: React.FC = () => {
         ))}
       </div>
       <div className="max-w-3xl mx-auto text-center py-10 px-4 md:px-0">
-        <h1 className="pb-16 text-4xl font-bold mb-0">{_(l, 'Apa Kata Mereka?', 'Apa Kata Mereka?')}</h1>
+        <h1 className="pb-16 text-4xl font-bold mb-0">{_(l, 'Apa Kata Mereka?', 'What Do They Say?')}</h1>
         {theysSaid.map((el, idx) => (
           <div
             className={`md:flex px-4 md:px-0 justify-between ${idx % 2 !== 0 && 'flex-row-reverse'} mb-20`}
@@ -191,7 +191,7 @@ export const Page: React.FC = () => {
         ))}
       </div>
       <div className="max-w-100 bg-black  bg-opacity-75 text-center py-10">
-        <h1 className="text-white text-4xl font-bold">{_(l, 'Komentar Akademisi', 'Komentar Akademisi')}</h1>
+        <h1 className="text-white text-4xl font-bold">{_(l, 'Komentar Akademisi', 'Academicians Comments')}</h1>
         <div className="max-w-5xl grid md:grid-cols-3 gap-6 mx-4 md:mx-auto mt-10">
           {komentar.map(el => (
             <div className="p-8 rounded-lg relative bg-white dark:bg-gray-900" key={el.name}>
@@ -207,7 +207,7 @@ export const Page: React.FC = () => {
       </div>
       <div className="text-center py-10 max-w-5xl mx-auto">
         <h1 className="text-2xl md:text-4xl font-bold my-8">
-          {_(l, 'Diliput Berbagai Media', 'Diliput Berbagai Media')}
+          {_(l, 'Diliput Berbagai Media', 'Media Coverage')}
         </h1>
         {media.map(el => (
           <div className="grid md:grid-cols-4 py-4 px-10 md:space-x-8" key={el.name}>

@@ -71,7 +71,7 @@ export const dataSection = [
     content:
       'Kamu aktif di YouTube dan media sosial lainnya? Ingin jangkauan audiensmu lebih luas? Gunakan jasa subtitle kami untuk meningkatkan engagement videomu!',
     contentEn:
-      'Are you a YouTuber and social media influencer? Do you want to reach more audience? Use out subtitling service to increase your engagement!',
+      'Are you a YouTuber and social media influencer? Do you want to reach more audience? Use our subtitling service to increase your engagement!',
     styling: true,
   },
   {

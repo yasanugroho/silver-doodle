@@ -84,15 +84,15 @@ export const caseStudy4 = [
 export const theysSaid = [
   {
     img: womenPink,
-    title: 'Response baik dan cepat dalam menyelesaikan pekerjaanya.',
-    titleEn: 'Response baik dan cepat dalam menyelesaikan pekerjaanya.',
+    title: 'Response baik dan cepat dalam menyelesaikan pekerjaannya.',
+    titleEn: 'Good and quick response in completing the work.',
     name: 'Natasha Amanda',
     positon: 'PT Tugu Insurance Pratama',
   },
   {
     img: manTeal,
     title: 'Sangat ramah dan profesional dalam membantu dokumen saya.',
-    titleEn: 'Sangat ramah dan profesional dalam membantu dokumen saya.',
+    titleEn: 'Very friendly and professional in helping my document.',
     name: 'Felix Sharief',
     positon: 'SYSTEMIQ Consulting',
   },
@@ -109,14 +109,14 @@ export const komentar = [
   {
     img: cwk,
     title: 'Pengerjaan cepat dan sesuai deadline yang diberikan.',
-    titleEn: 'Pengerjaan cepat dan sesuai deadline yang diberikan.',
+    titleEn: 'Fast completion and according to the given deadline.',
     name: 'Brian Bramanto',
     from: 'Norwegian University of Life Science',
   },
   {
     img: cw,
     title: 'Pekerjaan baik dan teliti, respon cepat, harga terjangkau.',
-    titleEn: 'Pekerjaan baik dan teliti, respon cepat, harga terjangkau.',
+    titleEn: 'Good and thorough work, fast response, affordable price.',
     name: 'Farina',
     from: 'University of Birmingham',
   },
@@ -125,28 +125,28 @@ export const komentar = [
     title:
       'Respon dari beliau sangat cepat, selain itu pekerjaan dapat diselesaikan hanya dalam 1 hari. Hasil dari pekerjaan juga sangat memuaskan. Sangat direkomendasikan.',
     titleEn:
-      'Respon dari beliau sangat cepat, selain itu pekerjaan dapat diselesaikan hanya dalam 1 hari. Hasil dari pekerjaan juga sangat memuaskan. Sangat direkomendasikan.',
+      'His response was very fast, besides that the work could be completed in just 1 day. The results of the work are also very satisfying. Highly recommended.',
     name: 'Dio Triyoga',
     from: 'Vrije Universiteit Brussel',
   },
   {
     img: cw,
     title: 'Fast respond banget dan tepat waktu.',
-    titleEn: 'Fast respond banget dan tepat waktu.',
+    titleEn: 'Very fast response and on time.',
     name: 'Lafiona Grezelda',
     from: 'Universitas Gadjah Mada',
   },
   {
     img: cwk,
     title: 'Respon dan pengerjaan projeknya cepat dan memuaskan.',
-    titleEn: 'Respon dan pengerjaan projeknya cepat dan memuaskan.',
+    titleEn: 'The response and project work is fast and satisfying.',
     name: 'Dede Mahmuda',
     from: 'Universitas Indonesia',
   },
   {
     img: cwk,
     title: 'Proofreader terbaik yang pernah saya temui selama saya bekerja secara profesional.',
-    titleEn: 'Proofreader terbaik yang pernah saya temui selama saya bekerja secara profesional.',
+    titleEn: 'The best proofreader I have ever met in my professional work.',
     name: 'Adam Maulana Sidik',
     from: 'Institut Teknologi Bandung',
   },

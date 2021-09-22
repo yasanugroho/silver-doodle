@@ -36,10 +36,10 @@ export const Page: React.FC = () => {
                 subtitle dan transkripsi <br /> berkualitas.
               </p>,
               <p className="text-xl md:text-2xl text-gray-500">
-                Perusahaan startup teknologi yang membantu memperbaiki <br /> dokumen dalam bahasa Inggris dan bahasa
-                Indonesia. Sedang <br />
-                dalam pengembangan Al-based platform dalam menyediakan <br /> jasa proofread, translate, pembuatan
-                subtitle dan transkripsi <br /> berkualitas.
+                A tech startup company that assists in editing <br /> English and Indonesian documents
+                professionally. In <br />
+                development of Al-based platform to serve <br /> proofreading, translation, subtitling
+                and transcription <br /> services.
               </p>,
             )}
           </div>

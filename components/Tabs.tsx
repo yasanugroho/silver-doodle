@@ -37,7 +37,14 @@ const tab: TabsContent[] = [
         alert: 'Not eligible for proofreading certificate',
         price: '150K',
         description: 'ENG: per 2500 words \n ID: per 3500 words',
-        services: ['Double spaces', 'Writing format', 'Typo', 'Punctuation', 'Grammar', 'Unlimited version'],
+        services: [
+          'Double spaces', 
+          'Writing format', 
+          'Typo', 
+          'Punctuation', 
+          'Grammar', 
+          'Unlimited revision'
+        ],
       },
       {
         id: '0-1',
@@ -49,7 +56,7 @@ const tab: TabsContent[] = [
           'Copy editing',
           'Rejection shield',
           'Edit your journal based on reviewers comment',
-          'Ensure all issues are appropiately handled',
+          'Ensure all issues are appropriately handled',
         ],
       },
       {
