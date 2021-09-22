@@ -20,7 +20,7 @@ export const Page: React.FC = () => {
   return (
     <LayoutPlain
       customMeta={{
-        title: _(l, 'Layanan', 'Services') + ' - Xerpihan',
+        title: _(l, 'Layanan - Jasa Proofreading, Translate, Subtitle, Transkrip', 'Services - Proofreading, Translate, Subtitle, Transcribe') + ' | Xerpihan',
       }}>
       <div
         className="bg-gradient-to-b
