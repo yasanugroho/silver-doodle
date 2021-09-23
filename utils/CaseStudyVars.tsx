@@ -28,9 +28,6 @@ export const caseStudy1 = [
     subtitleEn: 'Menjadi Manusia YouTube Channel',
     link: 'https://www.youtube.com/watch?v=nCWD5MTb15I',
   },
-];
-
-export const caseStudy2 = [
   {
     title: 'Mercury and Chromium Distribution in Soil Near Maros Karst Ecosystem',
     titleEn: 'Mercury and Chromium Distribution in Soil Near Maros Karst Ecosystem',
@@ -45,9 +42,6 @@ export const caseStudy2 = [
     subtitleEn: 'Titan Tyra YouTube Channel',
     link: 'https://youtu.be/15il1LSLDq0',
   },
-];
-
-export const caseStudy3 = [
   {
     title: 'A Numerical Study of The Outflow of Makassar Strait Using Regional Ocean Modelling System (ROMS)',
     titleEn: 'A Numerical Study of The Outflow of Makassar Strait Using Regional Ocean Modelling System (ROMS)',
@@ -62,9 +56,6 @@ export const caseStudy3 = [
     subtitleEn: 'Lifni Sanders YouTube Channel',
     link: 'https://www.youtube.com/watch?v=1An3sZc7KKk',
   },
-];
-
-export const caseStudy4 = [
   {
     title: 'Motivations and Challenges of Women Entrepreneurs: The Indonesian Mumpreneur Perspective',
     titleEn: 'Motivations and Challenges of Women Entrepreneurs: The Indonesian Mumpreneur Perspective',

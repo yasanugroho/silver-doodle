@@ -1,11 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 import { L, _ } from '../lib/i18n';
-import { illustration, KoranTempo, csKasus } from '../lib/images';
-import { caseStudy1, caseStudy2, theysSaid, komentar, media } from '../utils/CaseStudyVars';
+import { illustration, csKasus } from '../lib/images';
+import { caseStudy1, theysSaid, komentar, media } from '../utils/CaseStudyVars';
+import Carousel from 'react-grid-carousel';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -71,59 +70,16 @@ export const Page: React.FC = () => {
           <Image className="mt-6" src={illustration} alt="" height="336" width="360" />
         </div>
         <div className="col-span-2 my-auto">
-          <Carousel
-            autoPlay
-            autoPlaySpeed={4000}
-            className=""
-            infinite
-            // additionalTransfrom={0}
-            // arrows
-            // centerMode={true}
-            // containerClass="container-with-dots"
-            // dotListClass=""
-            // draggable
-            // focusOnSelect={true}
-            // itemClass=""
-            // keyBoardControl
-            // minimumTouchDrag={80}
-            // renderButtonGroupOutside={false}
-            // renderDotsOutside={false}
-            // showDots={false}
-            responsive={{
-              desktop: {
-                breakpoint: {
-                  max: 3000,
-                  min: 1024,
-                },
-                items: 2,
-                partialVisibilityGutter: 40,
-              },
-              mobile: {
-                breakpoint: {
-                  max: 464,
-                  min: 0,
-                },
-                items: 1,
-                partialVisibilityGutter: 30,
-              },
-              tablet: {
-                breakpoint: {
-                  max: 1024,
-                  min: 464,
-                },
-                items: 1,
-                partialVisibilityGutter: 30,
-              },
-            }}
-            sliderClass=""
-            slidesToSlide={2}
-            swipeable>
-            <div className="flex flex-col mx-4">
-              {caseStudy1.map((el, idx) => (
+          <Carousel cols={2} rows={2} gap={10} loop autoplay={1000}>
+            {caseStudy1.map((el, idx) => (
+              // eslint-disable-next-line react/jsx-key
+              <Carousel.Item>
                 <div
                   key={idx}
-                  className="bg-xerpihan-primary-500 text-white mt-4 text-left max-w-xl rounded-xl p-3 h-[200px] content-between flex-wrap flex">
-                  <h1 className="text-2xl text-bold">{_(l, el.title.substring(0, 40), el.titleEn.substring(0, 40))}</h1>
+                  className={` ${
+                    idx % 2 === 0 ? 'bg-xerpihan-secondary ' : 'bg-xerpihan-primary-500 '
+                  } text-white mt-4 text-left max-w-xl rounded-xl p-3 h-[200px] content-between flex-wrap flex`}>
+                  <h1 className="text-xl text-bold">{_(l, el.title.substring(0, 35), el.titleEn.substring(0, 35))}</h1>
                   <p className="text-lg text-light">
                     {_(l, el.subtitle.substring(0, 52), el.subtitleEn.substring(0, 52))}
                   </p>
@@ -131,35 +87,14 @@ export const Page: React.FC = () => {
                     <a
                       href={el.link}
                       target="_blank"
-                      className="px-3 py-2 items-center my-3 text-xerpihan-primary-500 bg-white rounded-lg"
+                      className="px-3 py-2 items-center my-4 text-xerpihan-primary-500 bg-white rounded-lg"
                       rel="noreferrer">
                       <span>{_(l, 'Detail', 'Detail')}</span>
                     </a>
                   </div>
                 </div>
-              ))}
-            </div>
-            <div className="flex flex-col-reverse mx-4">
-              {caseStudy2.map(el => (
-                <div
-                  key={el.title}
-                  className="bg-xerpihan-secondary text-white mt-4 text-left max-w-xl rounded-xl p-3 h-[200px] content-between flex-wrap flex ">
-                  <h1 className="text-2xl text-bold">{_(l, el.title.substring(0, 40), el.titleEn.substring(0, 40))}</h1>
-                  <p className="text-lg text-light">
-                    {_(l, el.subtitle.substring(0, 52), el.subtitleEn.substring(0, 52))}
-                  </p>
-                  <div className="ml-auto">
-                    <a
-                      href={el.link}
-                      target="_blank"
-                      className="px-3 py-2 items-center m-3 text-xerpihan-primary-500 bg-white rounded-lg"
-                      rel="noreferrer">
-                      <span>{_(l, 'Detail', 'Detail')}</span>
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
+              </Carousel.Item>
+            ))}
           </Carousel>
         </div>
       </div>
@@ -206,9 +141,7 @@ export const Page: React.FC = () => {
         </div>
       </div>
       <div className="text-center py-10 max-w-5xl mx-auto">
-        <h1 className="text-2xl md:text-4xl font-bold my-8">
-          {_(l, 'Diliput Berbagai Media', 'Media Coverage')}
-        </h1>
+        <h1 className="text-2xl md:text-4xl font-bold my-8">{_(l, 'Diliput Berbagai Media', 'Media Coverage')}</h1>
         {media.map(el => (
           <div className="grid md:grid-cols-4 py-4 px-10 md:space-x-8" key={el.name}>
             <Image src={el.logo} alt="" objectFit="contain" width={150} height={150} />
