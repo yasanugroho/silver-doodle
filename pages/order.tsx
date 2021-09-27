@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 //lib
 import Image from 'next/image';
 import { _ } from '../lib/i18n';
@@ -171,20 +172,20 @@ export const Page: React.FC = () => {
         {isSuccess && (
           <div className="space-y-4 text-center flex flex-col p-6">
             <p className="text-2xl text-xerpihan-primary-500">Terimakasih, {name && name.split(' ')[0]}</p>
-            <p>
+            <p className="dark:text-black">
               Order Anda telah kami terima <br />
               Kami akan segera menghubungi nomor Anda
             </p>
 
-            <p>Silakan melakukan pembayaran sebesar</p>
+            <p className="dark:text-black">Silakan melakukan pembayaran sebesar</p>
             <p className="text-xl text-xerpihan-primary-500">Rp {totalPriceText()}</p>
-            <div>ke rekening</div>
-            <p className="text-lg">
+            <div className="dark:text-black">ke rekening</div>
+            <p className="text-lg dark:text-black">
               8465595724 (BCA) <br />
               a.n PT Xerpihan Kata Digital
             </p>
             <p className="text-[#f542aa]">paling lambat {showDate(new Date())}</p>
-            <p>Kami mengirimkan invoice melalui email Anda</p>
+            <p className="dark:text-black">Kami mengirimkan invoice melalui email Anda</p>
             <button
               className="xerp-a-button px-4 py-2 w-full !rounded-full my-6"
               onClick={() => {
