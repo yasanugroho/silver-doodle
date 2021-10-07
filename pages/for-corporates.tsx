@@ -92,7 +92,7 @@ export const Page: React.FC = () => {
                   Berikan tulisan terbaik untuk mewakili brand bisnis dengan <br /> teknologi dan tim profesional.
                 </p>
                 <p>
-                  Hands on your best script to represent your business brand with <br /> technology and profesional
+                  Hands on your best script to represent your business brand with <br /> technology and professional
                   team.
                 </p>
               </L>
