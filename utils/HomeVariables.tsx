@@ -1,8 +1,8 @@
 import {
-  proofreading,
-  translation,
-  subtitle,
-  transcription,
+  drawingProofreading,
+  drawingTranslation,
+  drawingSubtitle,
+  drawingTranscription,
   spoon,
   bps,
   cirebon,
@@ -40,7 +40,7 @@ export const listLogoClient = [adhi, bps, amarta, procon, sh, spoon, as, dapus, 
 
 export const dataSection = [
   {
-    img: proofreading,
+    img: drawingProofreading,
     title: 'Proofreading',
     titleEn: 'Proofreading',
     subTitle: 'Hilangkan kesalahan penulisan di dokumen kamu',
@@ -52,7 +52,7 @@ export const dataSection = [
     styling: true,
   },
   {
-    img: translation,
+    img: drawingTranslation,
     title: 'Terjemahan',
     titleEn: 'Translation',
     subTitle: 'Alih bahasa dokumen',
@@ -63,7 +63,7 @@ export const dataSection = [
       'Do you need to translate your English and Indonesian document or vice versa? Use our translation service and we make sure you get accurate and acceptable translation result!',
   },
   {
-    img: subtitle,
+    img: drawingSubtitle,
     title: 'Subtitle',
     titleEn: 'Subtitles',
     subTitle: 'Tingkatkan aksesibilitas di video kamu',
@@ -75,7 +75,7 @@ export const dataSection = [
     styling: true,
   },
   {
-    img: transcription,
+    img: drawingTranscription,
     title: 'Transkripsi',
     titleEn: 'Transcription',
     subTitle: 'Konversi audio ke teks',

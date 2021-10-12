@@ -20,7 +20,7 @@ export const Index: React.FC = () => {
             el.styling ? 'md:flex-row-reverse' : 'md:flex-row'
           }`}>
           <div className="md:w-1/2 flex mb-5 md:mb-0 justify-center items-center">
-            <figure className="w-36 h-36 md:w-48 md:h-48">
+            <figure className="w-60 h-60 md:w-72 md:h-72">
               <Image src={el.img} alt="Proofreading" objectFit="contain" />
             </figure>
           </div>
