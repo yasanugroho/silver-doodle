@@ -86,11 +86,11 @@ export const Index: React.FC = () => {
         {/* Box */}
         <div className="max-w-5xl px-8 pt-8 md:pt-16 pb-10 mx-auto ">
           <div className="relative">
-            <div className="border-2 text-lg rounded-md md:p-10 p-6 bg-white dark:bg-black overflow-hidden lg:flex lg:flex-1 md:flex-row-reverse">
-              <div className="md:absolute -bottom-2 left-2 ">
+            <div className="border-2 px-5 text-lg rounded-md bg-white dark:bg-black overflow-hidden lg:flex lg:flex-1 md:flex-row">
+              <div className="mt-5 mr-5">
                 <Image src={contactImg} alt="cp" width={190} height={190} />
               </div>
-              <div className="lg:mr-10 mr-0 space-y-4">
+              <div className="space-y-4 mb-5 lg:my-10">
                 <L>
                   <p>
                     Dapatkan estimasi biaya proofreading, terjemahan, subtitle,
