@@ -22,6 +22,7 @@ import cirebon from '/images/cirebon-power.svg';
 import XerpihanServices from '/images/Xerpihan-1.svg';
 import xerpihanLogoWhite from '/images/xerpihan-logo-white.svg';
 import xerpihanLogoBlack from '/images/xerpihan-logo-black.svg';
+import popup from '/images/pop-up.svg';
 
 import cpImg from '/images/imgcp.svg';
 import csCorp from '/images/csCorp.svg';
@@ -69,6 +70,7 @@ export {
   sh,
   dapus,
   amarta,
+  popup,
   adhi,
   Spinner,
   pgdown,

@@ -23,7 +23,7 @@ const listProduk = [
     name: 'Perusahaan',
     nameEn: 'Corporate',
     list: [
-      { name: 'Blog', nameEn: 'Blog', link: '/blog' },
+      { name: 'Blog', nameEn: 'Blog', link: 'https://xerpihan.id/blog' },
       { name: 'Tentang', nameEn: 'About', link: '/about' },
       { name: 'Ketentuan Layanan', nameEn: 'Term of Services', link: '/term-of-services' },
       { name: 'Kebijakan Privasi', nameEn: 'Privacy Policy', link: '/privacy-policy' },
@@ -96,9 +96,7 @@ export default function Footer() {
                       : 'Konsultasikan kebutuhan Anda, gratis!'}
                   </p>
                   <p>
-                    {router.pathname === '/order'
-                      ? 'Need help filling the form?'
-                      : 'Consult your needs, for free!'}
+                    {router.pathname === '/order' ? 'Need help filling the form?' : 'Consult your needs, for free!'}
                   </p>
                 </L>
               </div>
@@ -178,7 +176,7 @@ export default function Footer() {
                   {'Artikel, berita, dan kabar bulanan dari Xerpihan.'}
                   {'Article, news, and monthly insights from Xerpihan.'}
                 </L>
-                  </p>
+              </p>
             </div>
             <div className="space-y-4 md:w-1/2">
               <form onSubmit={(e: any) => subs(e)}>
