@@ -73,7 +73,7 @@ export const Page: React.FC = () => {
           <Carousel cols={2} rows={2} gap={10} loop autoplay={1000}>
             {caseStudy1.map((el, idx) => (
               // eslint-disable-next-line react/jsx-key
-              <Carousel.Item>
+              <Carousel.Item key={idx}>
                 <div
                   key={idx}
                   className={` ${
