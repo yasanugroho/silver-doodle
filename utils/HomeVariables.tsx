@@ -48,7 +48,7 @@ export const dataSection = [
     content:
       'Butuh jasa proofreading yang murah dan berkualitas? Proofreader kami telah berpengalaman menangani berbagai jenis dokumen bahasa Indonesia dan Inggris. Pesan sekarang dan dapatkan sertifikat proofreading untuk dokumenmu!',
     contentEn:
-      'Do you need affordable and quality proofreading service? Our proofreaders have experienced in handling various Indonesian and English documents. Order now and get proofreading certificate for your document!',
+      'Do you need affordable and quality proofreading service? Our proofreaders are experienced in handling various Indonesian and English documents. Order now and get proofreading certificate for your document!',
     styling: true,
   },
   {
