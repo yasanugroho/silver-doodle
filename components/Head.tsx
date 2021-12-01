@@ -9,7 +9,7 @@ const Head: React.FC<{ customMeta?: MetaProps }> = ({ customMeta }) => {
   const meta: MetaProps = {
     title: 'Xerpihan | 1st Indonesian Translation and Proofreading Startup Company',
     description: 'First AI Startup in Indonesia for English and Indonesian text correction. Hands on your documents and videos to us for best tech-enabled translation, proofreading, subtitle, and transcription service.',
-    image: `${WEBSITE_HOST_URL}/images/site-preview.png`,
+    image: `${WEBSITE_HOST_URL}/images/xerpihan-logo-black.svg`,
     type: 'website',
     ...customMeta,
   };
