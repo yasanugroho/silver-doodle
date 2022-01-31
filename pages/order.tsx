@@ -153,7 +153,7 @@ export const Page: React.FC = () => {
           (selectionData[service]?.packages[paket]?.price * parseInt(panjang)) /
             (selectionData[service]?.packages[paket]?.perunit * 10),
         ) *
-          9270 *
+          10300 *
           topicMultiplier[topik]?.multiplier,
         10000,
       );
@@ -174,7 +174,7 @@ export const Page: React.FC = () => {
             <p className="text-2xl text-xerpihan-primary-500">Terimakasih, {name && name.split(' ')[0]}</p>
             <p className="dark:text-black">
               Order Anda telah kami terima <br />
-              Kami akan segera menghubungi Anda
+              Mohon hubungi Admin untuk konfirmasi pesanan Anda
             </p>
 
             <p className="dark:text-black">Silakan melakukan pembayaran sebesar</p>
@@ -321,7 +321,7 @@ export const Page: React.FC = () => {
                   {panjang && 'Rp '}
                   {panjang && totalPriceText()}
                   <br />
-                  <span className="font-light text-xs ">{panjang && '*Harga sudah termasuk diskon 10% dan platform fee 3%'}</span>
+                  <span className="font-light text-xs ">{panjang && '*Harga sudah termasuk platform fee 3%'}</span>
                 </p>
               </div>
               <div className="space-y-2">
