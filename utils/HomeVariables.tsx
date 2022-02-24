@@ -41,8 +41,8 @@ export const listLogoClient = [adhi, bps, amarta, procon, sh, spoon, as, dapus, 
 export const dataSection = [
   {
     img: drawingProofreading,
-    title: 'Proofreading',
-    titleEn: 'Proofreading',
+    title: 'Jasa Proofreading',
+    titleEn: 'Proofreading Services',
     subTitle: 'Hilangkan kesalahan penulisan di dokumen kamu',
     subTitleEn: 'Eliminate typos in your document',
     content:
@@ -53,8 +53,8 @@ export const dataSection = [
   },
   {
     img: drawingTranslation,
-    title: 'Terjemahan',
-    titleEn: 'Translation',
+    title: 'Jasa Terjemahan',
+    titleEn: 'Translation Services',
     subTitle: 'Alih bahasa dokumen',
     subTitleEn: 'Document translation',
     content:
@@ -64,8 +64,8 @@ export const dataSection = [
   },
   {
     img: drawingSubtitle,
-    title: 'Subtitle',
-    titleEn: 'Subtitles',
+    title: 'Jasa Subtitle',
+    titleEn: 'Subtitle Services',
     subTitle: 'Tingkatkan aksesibilitas di video kamu',
     subTitleEn: 'Increase your video accessibility rate',
     content:
@@ -76,8 +76,8 @@ export const dataSection = [
   },
   {
     img: drawingTranscription,
-    title: 'Transkripsi',
-    titleEn: 'Transcription',
+    title: 'Jasa Transkripsi',
+    titleEn: 'Transcription Services',
     subTitle: 'Konversi audio ke teks',
     subTitleEn: 'Converting audio to text',
     content:
