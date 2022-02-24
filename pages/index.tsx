@@ -93,20 +93,20 @@ export const Index: React.FC = () => {
               <div className="space-y-4 mb-5 lg:my-10">
                 <L>
                   <p>
-                    Dapatkan estimasi biaya proofreading, terjemahan, subtitle,
+                    Dapatkan estimasi biaya jasa proofreading, terjemahan, subtitle,
                     <br /> dan transkripsi, <span className="font-bold">gratis!</span>
                   </p>
                   <p>
                     Get cost estimation of proofreading, translation, subtitles
-                    <br /> and transcription, for <span className="font-bold">free!</span>
+                    <br /> and transcription services, for <span className="font-bold">free!</span>
                   </p>
                 </L>
                 <div className="md:flex md:space-x-4 items-center">
                   <Link href="/order">
                     <a className="xerp-a-button flex items-center justify-between p-4 text-sm font-bold  md:w-[270px] h-[61px]">
                       <L>
-                        {'Order Sekarang'}
-                        {'Order now'}
+                        {'Estimasi Instan'}
+                        {'Instant Estimation'}
                       </L>
                       <ArrowSmRightIcon className="ml-1 w-8" />
                     </a>
