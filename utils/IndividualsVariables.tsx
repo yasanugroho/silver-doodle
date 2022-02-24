@@ -15,7 +15,7 @@ export const listLayanan = [
     img: ServicesIcon2,
     titleId: 'Cukup Sekali Pesan',
     titleEn: 'Order Once',
-    subTitleId: 'Kami siap memberikan garansi revisi tanpa batas untuk setiap pemesanan jasa proofreading, terjemah, subtitle, atau transkripsi.',
+    subTitleId: 'Kami siap memberikan garansi revisi tanpa batas untuk setiap pemesanan jasa proofreading, translate, subtitle, atau transkripsi.',
     subTitleEn: 'We are ready to offer unlimited revision guarantee for every order of proofreading, translation, subtitle, and transcription service.',
     styling: '',
   },
