@@ -83,7 +83,7 @@ export const Page: React.FC = () => {
                         <li className="md:ml-14">
                           <Link href="/order">
                             <a className="flex justify-between xerp-a-button p-2 items-center mt-6 md:mt-0 md:w-2/3 px-4">
-                              <p>{_(l, 'Estimasi Biaya', 'Cost Estimation')}</p>
+                              <p>{_(l, 'Pesan Sekarang', 'Order Now')}</p>
                               <ArrowSmRightIcon className=" w-8" />
                             </a>
                           </Link>
