@@ -37,14 +37,12 @@ export const Page: React.FC = () => {
         <Tabs />
       </div>
         </div>
-        <p>
-         Kelebihan Jasa Proofreading Xerpihan<br>
-Dokumen Anda akan diperiksa oleh proofreader profesional yang sudah berpengalaman dalam melakukan proofreading berbagai macam dokumen dari berbagai perusahaan dan institusi.
+        <h6>Kelebihan Jasa Proofreading Xerpihan.</h6>
+<p>Dokumen Anda akan diperiksa oleh proofreader profesional yang sudah berpengalaman dalam melakukan proofreading berbagai macam dokumen dari berbagai perusahaan dan institusi.
 Semua layanan proofreading tidak dikerjakan dengan mesin, melainkan dikerjakan secara manual oleh proofreader kami. Untuk menjaga kualitas dokumen, dokumen hasil proofread akan diperiksa ulang oleh proofreader yang lain sebelum diserahkan ke klien.
 Kami akan memberikan dokumen yang berisi tracking editing agar klien dapat memeriksa setiap perubahan yang dilakukan oleh proofreader kami.
 Jaminan kepuasan dan revisi tidak terbatas. Kami juga menyediakan layanan khusus jasa proofreading jurnal berupa revisi gratis berdasarkan komentar reviewer.
-Tentunya, konsultasi gratis terkait dokumen yang kami proofread.
-        </p>
+Tentunya, konsultasi gratis terkait dokumen yang kami proofread.</p>
           <p>
             Harga jasa proofreading Xerpihan cukup terjangkau, yaitu mulai dari Rp10.000. 
             Biaya jasa proofreading ditentukan berdasarkan jumlah kata yang ada dalam dokumen. 
