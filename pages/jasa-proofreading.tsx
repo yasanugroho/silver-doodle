@@ -2,9 +2,9 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Header from '../components/Header';
 import LayoutPlain from '../components/LayoutPlain';
-import { _ } from '../lib/i18n';
 import Footer from '../components/Footer';
 import Tabs from '../components/Tabs';
+import { L, _ } from '../lib/i18n';
 export const Page: React.FC = () => {
   const router = useRouter();
   const { locale: l } = router;
@@ -62,7 +62,6 @@ export const Page: React.FC = () => {
       Harga jasa proofreading Xerpihan cukup terjangkau, yaitu mulai dari Rp10.000. 
       Biaya jasa proofreading ditentukan berdasarkan jumlah kata yang ada dalam dokumen. 
       Tarif jasa proofreading per kata berbeda-beda, tergantung bahasa yang digunakan dan jenis layanan proofreading yang dipilih. 
-      Anda bisa klik menu ‘Layanan’ untuk melihat harga setiap layanan proofreading.
       </p>
       
       </div>
