@@ -9,7 +9,7 @@ const Head: React.FC<{ customMeta?: MetaProps }> = ({ customMeta }) => {
   const meta: MetaProps = {
     title: 'Wisaeta | Paket Wisata Jogja dan Sekitarnya',
     description: 'Kamu butuh paket wisata untuk di Jogja dan sekitarnya? Wisaeta kini menyediakan paket wisata yang tepat buat kamu.',
-    image: `${WEBSITE_HOST_URL}/images/Wisaeta Logo nonBG v2 PNG.png`,
+    image: `${WEBSITE_HOST_URL}/images/Wisaeta Logo JPG.png`,
     type: 'website',
     ...customMeta,
   };
