@@ -37,18 +37,34 @@ export const Page: React.FC = () => {
         <Tabs />
       </div>
         </div>
-        <h6>Kelebihan Jasa Proofreading Xerpihan.</h6>
-<p>Dokumen Anda akan diperiksa oleh proofreader profesional yang sudah berpengalaman dalam melakukan proofreading berbagai macam dokumen dari berbagai perusahaan dan institusi.
-Semua layanan proofreading tidak dikerjakan dengan mesin, melainkan dikerjakan secara manual oleh proofreader kami. Untuk menjaga kualitas dokumen, dokumen hasil proofread akan diperiksa ulang oleh proofreader yang lain sebelum diserahkan ke klien.
-Kami akan memberikan dokumen yang berisi tracking editing agar klien dapat memeriksa setiap perubahan yang dilakukan oleh proofreader kami.
-Jaminan kepuasan dan revisi tidak terbatas. Kami juga menyediakan layanan khusus jasa proofreading jurnal berupa revisi gratis berdasarkan komentar reviewer.
-Tentunya, konsultasi gratis terkait dokumen yang kami proofread.</p>
-          <p>
-            Harga jasa proofreading Xerpihan cukup terjangkau, yaitu mulai dari Rp10.000. 
-            Biaya jasa proofreading ditentukan berdasarkan jumlah kata yang ada dalam dokumen. 
-            Tarif jasa proofreading per kata berbeda-beda, tergantung bahasa yang digunakan dan jenis layanan proofreading yang dipilih. 
-            Anda bisa klik menu ‘Layanan’ untuk melihat harga setiap layanan proofreading.
-          </p>
+      
+      <h6>Kelebihan Jasa Proofreading Xerpihan.</h6>
+      <L>
+      <p>
+      Dokumen Anda akan diperiksa oleh proofreader profesional yang sudah berpengalaman dalam melakukan proofreading berbagai macam dokumen dari berbagai perusahaan dan institusi.
+      Semua layanan proofreading tidak dikerjakan dengan mesin, melainkan dikerjakan secara manual oleh proofreader kami. Untuk menjaga kualitas dokumen, dokumen hasil proofread akan diperiksa ulang oleh proofreader yang lain sebelum diserahkan ke klien.
+      Kami akan memberikan dokumen yang berisi tracking editing agar klien dapat memeriksa setiap perubahan yang dilakukan oleh proofreader kami.
+      Jaminan kepuasan dan revisi tidak terbatas. Kami juga menyediakan layanan khusus jasa proofreading jurnal berupa revisi gratis berdasarkan komentar reviewer.
+      Tentunya, konsultasi gratis terkait dokumen yang kami proofread.
+      </p>
+      <p>Your documents will be checked by professional proofreaders who are experienced in proofreading various documents from various companies and institutions.
+       All proofreading services are not done by machine, but are done manually by our proofreaders. To maintain the quality of the document, the proofread document will be re-examined by another proofreader before being submitted to the client.
+       We will provide a document containing tracking editing so that the client can check any changes made by our proofreader.
+       Satisfaction guarantee and unlimited revisions. We also provide special journal proofreading services in the form of free revisions based on reviewer comments.
+       Of course, free consultation regarding the documents we proofread.
+       </p>
+      </L>
+      <p>
+
+      </p>
+      
+      <p>
+      Harga jasa proofreading Xerpihan cukup terjangkau, yaitu mulai dari Rp10.000. 
+      Biaya jasa proofreading ditentukan berdasarkan jumlah kata yang ada dalam dokumen. 
+      Tarif jasa proofreading per kata berbeda-beda, tergantung bahasa yang digunakan dan jenis layanan proofreading yang dipilih. 
+      Anda bisa klik menu ‘Layanan’ untuk melihat harga setiap layanan proofreading.
+      </p>
+      
       </div>
 
       <Footer />
