@@ -7,9 +7,9 @@ import { MetaProps } from '../types/layout';
 const Head: React.FC<{ customMeta?: MetaProps }> = ({ customMeta }) => {
   const router = useRouter();
   const meta: MetaProps = {
-    title: 'Xerpihan | Indonesian Translation and Proofreading Services Company',
-    description: 'First AI Startup in Indonesia for English and Indonesian text correction. Hands on your documents and videos to us for best tech-enabled translation, proofreading, subtitle, and transcription service.',
-    image: `${WEBSITE_HOST_URL}/images/xerpihan-logo-black.png`,
+    title: 'Wisaeta | Paket Wisata Jogja dan Sekitarnya',
+    description: 'Kamu butuh paket wisata untuk di Jogja dan sekitarnya? Wisaeta kini menyediakan paket wisata yang tepat buat kamu.',
+    image: `${WEBSITE_HOST_URL}/images/Wisaeta Logo nonBG v2 PNG.png`,
     type: 'website',
     ...customMeta,
   };
