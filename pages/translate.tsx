@@ -22,6 +22,13 @@ export const Page: React.FC = () => {
           <h1> Xerpihan Translation</h1>
           <h6> Jasa Translate Bahasa Indonesia dan Inggris </h6>
         </div>
+        <p>
+          Apakah Anda sedang membutuhkan jasa penerjemah profesional? 
+          Kini, Xerpihan menyediakan jasa penerjemah bahasa Inggris dan bahasa Indonesia dengan harga yang murah, tetapi berkualitas. 
+          Kami menyediakan layanan jasa translate dalam dua bentuk, yaitu jasa translate dokumen online dan jasa translate video (subtitle). 
+          Xerpihan sudah berpengalaman menerjemahkan berbagai jenis dokumen dan video. 
+          Kami melayani jasa translate jurnal bahasa Inggris, artikel, abstrak, buku, transkrip nilai, website perusahaan, laporan, film, dan masih banyak lagi.
+        </p>
         <div>
         <div className="text-center pt-28">
         <h1 className=" text-3xl font-bold">
@@ -33,7 +40,11 @@ export const Page: React.FC = () => {
       </div>
         </div>
         <p>
-         
+         Harga jasa penerjemah video (subtitle) ditentukan berdasarkan durasi video. 
+          Sementara tarif jasa penerjemah atau translate dokumen online ditentukan berdasarkan jumlah kata dan jenis layanan yang dipilih. 
+          Harga jasa penerjemah kami cukup murah dibandingkan jasa penerjemah lainnya. 
+          Dengan membayar Rp10.000, Anda sudah bisa menerjemahkan (translate) jurnal atau dokumen bahasa Inggris/Indonesia sebanyak 75 kata. 
+          Anda bisa klik menu ‘Layanan’ untuk melihat harga setiap jenis jasa penerjemah kami
         </p>
       </div>
 
