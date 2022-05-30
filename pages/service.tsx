@@ -20,7 +20,7 @@ export const Page: React.FC = () => {
   return (
     <LayoutPlain
       customMeta={{
-        title: _(l, 'Layanan - Jasa Proofreading, Translate, Subtitle, Transkrip Indonesia Inggris', 'Services - Indonesian English Proofreading, Translate, Subtitle, Transcribe') + ' | Xerpihan',
+        title: _(l, 'Layanan Bahasa Profesional untuk Bahasa Indonesia dan Inggris', 'Indonesian and English Professional Language Service Provider') + ' | Xerpihan',
       }}>
       <div
         className="bg-gradient-to-b
