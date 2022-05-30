@@ -42,8 +42,8 @@ export const listLogoClient = [adhi, bps, amarta, procon, sh, spoon, as, dapus, 
 export const dataSection = [
   {
     img: drawingProofreading,
-    title: <Link href={"/jasa-proofreading"}><a>'Jasa Proofreading'</a></Link>,
-    titleEn: 'Proofreading Services',
+    title: <Link href={"/jasa-proofreading"}><a>Jasa Proofreading</a></Link>,
+    titleEn: <Link href={"/jasa-proofreading"}><a>Proofreading Service</a></Link>,
     subTitle: 'Hilangkan kesalahan penulisan di dokumen kamu',
     subTitleEn: 'Eliminate typos in your document',
     content:
@@ -54,8 +54,8 @@ export const dataSection = [
   },
   {
     img: drawingTranslation,
-    title: 'Jasa Terjemahan',
-    titleEn: 'Translation Services',
+    title: <Link href={"/translate"}><a>Jasa Terjemah</a></Link>,
+    titleEn: <Link href={"/translate"}><a>Translation Service</a></Link>,
     subTitle: 'Alih bahasa dokumen',
     subTitleEn: 'Document translation',
     content:
@@ -65,8 +65,8 @@ export const dataSection = [
   },
   {
     img: drawingSubtitle,
-    title: 'Jasa Subtitle',
-    titleEn: 'Subtitle Services',
+    title: <Link href={"/subtitle"}><a>Jasa Subtitle</a></Link>,
+    titleEn: <Link href={"/subtitle"}><a>Subtitling Service</a></Link>,
     subTitle: 'Tingkatkan aksesibilitas di video kamu',
     subTitleEn: 'Increase your video accessibility rate',
     content:
@@ -77,8 +77,8 @@ export const dataSection = [
   },
   {
     img: drawingTranscription,
-    title: 'Jasa Transkripsi',
-    titleEn: 'Transcription Services',
+    title: <Link href={"/transcription"}><a>Jasa Transkripsi</a></Link>,
+    titleEn: <Link href={"/transcription"}><a>Transcription Service</a></Link>,
     subTitle: 'Konversi audio ke teks',
     subTitleEn: 'Converting audio to text',
     content:
