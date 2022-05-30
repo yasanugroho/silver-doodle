@@ -34,19 +34,19 @@ export const Page: React.FC = () => {
         </div>
         <p>
         Harga jasa transkrip ditentukan berdasarkan durasi video dan jenis layanan yang dipilih. Tarif jasa transkrip yang kami sediakan terbilang cukup murah, yaitu mulai dari Rp10.000. Jika Anda ingin melihat harga setiap jenis layanan transkrip kami, silakan klik di menu ‘Layanan’.
-        <br>Kelebihan Jasa Transkrip Xerpihan</br>
-        <br>Berpengalaman membuat transkrip berbagai macam audio</br>
-        Transkrip video Anda akan dikerjakan oleh tim kami yang sudah berpengalaman membuat transkrip berbagai macam video dari berbagai perusahaan, institusi, maupun perorangan.
-        <br>Pengerjaan cepat dan berkualitas</br>
-        Pengerjaan dilakukan dengan bantuan audio-to-text tool, kemudian diperiksa dan diperbaiki secara manual, sehingga waktu pengerjaan lebih cepat. Untuk menjaga kualitasnya, dokumen hasil transkrip akan diperiksa ulang oleh proofreader kami sebelum diserahkan ke klien.
-        <br>Tersedia paket jasa transkrip sekaligus terjemah (translation)</br>
-        Kami juga menyediakan paket transkrip sekaligus terjemah bahasa Indonesia dan bahasa Inggris dengan harga terjangkau dan dikerjakan oleh penerjemah (translator) yang berpengalaman.
-        <br>Garansi uang kembali dan revisi tanpa batas</br>
-        Klien bisa mengajukan revisi secara gratis jika kurang setuju dengan hasil transkrip kami. Apabila kami melakukan kesalahan fatal dan klien tidak puas dengan hasilnya, kami siap mengembalikan uangnya.
-        <br>Konsultasi gratis</br>
-        Kami menyediakan layanan konsultasi gratis terkait dokumen yang kami kerjakan.
-        <br>Jaminan kerahasiaan</br>
-        Kami bersedia untuk membuat dan menandatangani surat perjanjian kerahasiaan (non-disclosure agreement) apabila diperlukan.
+        <br/>Kelebihan Jasa Transkrip Xerpihan
+        <br/>Berpengalaman membuat transkrip berbagai macam audio
+        <br/>Transkrip video Anda akan dikerjakan oleh tim kami yang sudah berpengalaman membuat transkrip berbagai macam video dari berbagai perusahaan, institusi, maupun perorangan.
+        <br/>Pengerjaan cepat dan berkualitas
+        <br/>Pengerjaan dilakukan dengan bantuan audio-to-text tool, kemudian diperiksa dan diperbaiki secara manual, sehingga waktu pengerjaan lebih cepat. Untuk menjaga kualitasnya, dokumen hasil transkrip akan diperiksa ulang oleh proofreader kami sebelum diserahkan ke klien.
+        <br/>Tersedia paket jasa transkrip sekaligus terjemah (translation)
+        <br/>Kami juga menyediakan paket transkrip sekaligus terjemah bahasa Indonesia dan bahasa Inggris dengan harga terjangkau dan dikerjakan oleh penerjemah (translator) yang berpengalaman.
+        <br/>Garansi uang kembali dan revisi tanpa batas
+        <br/>Klien bisa mengajukan revisi secara gratis jika kurang setuju dengan hasil transkrip kami. Apabila kami melakukan kesalahan fatal dan klien tidak puas dengan hasilnya, kami siap mengembalikan uangnya.
+        <br/>Konsultasi gratis
+        <br/>Kami menyediakan layanan konsultasi gratis terkait dokumen yang kami kerjakan.
+        <br/>Jaminan kerahasiaan
+        <br/>Kami bersedia untuk membuat dan menandatangani surat perjanjian kerahasiaan (non-disclosure agreement) apabila diperlukan.
         </p>
       </div>
 
