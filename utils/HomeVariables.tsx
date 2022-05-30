@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   drawingProofreading,
   drawingTranslation,
@@ -41,7 +42,7 @@ export const listLogoClient = [adhi, bps, amarta, procon, sh, spoon, as, dapus, 
 export const dataSection = [
   {
     img: drawingProofreading,
-    title: 'Jasa Proofreading',
+    title: <Link href={"/jasa-proofreading"}><a>'Jasa Proofreading'</a></Link>,
     titleEn: 'Proofreading Services',
     subTitle: 'Hilangkan kesalahan penulisan di dokumen kamu',
     subTitleEn: 'Eliminate typos in your document',
