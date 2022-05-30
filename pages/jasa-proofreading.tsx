@@ -22,11 +22,18 @@ export const Page: React.FC = () => {
           <h1> Xerpihan Proofreading</h1>
           <h6> Jasa Proofreading Bahasa Indonesia dan Inggris </h6>
         </div>
+        <L>
         <p>
-          Jasa proofreading adalah layanan pemeriksaan sekaligus perbaikan tulisan untuk memastikan tidak ada kesalahan dalam teks tersebut. 
-          Pemeriksaan tersebut meliputi tata letak, ejaan, tata bahasa, tanda baca, struktur kalimat, konsistensi gaya bahasa, hingga koherensi antarparagraf sehingga 
-          tulisan akan lebih mudah dipahami oleh pembaca.
+        Jasa proofreading adalah layanan pemeriksaan sekaligus perbaikan tulisan untuk memastikan tidak ada kesalahan dalam teks tersebut. 
+        Pemeriksaan tersebut meliputi tata letak, ejaan, tata bahasa, tanda baca, struktur kalimat, konsistensi gaya bahasa, hingga koherensi antarparagraf sehingga 
+        tulisan akan lebih mudah dipahami oleh pembaca.
         </p>
+        <p>
+        A proofreading service is a service for checking and correcting writing to ensure that there are no errors in the text.
+        The examination includes layout, spelling, grammar, punctuation, sentence structure, stylistic consistency, to coherence between paragraphs so that
+        writing will be easier for readers to understand.
+        </p>
+        </L>
         
         <div className="text-center pt-28">
         <h1 className=" text-3xl font-bold">
@@ -37,8 +44,10 @@ export const Page: React.FC = () => {
         <Tabs />
       </div>
         </div>
-      
-      <h6>Kelebihan Jasa Proofreading Xerpihan.</h6>
+      <L>
+      <p>Kelebihan Jasa Proofreading Xerpihan.</p>
+      <p>Xerpihan Proofreading Services Advantages.</p>
+      </L>
       <L>
       <p>
       Dokumen Anda akan diperiksa oleh proofreader profesional yang sudah berpengalaman dalam melakukan proofreading berbagai macam dokumen dari berbagai perusahaan dan institusi.
@@ -54,16 +63,18 @@ export const Page: React.FC = () => {
        Of course, free consultation regarding the documents we proofread.
        </p>
       </L>
-      <p>
-
-      </p>
-      
+      <L>
       <p>
       Harga jasa proofreading Xerpihan cukup terjangkau, yaitu mulai dari Rp10.000. 
       Biaya jasa proofreading ditentukan berdasarkan jumlah kata yang ada dalam dokumen. 
-      Tarif jasa proofreading per kata berbeda-beda, tergantung bahasa yang digunakan dan jenis layanan proofreading yang dipilih. 
+      Tarif jasa proofreading per kata berbeda-beda, tergantung bahasa yang digunakan dan jenis layanan proofreading yang dipilih.
       </p>
-      
+      <p>
+      The price of Xerpihan's proofreading services is quite affordable, starting from Rp. 10,000.
+      The proofreading service fee is determined based on the number of words in the document.
+      Proofreading service rates per word vary, depending on the language used and the type of proofreading service selected. 
+      </p>
+      </L>
       </div>
 
       <Footer />

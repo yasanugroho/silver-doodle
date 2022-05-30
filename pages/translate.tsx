@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Header from '../components/Header';
 import LayoutPlain from '../components/LayoutPlain';
-import { _ } from '../lib/i18n';
+import { L, _ } from '../lib/i18n';
 import Footer from '../components/Footer';
 import Tabs from '../components/Tabs';
 export const Page: React.FC = () => {
@@ -22,6 +22,7 @@ export const Page: React.FC = () => {
           <h1> Xerpihan Translation</h1>
           <h6> Jasa Translate Bahasa Indonesia dan Inggris </h6>
         </div>
+        <L>
         <p>
           Apakah Anda sedang membutuhkan jasa penerjemah profesional? 
           Kini, Xerpihan menyediakan jasa penerjemah bahasa Inggris dan bahasa Indonesia dengan harga yang murah, tetapi berkualitas. 
@@ -29,7 +30,14 @@ export const Page: React.FC = () => {
           Xerpihan sudah berpengalaman menerjemahkan berbagai jenis dokumen dan video. 
           Kami melayani jasa translate jurnal bahasa Inggris, artikel, abstrak, buku, transkrip nilai, website perusahaan, laporan, film, dan masih banyak lagi.
         </p>
-        
+        <p>
+           Are you in need of a professional translator?
+           Now, Xerpihan provides English and Indonesian translator services at low prices, but with high quality.
+           We provide translation services in two forms, namely online document translation services and video translation services (subtitles).
+           Xerpihan has experience translating various types of documents and videos.
+           We provide translation services for English journals, articles, abstracts, books, transcripts, company websites, reports, films, and much more.
+        </p>
+        </L>
         <div className="text-center pt-28">
         <h1 className=" text-3xl font-bold">
           {_(l, 'Pilih Paket yang Sesuai dengan Kebutuhan Kamu', 'Choose the Package That Fits Your Needs')}
@@ -39,13 +47,22 @@ export const Page: React.FC = () => {
         <Tabs />
       </div>
         </div>
+        <L>
         <p>
-         Harga jasa penerjemah video (subtitle) ditentukan berdasarkan durasi video. 
+          Harga jasa penerjemah video (subtitle) ditentukan berdasarkan durasi video. 
           Sementara tarif jasa penerjemah atau translate dokumen online ditentukan berdasarkan jumlah kata dan jenis layanan yang dipilih. 
           Harga jasa penerjemah kami cukup murah dibandingkan jasa penerjemah lainnya. 
           Dengan membayar Rp10.000, Anda sudah bisa menerjemahkan (translate) jurnal atau dokumen bahasa Inggris/Indonesia sebanyak 75 kata. 
-          Anda bisa klik menu ‘Layanan’ untuk melihat harga setiap jenis jasa penerjemah kami
+          
         </p>
+        <p>
+           The price for video translation services (subtitles) is determined based on the duration of the video.
+           Meanwhile, the tariff for online document translation services is determined based on the number of words and the type of service selected.
+           The price of our translation services is quite cheap compared to other translation services.
+           By paying Rp 10,000, you can translate 75 words of journals or English/Indonesian documents.
+           
+        </p>
+        </L>
       </div>
 
       <Footer />
