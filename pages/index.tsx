@@ -57,13 +57,13 @@ export const Index: React.FC = () => {
         <Header />
         <L>
           <h1 className=" text-4xl md:text-6xl font-bold text-center">
-            Layanan bahasa
+            Paket Wisata
             <br />
-            <span className="text-xerpihan-primary-600 leading-normal">No.1</span> di Indonesia
+            <span className="text-xerpihan-primary-600 leading-normal">Jogja</span> dan Sekitarnya
           </h1>
           <h1 className="text-4xl md:text-6xl font-bold text-center">
-            Indonesian <span className="text-xerpihan-primary-600 leading-normal">No.1</span>
-            <br /> language service provider
+            Tour Package for <span className="text-xerpihan-primary-600 leading-normal">Jogja</span>
+            <br /> and Its Surroundings
           </h1>
         </L>
         <div className="grid grid-cols-2 text-center justify-center md:flex-wrap md:flex py-5">
