@@ -36,19 +36,19 @@ Subtitle dapat membantu meningkatkan jangkauan audiens video Anda. Penambahan su
         </div>
         <p>
         Kelebihan Jasa Subtitle Film dan Video Xerpihan
-        <br/>Berpengalaman membuat subtitle berbagai macam video
+        <br/><br/>1. Berpengalaman membuat subtitle berbagai macam video
         <br/>Subtitle video Anda akan dikerjakan oleh tim kami yang sudah berpengalaman membuat subtitle berbagai macam video dari berbagai perusahaan, institusi, maupun perorangan. Tim kami sudah pernah mengerjakan jasa subtitle untuk berbagai jenis video, mulai dari film, web series, podcast YouTube, dan company profile.
-        <br/>ngerjaan cepat dan berkualitas
+        <br/>2. Pengerjaan cepat dan berkualitas
         <br/>Pengerjaan dilakukan dengan bantuan audio-to-text tool, kemudian diperiksa dan diperbaiki secara manual, sehingga waktu pengerjaan lebih cepat. Untuk menjaga kualitasnya, hasil subtitle akan diperiksa ulang oleh proofreader kami sebelum diserahkan ke klien.
-        <br/>Tersedia paket layanan subtitle sekaligus translation
+        <br/>3. Tersedia paket layanan subtitle sekaligus translation
         <br/>Kami juga menyediakan paket subtitle sekaligus terjemah dengan harga terjangkau dan dikerjakan oleh penerjemah (translator) yang berpengalaman.
-        <br/>Tersedia berbagai macam format dan gaya
+        <br/>4. Tersedia berbagai macam format dan gaya
         <br/>Kami dapat membuat subtitle dengan berbagai macam format dan gaya sehingga klien dapat memilih jenis font, ukuran, dan warna sesuai keinginan. Klien juga bisa memilih jenis dokumen yang akan diterima, apakah hardsub atau softsub (.srt) atau keduanya.
-        <br/>Garansi uang kembali dan revisi tanpa batas
+        <br/>5. Garansi uang kembali dan revisi tanpa batas
         <br/>Klien bisa mengajukan revisi secara gratis jika kurang setuju dengan hasil subtitle kami. Apabila kami melakukan kesalahan fatal dan klien tidak puas dengan hasilnya, kami siap mengembalikan uangnya.
-        <br/>Konsultasi gratis
+        <br/>6. Konsultasi gratis
         <br/>Kami menyediakan layanan konsultasi gratis terkait video yang kami kerjakan.
-        <br/>Jaminan kerahasiaan
+        <br/>7. Jaminan kerahasiaan
         <br/>Kami bersedia untuk membuat dan menandatangani surat perjanjian kerahasiaan (non-disclosure agreement) apabila diperlukan.
         </p>
       </div>
