@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="810px" height="582px" viewBox="0 0 810 582" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 12</title>
+    <g id="Main-Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Untuk-Individual" transform="translate(-804.000000, -861.000000)">
+            <g id="Group-12" transform="translate(804.767883, 863.461731)">
+                <g id="Group-20" transform="translate(-0.000000, 0.000000)">
+                    <path d="M86.6768225,18.5383392 L502.090325,30.5668257 C516.995766,30.9984195 528.729138,43.4315428 528.297544,58.3369839 C528.268812,59.3292552 528.18538,60.319187 528.047626,61.3022697 L483.490465,379.285025 C481.622078,392.618795 470.215732,402.538269 456.751695,402.538269 L125.20673,402.538269 C111.530379,402.538269 100.013986,392.312304 98.3962783,378.731966 L59.0849014,48.7207242 C57.3210715,33.9137208 67.8946528,20.4804062 82.7016563,18.7165763 C84.0205241,18.559471 85.3491868,18.4998969 86.6768225,18.5383392 Z" id="Rectangle-Copy-3" fill="#80D4E1" fill-rule="nonzero"></path>
+                    <path d="M33.9148732,1.23210397 L429.212361,15.5929893 C443.733001,16.1205141 455.232117,28.0449706 455.232117,42.5751893 L455.232117,368.538269 C455.232117,383.449957 443.143805,395.538269 428.232117,395.538269 L98.5252887,395.538269 C85.5838044,395.538269 74.4623348,386.355571 72.0131935,373.647947 L6.42253323,33.3239819 C3.60053607,18.681756 13.1827247,4.52420598 27.8249506,1.70220883 C29.830608,1.31565834 31.873652,1.15794781 33.9148732,1.23210397 Z" id="Rectangle" stroke="#00AFC5" stroke-width="6" fill-opacity="0" fill="#D8D8D8"></path>
+                    <path d="M292.831435,149.669464 L713.365218,189.031258 C728.173656,190.417322 739.072474,203.518272 737.740543,218.331678 L712.925177,494.322053 C711.782504,507.03058 701.89925,517.20424 689.229132,518.714372 L327.233464,561.860082 C312.426577,563.624892 298.992563,553.052201 297.227752,538.245314 C297.201296,538.02334 297.177597,537.801046 297.156661,537.578483 L263.433912,179.080604 C262.037382,164.234455 272.940453,151.067162 287.786603,149.670632 C289.464491,149.512798 291.153473,149.512407 292.831435,149.669464 Z" id="Rectangle-Copy-5" fill="#ECC3C3" fill-rule="nonzero"></path>
+                    <path d="M363.947227,164.2438 L777.313917,167.302592 C792.225197,167.412931 804.22373,179.59036 804.113391,194.50164 C804.102432,195.982618 803.969639,197.460184 803.716356,198.919384 L744.101489,542.368797 C741.826613,555.474666 730.345307,564.971076 717.045351,564.747451 L429.143116,559.906679 C416.374044,559.691981 405.501787,550.560272 403.084933,538.020173 L337.235345,196.352739 C334.413348,181.710513 343.995537,167.552963 358.637763,164.730965 C360.387177,164.393801 362.165667,164.230617 363.947227,164.2438 Z" id="Rectangle-Copy-4" stroke="#D78887" stroke-width="6" fill-opacity="0" fill="#D8D8D8"></path>
+                </g>
+                <g id="Group-2" transform="translate(65.232117, 15.538269)">
+                    <rect id="Rectangle" stroke="#00AFC5" stroke-width="2" fill="#FFFFFF" x="-1" y="-1" width="186" height="186" rx="92"></rect>
+                    <text id="Sastra" font-family="Helvetica" font-size="23" font-weight="normal" line-spacing="31" fill="#008D9F">
+                        <tspan x="58.7634277" y="100">Sastra</tspan>
+                    </text>
+                </g>
+                <g id="Group-3" transform="translate(273.232117, 58.538269)">
+                    <rect id="Rectangle-Copy-7" stroke="#00AFC5" stroke-width="2" fill="#FFFFFF" x="-1" y="-1" width="186" height="186" rx="92"></rect>
+                    <text id="Kreatif" font-family="Helvetica" font-size="23" font-weight="normal" line-spacing="31" fill="#008D9F">
+                        <tspan x="58.7634277" y="100">Kreatif</tspan>
+                    </text>
+                </g>
+                <g id="Group-23" transform="translate(330.232117, 260.538269)">
+                    <rect id="Rectangle-Copy-9" stroke="#D78887" stroke-width="2" fill="#FFFFFF" x="-1" y="-1" width="186" height="186" rx="92"></rect>
+                    <text id="Bisnis" font-family="Helvetica" font-size="23" font-weight="normal" line-spacing="31" fill="#973735">
+                        <tspan x="61.3239746" y="100">Bisnis</tspan>
+                    </text>
+                </g>
+                <g id="Group-24" transform="translate(528.232117, 199.538269)">
+                    <rect id="Rectangle-Copy-10" stroke="#D78887" stroke-width="2" fill="#FFFFFF" x="-1" y="-1" width="186" height="186" rx="92"></rect>
+                    <text id="Ilmiah" font-family="Helvetica" font-size="23" font-weight="normal" line-spacing="31" fill="#973735">
+                        <tspan x="61.8239746" y="100">Ilmiah</tspan>
+                    </text>
+                </g>
+                <g id="Group-25" transform="translate(489.232117, 393.538269)">
+                    <rect id="Rectangle-Copy-11" stroke="#D78887" stroke-width="2" fill="#FFFFFF" x="-1" y="-1" width="186" height="186" rx="92"></rect>
+                    <text id="Hukum" font-family="Helvetica" font-size="23" font-weight="normal" line-spacing="31" fill="#973735">
+                        <tspan x="55.5739746" y="100">Hukum</tspan>
+                    </text>
+                </g>
+                <g id="Group-22" transform="translate(118.232117, 212.538269)">
+                    <rect id="Rectangle-Copy-8" stroke="#00AFC5" stroke-width="2" fill="#FFFFFF" x="-1" y="-1" width="186" height="186" rx="92"></rect>
+                    <text id="Jurnalistik" font-family="Helvetica" font-size="23" font-weight="normal" line-spacing="31" fill="#008D9F">
+                        <tspan x="40.873291" y="100">Jurnalistik</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
