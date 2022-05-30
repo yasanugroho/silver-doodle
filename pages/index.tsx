@@ -57,9 +57,9 @@ export const Index: React.FC = () => {
         <Header />
         <L>
           <h1 className=" text-4xl md:text-6xl font-bold text-center">
-            Layanan Paket Wisata
+            Layanan bahasa
             <br />
-            <span className="text-xerpihan-primary-600 leading-normal">Terkemuka</span> di Indonesia
+            <span className="text-xerpihan-primary-600 leading-normal">No.1</span> di Indonesia
           </h1>
           <h1 className="text-4xl md:text-6xl font-bold text-center">
             Indonesian <span className="text-xerpihan-primary-600 leading-normal">No.1</span>
