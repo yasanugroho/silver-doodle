@@ -20,8 +20,8 @@ import ServicesIcon3 from '/images/Icon-3.svg';
 import ServicesIcon4 from '/images/Icon-4.svg';
 import cirebon from '/images/cirebon-power.svg';
 import XerpihanServices from '/images/Xerpihan-1.svg';
-import xerpihanLogoWhite from '/images/xerpihan-logo-white.svg';
-import xerpihanLogoBlack from '/images/xerpihan-logo-black.svg';
+import xerpihanLogoWhite from '/images/Wisaeta Logo nonBG v2 PNG.png';
+import xerpihanLogoBlack from '/images/Wisaeta Logo nonBG PNG';
 import popup from '/images/pop-up.svg';
 
 import cpImg from '/images/imgcp.svg';
