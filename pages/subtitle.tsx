@@ -12,7 +12,7 @@ export const Page: React.FC = () => {
   return (
     <LayoutPlain
       customMeta={{
-        title: _(l, 'Layanan dan Jasa Subtitle Bahasa Inggris dan Indonesia', 'Subtitling Service for English and Indonesian') + ' - Xerpihan',
+        title: _(l, 'Layanan dan Jasa Subtitle Video Film Bahasa Inggris dan Indonesia', 'Subtitling Service for English and Indonesian') + ' - Xerpihan',
       }}>
       <div
         className="bg-gradient-to-b max-w-5xl px-8 py-4 md:mx-auto space-y-6
@@ -22,18 +22,34 @@ export const Page: React.FC = () => {
           <h1> Xerpihan Subtitle</h1>
           <h6> Jasa Subtitle Bahasa Indonesia dan Inggris </h6>
         </div>
-        <div>
+        <p>Apakah Anda sedang membutuhkan jasa pembuatan subtitle? Kini, Xerpihan menyediakan jasa subtitle film dan video YouTube dengan harga yang murah, tetapi berkualitas. Kami menyediakan jasa subtitle dalam dua bahasa, yaitu bahasa Inggris dan bahasa Indonesia.
+
+Subtitle dapat membantu meningkatkan jangkauan audiens video Anda. Penambahan subtitle bahasa Inggris di dalam video, akan memudahkan Anda menggaet penonton asing yang tidak paham bahasa Anda. Subtitle bahasa Indonesia juga dapat membantu penonton yang mempunyai gangguan pendengaran supaya lebih memahami video Anda.</p>
         <div className="text-center pt-28">
         <h1 className=" text-3xl font-bold">
           {_(l, 'Pilih Paket yang Sesuai dengan Kebutuhan Kamu', 'Choose the Package That Fits Your Needs')}
         </h1>
-      </div>
+      
       <div>
         <Tabs />
       </div>
         </div>
         <p>
-         
+        <br>Kelebihan Jasa Subtitle Film dan Video Xerpihan</br>
+        <br>Berpengalaman membuat subtitle berbagai macam video</br>
+        Subtitle video Anda akan dikerjakan oleh tim kami yang sudah berpengalaman membuat subtitle berbagai macam video dari berbagai perusahaan, institusi, maupun perorangan. Tim kami sudah pernah mengerjakan jasa subtitle untuk berbagai jenis video, mulai dari film, web series, podcast YouTube, dan company profile.
+        <br>Pengerjaan cepat dan berkualitas</br>
+        Pengerjaan dilakukan dengan bantuan audio-to-text tool, kemudian diperiksa dan diperbaiki secara manual, sehingga waktu pengerjaan lebih cepat. Untuk menjaga kualitasnya, hasil subtitle akan diperiksa ulang oleh proofreader kami sebelum diserahkan ke klien.
+        <br>Tersedia paket layanan subtitle sekaligus translation</br>
+        Kami juga menyediakan paket subtitle sekaligus terjemah dengan harga terjangkau dan dikerjakan oleh penerjemah (translator) yang berpengalaman.
+        <br>Tersedia berbagai macam format dan gaya</br>
+        Kami dapat membuat subtitle dengan berbagai macam format dan gaya sehingga klien dapat memilih jenis font, ukuran, dan warna sesuai keinginan. Klien juga bisa memilih jenis dokumen yang akan diterima, apakah hardsub atau softsub (.srt) atau keduanya.
+        <br>Garansi uang kembali dan revisi tanpa batas</br>
+        Klien bisa mengajukan revisi secara gratis jika kurang setuju dengan hasil subtitle kami. Apabila kami melakukan kesalahan fatal dan klien tidak puas dengan hasilnya, kami siap mengembalikan uangnya.
+        <br>Konsultasi gratis</br>
+        Kami menyediakan layanan konsultasi gratis terkait video yang kami kerjakan.
+        <br>Jaminan kerahasiaan</br>
+        Kami bersedia untuk membuat dan menandatangani surat perjanjian kerahasiaan (non-disclosure agreement) apabila diperlukan.
         </p>
       </div>
 

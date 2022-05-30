@@ -12,7 +12,7 @@ export const Page: React.FC = () => {
   return (
     <LayoutPlain
       customMeta={{
-        title: _(l, 'Layanan dan Jasa Translate Bahasa Inggris dan Indonesia', 'Translation Service for English and Indonesian') + ' - Xerpihan',
+        title: _(l, 'Layanan dan Jasa Translate Berkualitas Bahasa Inggris dan Indonesia', 'Translation Service for English and Indonesian') + ' - Xerpihan',
       }}>
       <div
         className="bg-gradient-to-b max-w-5xl px-8 py-4 md:mx-auto space-y-6
@@ -29,12 +29,12 @@ export const Page: React.FC = () => {
           Xerpihan sudah berpengalaman menerjemahkan berbagai jenis dokumen dan video. 
           Kami melayani jasa translate jurnal bahasa Inggris, artikel, abstrak, buku, transkrip nilai, website perusahaan, laporan, film, dan masih banyak lagi.
         </p>
-        <div>
+        
         <div className="text-center pt-28">
         <h1 className=" text-3xl font-bold">
           {_(l, 'Pilih Paket yang Sesuai dengan Kebutuhan Kamu', 'Choose the Package That Fits Your Needs')}
         </h1>
-      </div>
+      
       <div>
         <Tabs />
       </div>

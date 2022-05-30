@@ -12,7 +12,7 @@ export const Page: React.FC = () => {
   return (
     <LayoutPlain
       customMeta={{
-        title: _(l, 'Layanan dan Jasa Proofreading Bahasa Inggris dan Indonesia', 'Proofreading Service for English and Indonesian') + ' - Xerpihan',
+        title: _(l, 'Cek Grammar dan Jasa Proofreading Bahasa Inggris dan Indonesia', 'Proofreading Service for English and Indonesian') + ' - Xerpihan',
       }}>
       <div
         className="bg-gradient-to-b max-w-5xl px-8 py-4 md:mx-auto space-y-6
@@ -27,12 +27,12 @@ export const Page: React.FC = () => {
           Pemeriksaan tersebut meliputi tata letak, ejaan, tata bahasa, tanda baca, struktur kalimat, konsistensi gaya bahasa, hingga koherensi antarparagraf sehingga 
           tulisan akan lebih mudah dipahami oleh pembaca.
         </p>
-        <div>
+        
         <div className="text-center pt-28">
         <h1 className=" text-3xl font-bold">
           {_(l, 'Pilih Paket yang Sesuai dengan Kebutuhan Kamu', 'Choose the Package That Fits Your Needs')}
         </h1>
-      </div>
+      
       <div>
         <Tabs />
       </div>
