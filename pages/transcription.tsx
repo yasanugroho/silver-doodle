@@ -12,15 +12,15 @@ export const Page: React.FC = () => {
   return (
     <LayoutPlain
       customMeta={{
-        title: _(l, 'Layanan dan Jasa Proofreading Bahasa Inggris dan Indonesia', 'Proofreading Service for English and Indonesian') + ' - Xerpihan',
+        title: _(l, 'Layanan dan Jasa Transkrip Bahasa Inggris dan Indonesia', 'Transcription Service for English and Indonesian') + ' - Xerpihan',
       }}>
       <div
         className="bg-gradient-to-b max-w-5xl px-8 py-4 md:mx-auto space-y-6
         from-xerpihan-hero-gradient-start to-xerpihan-hero-gradient-end dark:from-gray-900 dark:to-gray-800">
         <Header></Header>
         <div className="text-center space-y-4">
-          <h1> Xerpihan Proofreading</h1>
-          <h6> Jasa Proofreading Bahasa Indonesia dan Inggris </h6>
+          <h1> Xerpihan Transcription</h1>
+          <h6> Jasa Transkrip Bahasa Indonesia dan Inggris </h6>
         </div>
         <div>
         <div className="text-center pt-28">
