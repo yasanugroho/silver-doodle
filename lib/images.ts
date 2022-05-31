@@ -19,10 +19,10 @@ import ServicesIcon2 from '/images/Icon-2.svg';
 import ServicesIcon3 from '/images/Icon-3.svg';
 import ServicesIcon4 from '/images/Icon-4.svg';
 import cirebon from '/images/cirebon-power.svg';
-import XerpihanServices from '/images/Xerpihan-1.svg';
+import XerpihanServices from '/images/Wisaeta Logo JPG.jpg';
 import xerpihanLogoWhite from '/images/Wisaeta Logo nonBG v2 PNG.png';
 import xerpihanLogoBlack from '/images/Wisaeta Logo nonBG PNG.png';
-import popup from '/images/pop-up.svg';
+import popup from '/images/Wisaeta Logo JPG.jpg';
 
 import cpImg from '/images/imgcp.svg';
 import csCorp from '/images/csCorp.svg';
@@ -33,7 +33,7 @@ import csAbout from '/images/csAbout.svg';
 import csOrder from '/images/csOrder.svg';
 import csOrderFooter from '/images/csOrderFooter.svg';
 
-import brandLogo from '/images/BrandLogo2.svg';
+import brandLogo from '/images/Wisaeta Logo JPG.jpg';
 import illustration from '/images/IllustrationCaseStudy.svg';
 import profile1 from '/images/Profile1.png';
 import profile2 from '/images/Profile2.png';
