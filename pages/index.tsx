@@ -119,7 +119,7 @@ export const Index: React.FC = () => {
                   </div>
                   <a
                     className="xerp-b-button flex items-center justify-between lg:p-2.5 p-4   md:w-[270px]"
-                    href="https://wa.me/+6283119161413"
+                    href="https://wa.me/xxx"
                     target="_blank"
                     rel="noreferrer">
                     <div className=" text-sm font-bold">

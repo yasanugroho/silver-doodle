@@ -24,14 +24,14 @@ import xerpihanLogoWhite from '/images/Wisaeta Logo nonBG v2 PNG.png';
 import xerpihanLogoBlack from '/images/Wisaeta Logo nonBG PNG.png';
 import popup from '/images/Wisaeta Logo JPG.jpg';
 
-import cpImg from '/images/imgcp.svg';
+import cpImg from '/images/Wisaeta Logo JPG.jpg';
 import csCorp from '/images/csCorp.svg';
 import csKasus from '/images/csKasus.svg';
 import csPerson from '/images/csPersonal.svg';
-import contactImg from '/images/imgContact.svg';
+import contactImg from '/images/Wisaeta Logo JPG.jpg';
 import csAbout from '/images/csAbout.svg';
 import csOrder from '/images/csOrder.svg';
-import csOrderFooter from '/images/csOrderFooter.svg';
+import csOrderFooter from '/images/Wisaeta Logo JPG.jpg';
 
 import brandLogo from '/images/Wisaeta Logo JPG.jpg';
 import illustration from '/images/IllustrationCaseStudy.svg';
