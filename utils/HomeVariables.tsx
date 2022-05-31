@@ -77,8 +77,8 @@ export const dataSection = [
   },
   {
     img: drawingTranscription,
-    title: <Link href={"/transcription"}><a>Paket Wisata Magelang</a></Link>,
-    titleEn: <Link href={"/transcription"}><a>Magelang Tour Package</a></Link>,
+    title: <Link href={"/transcription"}><a>Paket Wisata Semarang</a></Link>,
+    titleEn: <Link href={"/transcription"}><a>Semarang Tour Package</a></Link>,
     subTitle: 'Lorem Ipsum',
     subTitleEn: 'Lorem Ipsum',
     content:
