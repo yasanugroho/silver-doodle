@@ -108,8 +108,8 @@ export default function Footer() {
                   </p>
                 ) : (
                   <p>
-                    Tim Xerpihan akan membantu menemukan solusi untuk segala kebutuhan
-                    <br /> layanan bahasa Anda.
+                    Wisaeta akan membantu menemukan solusi untuk segala kebutuhan
+                    <br /> layanan wisata Anda.
                   </p>
                 )}
                 {router.pathname === '/order' ? (
@@ -119,7 +119,7 @@ export default function Footer() {
                   </p>
                 ) : (
                   <p>
-                    Xerpihan team will help you find the solution to your
+                    Wisaeta will help you find the solution to your
                     <br /> language needs.
                   </p>
                 )}
@@ -134,12 +134,12 @@ export default function Footer() {
                       : 'border-white text-white dark:hover:text-xerpihan-primary-500 hover:bg-xerpihan-primary-400  dark:hover:bg-black dark:hover:border-xerpihan-primary-400'
                   } p-4 md:mb-0 mb-4 font-semibold`}>
                   <L>
-                    <p>WhatsApp ke +62 831 1916 1413</p>
-                    <p> WhatsApp to +62 831 1916 1413</p>
+                    <p>WhatsApp ke +62 xxx</p>
+                    <p> WhatsApp to +62 xxx</p>
                   </L>
                 </div>
               </a>
-              <a href="mailto:layanan@xerpihan.id" target="_blank" rel="noreferrer">
+              <a href="mailto:xxx" target="_blank" rel="noreferrer">
                 <div
                   className={` border rounded-lg  ${
                     router.pathname === '/order'
@@ -147,8 +147,8 @@ export default function Footer() {
                       : 'border-white text-white dark:hover:text-xerpihan-primary-500 hover:bg-xerpihan-primary-400 dark:hover:bg-black dark:hover:border-xerpihan-primary-400'
                   } p-4 md:mb-0 mb-4 font-semibold`}>
                   <L>
-                    <p>E-mail ke layanan@xerpihan.id</p>
-                    <p> E-mail to layanan@xerpihan.id</p>
+                    <p>E-mail ke xxx</p>
+                    <p> E-mail to xxx</p>
                   </L>
                 </div>
               </a>
@@ -173,8 +173,8 @@ export default function Footer() {
               </p>
               <p className="text-[#838383]">
                 <L>
-                  {'Artikel, berita, dan kabar bulanan dari Xerpihan.'}
-                  {'Article, news, and monthly insights from Xerpihan.'}
+                  {'Artikel, berita, dan kabar bulanan dari Wisaeta.'}
+                  {'Article, news, and monthly insights from Wisaeta.'}
                 </L>
               </p>
             </div>
@@ -204,8 +204,8 @@ export default function Footer() {
                   <input type="checkbox" required />
                   <p>
                     <L>
-                      {'Saya setuju untuk mendapatkan email marketing dari Xerpihan.'}
-                      {'I agree to get marketing emails from Xerpihan.'}
+                      {'Saya setuju untuk mendapatkan email marketing dari Wisaeta.'}
+                      {'I agree to get marketing emails from Wisaeta.'}
                     </L>
                   </p>
                 </div>
@@ -256,8 +256,7 @@ export default function Footer() {
                 </L>
               </p>
               <p className="text-[#838383] dark:text-white text-sm">
-                PT Xerpihan Kata Digital <br /> Jl. Semangu No.4a, Rejowinangun, Kec. Kotagede, Kota Yogyakarta, Daerah
-                Istimewa Yogyakarta 55171
+                Wisaeta <br /> Jl. xxx
               </p>
             </div>
           </div>

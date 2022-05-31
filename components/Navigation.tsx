@@ -47,13 +47,13 @@ const Navigation: React.FC = () => {
         className="text-gray-900 dark:text-white pr-6 py-4 font-bold flex justify-center items-center minw"
         style={{ minWidth: 95 }}>
         <div className="flex dark:hidden justify-center items-center">
-          <Image src={xerpihanLogoBlack} alt="Xerpihan Logo" height={37} width={125} objectFit="contain" />
+          <Image src={xerpihanLogoBlack} alt="Wisaeta Logo" height={37} width={125} objectFit="contain" />
         </div>
         <div className="hidden dark:flex justify-center items-center">
           <Image
             className="light"
             src={xerpihanLogoWhite}
-            alt="Xerpihan Logo"
+            alt="Wisaeta Logo"
             height={37}
             width={125}
             objectFit="contain"

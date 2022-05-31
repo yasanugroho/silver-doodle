@@ -93,12 +93,12 @@ export const Index: React.FC = () => {
               <div className="space-y-4 mb-5 lg:my-10">
                 <L>
                   <p>
-                    Dapatkan estimasi biaya jasa proofreading, terjemahan, subtitle,
-                    <br /> dan transkripsi, <span className="font-bold">gratis!</span>
+                    Lorem ipsum
+                    <br /> lorem ipsum <span className="font-bold">lorem!</span>
                   </p>
                   <p>
-                    Get cost estimation of proofreading, translation, subtitles
-                    <br /> and transcription services, for <span className="font-bold">free!</span>
+                    Lorem ipsum
+                    <br /> lorem ipsum <span className="font-bold">lorem!</span>
                   </p>
                 </L>
                 <div className="md:flex md:space-x-4 items-center">
@@ -126,11 +126,11 @@ export const Index: React.FC = () => {
                       <L>
                         <p className="m-0">
                           Konsultasi via WhatsApp <br />
-                          +62 831 1916 1413
+                          +62 xxx
                         </p>
                         <p>
                           Consult via WhatsApp <br />
-                          +62 831 1916 1413
+                          +62 xxx
                         </p>
                       </L>
                     </div>
@@ -144,8 +144,8 @@ export const Index: React.FC = () => {
       </div>
       <div className="max-w-5xl px-8 mx-auto text-lg text-center text-[#A0A0A0] space-y-10">
         <L>
-          <p>Layanan kami telah digunakan oleh tim-tim terkemuka di Indonesia</p>
-          <p>Our services have been widely used by great teams in Indonesia</p>
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
         </L>
         <div className="grid md:grid-cols-5 grid-cols-3 gap-2 md:mx-20">
           {listLogoTim.map(el => (
