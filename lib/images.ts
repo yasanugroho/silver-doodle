@@ -3,10 +3,10 @@ import translation from '/images/translation.webp';
 import proofreading from '/images/proofreading.webp';
 import transcription from '/images/transcription.webp';
 
-import drawingSubtitle from '/images/drawings/subtitle.png';
-import drawingTranslation from '/images/drawings/terjemahan.png';
-import drawingProofreading from '/images/drawings/proofreading.png';
-import drawingTranscription from '/images/drawings/transkripsi.png';
+import drawingSubtitle from '/images/Wisaeta Logo JPG.jpg';
+import drawingTranslation from '/images/Wisaeta Logo JPG.jpg';
+import drawingProofreading from '/images/Wisaeta Logo JPG.jpg';
+import drawingTranscription from '/images/Wisaeta Logo JPG.jpg';
 
 import bps from '/images/bps.svg';
 import spoon from '/images/spoon.svg';
