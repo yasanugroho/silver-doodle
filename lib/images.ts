@@ -22,7 +22,7 @@ import cirebon from '/images/Wisaeta Logo nonBG PNG.png';
 import XerpihanServices from '/images/Wisaeta Logo JPG.jpg';
 import xerpihanLogoWhite from '/images/Wisaeta Logo nonBG v2 PNG.png';
 import xerpihanLogoBlack from '/images/Wisaeta Logo nonBG PNG.png';
-import popup from '/images/Wisaeta Logo JPG.jpg';
+import popup from '/images/pop-up.svg';
 
 import cpImg from '/images/Wisaeta Logo JPG.jpg';
 import csCorp from '/images/csCorp.svg';
